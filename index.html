@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GenAI Daily</title>
+  <meta name="description" content="Auto-generated daily digest of generative-AI papers, news and trending repositories." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div id="app" data-state="loading">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">?</div>
+          <div>
+            <h1>GenAI&nbsp;Daily</h1>
+            <p class="tagline">A daily, LLM-curated digest of generative-AI research, news &amp; trending code.</p>
+          </div>
+        </div>
+        <div class="header-meta">
+          <a class="ghlink" href="https://github.com/HerdMoon/herdmoon.github.io" target="_blank" rel="noopener">source</a>
+          <span id="updated" class="updated"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="stats" id="stats" aria-label="Overview statistics"></section>
+
+      <section class="charts">
+        <div class="card chart-card chart-wide">
+          <h3>Items per day</h3>
+          <div class="chart-holder"><canvas id="chartDaily"></canvas></div>
+        </div>
+        <div class="card chart-card">
+          <h3>By source</h3>
+          <div class="chart-holder"><canvas id="chartSource"></canvas></div>
+        </div>
+        <div class="card chart-card chart-wide">
+          <h3>Top topics</h3>
+          <div class="chart-holder"><canvas id="chartTags"></canvas></div>
+        </div>
+      </section>
+
+      <section class="controls card" aria-label="Filters">
+        <div class="control-row">
+          <div class="search-box">
+            <span class="search-icon" aria-hidden="true">?</span>
+            <input id="search" type="search" placeholder="Search titles, summaries, authors, tags?" autocomplete="off" />
+          </div>
+          <select id="sort" aria-label="Sort order">
+            <option value="date">Newest first</option>
+            <option value="topic">Top topic score</option>
+            <option value="quality">Top quality score</option>
+          </select>
+        </div>
+        <div class="control-row">
+          <div class="filter-group">
+            <span class="filter-label">Source</span>
+            <div id="sourceFilters" class="pills"></div>
+          </div>
+          <div class="filter-group score-group">
+            <span class="filter-label">Min topic <b id="minTopicVal">0</b></span>
+            <input id="minTopic" type="range" min="0" max="10" value="0" step="1" />
+          </div>
+        </div>
+        <div class="control-row">
+          <div class="filter-group">
+            <span class="filter-label">Topics</span>
+            <div id="tagFilters" class="pills tag-pills"></div>
+          </div>
+        </div>
+        <div class="control-row result-row">
+          <span id="resultCount" class="result-count"></span>
+          <button id="clearFilters" class="clear-btn" type="button">Clear filters</button>
+        </div>
+      </section>
+
+      <section id="feed" class="feed" aria-live="polite"></section>
+      <div id="empty" class="empty" hidden>No items match your filters.</div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>Generated automatically from an Obsidian vault. Papers &amp; repos belong to their respective authors.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div id="loading" class="loading-screen">Loading digest?</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
