@@ -13,7 +13,9 @@
     <header class="site-header">
       <div class="wrap header-inner">
         <div class="brand">
-          <div class="brand-mark" aria-hidden="true">?</div>
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.5l2.4 6.1 6.1 2.4-6.1 2.4L12 21.5l-2.4-6.1L3.5 11l6.1-2.4L12 2.5z" fill="currentColor"/></svg>
+          </div>
           <div>
             <h1>GenAI&nbsp;Daily</h1>
             <p class="tagline">A daily, LLM-curated digest of generative-AI research, news &amp; trending code.</p>
@@ -47,8 +49,10 @@
       <section class="controls card" aria-label="Filters">
         <div class="control-row">
           <div class="search-box">
-            <span class="search-icon" aria-hidden="true">?</span>
-            <input id="search" type="search" placeholder="Search titles, summaries, authors, tags?" autocomplete="off" />
+            <span class="search-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <input id="search" type="search" placeholder="Search titles, summaries, authors, tags..." autocomplete="off" />
           </div>
           <select id="sort" aria-label="Sort order">
             <option value="date">Newest first</option>
@@ -89,7 +93,7 @@
     </footer>
   </div>
 
-  <div id="loading" class="loading-screen">Loading digest?</div>
+  <div id="loading" class="loading-screen">Loading digest...</div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <script src="./assets/app.js" defer></script>
