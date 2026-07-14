@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GenAI Daily</title>
+  <meta name="description" content="A weekly-archived blog of generative-AI papers, news and trending repositories." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div id="app" data-state="loading">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.5l2.4 6.1 6.1 2.4-6.1 2.4L12 21.5l-2.4-6.1L3.5 11l6.1-2.4L12 2.5z" fill="currentColor"/></svg>
+          </div>
+          <div>
+            <h1>GenAI&nbsp;Daily</h1>
+            <p class="tagline">An LLM-curated blog of generative-AI research, news &amp; trending code.</p>
+          </div>
+        </div>
+        <nav class="top-nav">
+          <button class="nav-btn active" data-view="digest" type="button">Digest</button>
+          <button class="nav-btn" data-view="overview" type="button">Overview</button>
+        </nav>
+        <div class="header-meta">
+          <a class="ghlink" href="https://github.com/HerdMoon/herdmoon.github.io" target="_blank" rel="noopener">source</a>
+          <span id="updated" class="updated"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap layout">
+      <aside class="sidebar">
+        <div class="side-block">
+          <div class="search-box">
+            <span class="search-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <input id="search" type="search" placeholder="Search all weeks..." autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="side-block">
+          <h4>Sources</h4>
+          <div id="sourceFilters" class="pills"></div>
+        </div>
+
+        <div class="side-block">
+          <h4>Min topic score <b id="minTopicVal">0</b></h4>
+          <input id="minTopic" type="range" min="0" max="10" value="0" step="1" />
+        </div>
+
+        <div class="side-block" id="tagBlock">
+          <h4>Topics</h4>
+          <div id="tagFilters" class="pills tag-pills"></div>
+        </div>
+
+        <button id="clearFilters" class="clear-btn" type="button" hidden>Clear filters</button>
+
+        <div class="side-block archive">
+          <h4>Archive</h4>
+          <div id="archiveList" class="archive-list"></div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section id="overviewPanel" class="overview" hidden>
+          <div class="stats" id="stats"></div>
+          <div class="charts">
+            <div class="card chart-card chart-wide">
+              <h3>Items per day</h3>
+              <div class="chart-holder"><canvas id="chartDaily"></canvas></div>
+            </div>
+            <div class="card chart-card">
+              <h3>By source</h3>
+              <div class="chart-holder"><canvas id="chartSource"></canvas></div>
+            </div>
+            <div class="card chart-card chart-wide">
+              <h3>Top topics</h3>
+              <div class="chart-holder"><canvas id="chartTags"></canvas></div>
+            </div>
+          </div>
+        </section>
+
+        <div id="weekNav" class="week-nav">
+          <button id="prevWeek" class="week-arrow" type="button" aria-label="Older week">&larr;</button>
+          <div class="week-title">
+            <span id="weekLabel"></span>
+            <span id="weekCount" class="week-count"></span>
+          </div>
+          <button id="nextWeek" class="week-arrow" type="button" aria-label="Newer week">&rarr;</button>
+        </div>
+
+        <div id="filterBanner" class="filter-banner" hidden></div>
+
+        <section id="feed" class="feed" aria-live="polite"></section>
+        <div id="empty" class="empty" hidden>No items match your filters.</div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>Generated automatically from an Obsidian vault. Papers &amp; repos belong to their respective authors.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div id="loading" class="loading-screen">Loading digest...</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
