@@ -57,6 +57,7 @@ async function init() {
   buildFilters();
   renderArchive();
   bindEvents();
+  if (location.hash === "#overview") setView("overview");
   render();
   app.dataset.state = "ready";
 }
