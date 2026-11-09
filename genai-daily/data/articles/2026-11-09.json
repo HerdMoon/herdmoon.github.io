@@ -1,0 +1,77 @@
+{
+  "fingerprint": "1cd00d676b92ef889e279dba32af70d22d9bf3027b6b5f53c967e61c7282ccaf",
+  "article": {
+    "headline": "Video-Coder enables autonomous coding for dynamic video generation",
+    "lead": "Video-Coder enhances video generation through autonomous coding, achieving significant performance improvements. It combines supervised fine-tuning and reinforcement learning to create dynamic 3D scenes.",
+    "sections": [
+      {
+        "heading": "Benchmarks for image synthesis and 3D creation",
+        "paragraphs": [
+          {
+            "text": "LongBanana establishes an expert-verified benchmark for long-context multi-reference image synthesis, featuring 90 tasks and 4,670 evaluation items focused on content fidelity and relational binding (2). Frontier3DBench offers a comprehensive evaluation framework for coding agents in 3D creation, revealing that models excel in object generation but struggle with reference reconstruction and coordinated activities (3). This highlights ongoing challenges in achieving fidelity and workflow completion in 3D environments.",
+            "refs": [
+              2,
+              3
+            ]
+          },
+          {
+            "text": "OmniLatent presents a unified latent modeling framework for 3D part decomposition, generating geometry and texture from a single image without separate segmentation (5). SplatAnything introduces Gaussian Spacing Normalization to improve feed-forward 3D Gaussian Splatting, achieving state-of-the-art performance across varying scene scales (6). Both approaches aim to enhance 3D asset generation and address limitations in existing methods.",
+            "refs": [
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Advancements in generative models and reinforcement learning",
+        "paragraphs": [
+          {
+            "text": "EvoWorld tackles Out-of-Sight Causal Evolution in generative video models, integrating a vision-language model to enhance reasoning about world states (4). LambdaMix introduces a parameter-efficient method for preference-conditioned policy learning, achieving higher performance across multiple models while reducing training requirements (7). LowRAM presents a KV cache compression technique that significantly boosts decode throughput while maintaining performance, allowing for efficient inference (8). These works reflect ongoing efforts to improve generative models and adapt to user preferences.",
+            "refs": [
+              4,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Innovations in speech generation",
+        "paragraphs": [
+          {
+            "text": "VoxCPM2 is a tokenizer-free text-to-speech model that enhances multilingual speech generation and voice cloning capabilities (9). By eliminating tokenization, it improves efficiency and reduces latency, marking a significant step forward in generative audio models.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Video-Coder introduces a novel code-driven approach to video generation, enabling an agent to autonomously write and execute code for constructing dynamic 3D scenes, thereby enhancing spatial structure and motion coherence.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "What specific improvements did Video-Coder achieve on benchmarks?"
+      },
+      {
+        "ref": 4,
+        "question": "How does EvoWorld enhance reasoning about world states?"
+      },
+      {
+        "ref": 9,
+        "question": "What are the advantages of VoxCPM2's tokenizer-free approach?"
+      }
+    ]
+  }
+}
