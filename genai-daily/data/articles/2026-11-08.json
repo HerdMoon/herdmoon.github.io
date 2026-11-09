@@ -1,0 +1,26 @@
+{
+  "fingerprint": "6ad6466b957bc7da9591015c3666f2f3d63b0f0ef1c5a4d2730f5508eee5737c",
+  "article": {
+    "headline": "How claude-video turns a clip into evidence Claude can inspect",
+    "lead": "A video tutorial contains two accounts of what happened: the steps visible on screen and the explanation in the audio. The /watch tool makes both available to Claude as frames and a transcript.",
+    "sections": [
+      {
+        "heading": "What the tool hands to Claude",
+        "paragraphs": [
+          {
+            "text": "In the local workflow, /watch samples timestamped frames and pairs them with captions or a transcript. If a presenter says “click here,” Claude can use a frame to identify the menu and the transcript to recover the instruction. The important design choice is when to sample: two screenshots on either side of a brief pop-up may both miss it.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "When a crucial step lasts only a moment, which frame-sampling setting captures it at an acceptable input cost?"
+      }
+    ]
+  }
+}

@@ -78,6 +78,7 @@ a:hover { text-decoration: underline; }
 }
 .nav-btn:hover { color: var(--text); }
 .nav-btn.active { background: var(--accent-grad); color: #0b0e14; }
+.back-to-blog { align-self: center; padding: 4px 9px; font-size: .85rem; }
 
 .header-meta { display: flex; align-items: center; gap: 14px; }
 .ghlink { color: var(--muted); font-size: 0.82rem; }

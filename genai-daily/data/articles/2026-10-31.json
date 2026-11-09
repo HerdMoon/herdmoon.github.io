@@ -1,0 +1,127 @@
+{
+  "fingerprint": "e3c136e022b0ac45c018511d7cd01a1c274f0ff0c65457c040c70f1a4ed4a670",
+  "article": {
+    "headline": "Two ways to loosen the constraints on image tokens",
+    "lead": "SpecSlot separates fine image detail from the length of the global attention sequence. Another paper changes the order in which a pretrained image model fills a canvas, making inpainting and outpainting natural tests of what it has learned.",
+    "sections": [
+      {
+        "heading": "Generative image modeling improvements",
+        "paragraphs": [
+          {
+            "text": "SpecSlot introduces a pixel-space rectified-flow Transformer that separates output detail from global attention sequence length. This method allows for fine spectral detail retention while lowering computational costs. The authors report a 2.84 FID improvement on ImageNet-512 with 3.9% fewer FLOPs compared to a control model, and it surpasses JiT-B/8 in text-to-image generation by 1.06 at a 40.6% lower forward cost. This demonstrates a significant trade-off between detail preservation and efficiency in generative tasks.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image quality assessment enhancements",
+        "paragraphs": [
+          {
+            "text": "MetaRefine presents a lightweight architecture for image quality assessment that combines original-image geometry with multi-level visual features. This integration refines score predictions without changing existing scoring pipelines. The method achieves average relative gains of 7.55% in PLCC and 7.10% in SRCC across 100 configurations on 21 datasets, while maintaining a median parameter overhead of only 1.11%. This approach enhances state-of-the-art assessment models by leveraging geometric and compositional cues for improved performance.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Advancements in sampling and object insertion",
+        "paragraphs": [
+          {
+            "text": "The introduction of exponential residual flows (ERFs) provides an ODE-based sampling framework for discrete diffusion models. This method preserves the marginals of the original diffusion while enabling faster sampling and consistency distillation, showing empirical improvements in code and text generation tasks. Additionally, PhysInsert enhances object insertion by utilizing a new dataset, Insert World, which improves spatially consistent insertions through Geometry-Guided Adaptation and 2D Object-Scene Spatial Supervision. This addresses challenges in pose and illumination adaptation that previous methods struggled with.",
+            "refs": [
+              3,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frameworks for robotics and editing",
+        "paragraphs": [
+          {
+            "text": "Gym-Anything for Robotics introduces a framework that uses coding agents to autonomously create realistic robotics simulations. It includes RoboWorld, featuring 25 simulations and 175 training environments, where even state-of-the-art models achieve low average rewards. Meanwhile, Micro-Edits offers a framework for fine-scale film editing, improving efficiency through AI and optimization techniques. Both works aim to enhance model performance in their respective domains by addressing scalability and precision challenges.",
+            "refs": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models — The paper presents a method for adapting pretrained autoregressive (AR) image models to enable any-order generation without the need for extensive retraining, achieving significant improvements in inpainting and outpainting tasks.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "The repository \"0x0funky/agent-sprite-forge\" introduces a skill for generating 2D sprite sheets, transparent PNG frames, and animated GIFs directly from text prompts, enhancing the efficiency of game asset creation.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Proving and Improving the Platonic Representation Hypothesis with JEPAs — The paper presents the Platonic Representation Theorem, demonstrating that Joint-Embedding Predictive Architectures (JEPAs) trained on multiple modalities converge to the same representation of the world, achieving this with significantly fewer training samples—42 times less for \"good views\" compared to next-token prediction.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "Weaken to Strengthen — The paper introduces Weakening-Induced On-Policy Self-Distillation (WISD), a novel self-distillation framework that constructs a weaker model through low-bit quantization and magnitude pruning to enhance reasoning models without requiring privileged information.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "The paper introduces A-RSI, a novel approach for adaptive task refresh in zero-data multimodal self-improvement, which enhances model performance from an average of 57.77 to 61.05 across eleven benchmarks by introducing 800 fresh tasks.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "A Broader Look into MLLM's Retrieval Heads — The paper presents a detailed analysis of retrieval heads in Multimodal Large Language Models (MLLMs), revealing that these sparse attention heads, which facilitate evidence retrieval from long inputs, are largely shared across different modalities, including newly introduced audio-visual inputs.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "hacksider/Deep-Live-Cam — The Deep-Live-Cam repository enables real-time face swapping and one-click video deepfake generation using only a single image as input.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 6,
+        "question": "How much of the gain in inpainting survives when the missing region has an unfamiliar shape?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific techniques does SpecSlot use to reduce FLOPs?"
+      }
+    ]
+  }
+}

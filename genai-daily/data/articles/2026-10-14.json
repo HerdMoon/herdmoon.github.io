@@ -1,0 +1,140 @@
+{
+  "fingerprint": "86580ab4283da71982c1c52c45e0898035f9a9b33d83fa44cbba8bb95e4c8ac4",
+  "article": {
+    "headline": "Keeping a shared 3D world consistent across viewpoints",
+    "lead": "WorldRecon reconstructs a scene mesh from RGB images without known camera poses. WorldCast tackles consistency when several players each generate their own view of a shared world. Together they make disagreement between viewpoints a concrete failure to look for.",
+    "sections": [
+      {
+        "heading": "Generative multi-view reconstruction framework",
+        "paragraphs": [
+          {
+            "text": "WorldRecon introduces a generative multi-view reconstruction framework that integrates a dedicated reconstruction-based conditioning architecture with the TRELLIS.2 model. This combination significantly enhances the quality of 3D scene meshes derived from unposed RGB images, achieving state-of-the-art performance on both synthetic and real-world indoor scenes. The framework employs neighbour-aware latent inpainting and a causal world-generation procedure to ensure coherent scene reconstruction across overlapping spatial blocks, addressing challenges in traditional methods.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Dog-Breed Text-to-image Flow Matching from Pretraining to Fine-Tuning on 4 Consumer GPUs — The paper introduces MiniDog, a framework for training text-to-image diffusion models that significantly reduces compute requirements, allowing pretraining in 55 minutes and fine-tuning in 15 minutes on four NVIDIA 3090 GPUs.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The paper introduces PixelMoE, a pixel-space generative framework that employs LLM-style Mixture-of-Experts (MoE) architectures to achieve sparse scaling of model capacity in diffusion models, without the need for diffusion-specific routing mechanisms.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "DuplexBridge introduces a unified model that enhances image editing by coordinating understanding and generation without relying on an external understanding module.",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "WorldOracle introduces a benchmark for evaluating action-conditioned world models (ACWMs) against real-world executions, focusing on four dimensions: physical state correctness, interaction spatial alignment, key interaction area fidelity, and multi-view action coherence.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "The paper introduces UniW(A)M, a unified mixture-of-experts framework that integrates world models (WMs) and world-action models (WAMs) using diffusion Transformers, enabling shared learning of physical dynamics while maintaining distinct modeling capabilities.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "WorldCast introduces a distributed multiplayer world model that significantly enhances real-time performance and scalability in generating consistent views for multiple players in shared environments.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "GreenWAM introduces a unified world foundation model for robotics that effectively serves both world modeling and action policy roles across 20 robot families, achieving state-of-the-art performance in trajectory, depth, and 3D accuracy on the WorldArena 1.0 benchmark.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "The paper introduces 4LC, a 4D latent cache designed for efficient conditioning in dynamic world modeling, which enables the reuse of static and dynamic visual content for video generation without the need for per-request RGB rendering.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "Learning Transferable World-Action Models from Task-Paired Human Videos — The paper introduces WATCH, a novel cross-video pre-training method that enhances world-action models by learning transferable interactions from task-paired human videos across diverse environments.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces Geometry Attention Distillation (GAD), a novel method that enhances video generation by improving long-range scene consistency and dynamic temporal consistency through reliable cross-frame associations.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "FlashVSR+ introduces a novel hybrid attention mechanism that enhances video super-resolution (VSR) by achieving up to 2x speedup and 45% lower peak memory usage, enabling efficient 4K VSR on a single 24GB RTX 4090.",
+            "refs": [
+              13
+            ]
+          },
+          {
+            "text": "LightVAE introduces a novel compression framework for video autoencoders that significantly enhances decoding efficiency by reparameterizing causal Conv3D layers and applying temporal low-rank compression.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "Video-Arena introduces a novel benchmark for evaluating spatiotemporal understanding in video models by leveraging competitive games to create scalable tests of dynamic world state comprehension.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "The paper introduces OmniCompass, a comprehensive benchmark for evaluating omni-modal video grounding and understanding, which includes two tracks: OmniCompass-VL for vision-language models and OmniCompass-AV for audio-visual models.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "Omni-Modal LLMs Know More Than They Say — The paper introduces OmniCatalyst, a novel approach that enhances the performance of omni-modal large language models (Omni-LLMs) by addressing the \"knows-but-cannot-say\" issue, where these models fail to effectively express non-textual information.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "When two players see the same moving object, how does the system reconcile their independently generated views?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific techniques contribute to the reduction in Chamfer distance?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "fingerprint": "49175ec2752edbe4ddd6537065b7c1bc664c1b45d5aa7839e97bae2792003f4e",
+  "article": {
+    "headline": "Two kinds of control over generated 3D content",
+    "lead": "FlexPart lets a user vary the granularity of parts reconstructed from an image. AnyGameRenderer follows entities as it restyles game footage. One asks whether parts can be separated at the right scale, the other whether they stay recognizable through time.",
+    "sections": [
+      {
+        "heading": "Generative rendering across games",
+        "paragraphs": [
+          {
+            "text": "AnyGameRenderer enhances the visual quality of AI-generated game footage while maintaining entity consistency across various game genres. By fine-tuning the MiniMax-H3 model, it improves entity correspondence, with temporal match accuracy increasing from 50.9% to 62.9%. The system operates directly on plain video inputs and is evaluated using a new entity-level benchmark comprising 59 cases and 753 entities.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "FlexPart introduces a unified framework for generating 3D parts from images. It allows variable-granularity geometric conditions, which enhances flexibility in user workflows. The method achieves a 16.6% reduction in Part Chamfer Distance (CD) compared to TripoSG + SAM3D and a 10.5% reduction relative to OmniPart, while maintaining competitive whole-mesh quality. This framework is particularly useful for applications requiring adaptable geometric representations.",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "Gate3DGen enhances single-image 3D generation by purifying real-world images with degradation issues. It achieves a 61.5% reduction in TRELLIS.2 mesh distance compared to degraded inputs, processing images in an average of 2.3 seconds. The model uses a degradation-aware router to bypass clean inputs and a 3D-oriented one-step purifier that preserves essential visual cues, improving fidelity and downstream 3D geometry without retraining existing 3D generators.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The conditional 3D diffusion framework synthesizes complete biparametric prostate MRI (bpMRI) from anatomical masks. It addresses the scarcity of large prostate MRI datasets and supports both sequential and joint synthesis. Joint synthesis achieves competitive distributional fidelity and improved performance in generating complete bpMRI compared to traditional methods, demonstrating effectiveness across multiple configurations using established datasets.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "HyperDrone introduces a quadrotor simulator that achieves over 20x the speed of current state-of-the-art simulators. It leverages a new ray-tracing engine, HyperLux, to render high-fidelity scenes at millions of frames per second. The simulator supports multiple rendering backends and produces various outputs, enabling effective training of vision-based control policies that transfer to real-world applications.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "FilmFlow translates natural-language instructions and reference videos into executable camera trajectories for dynamic 3D environments. It employs a Director agent to compose high-level camera plans, achieving superior benchmark performance and user preference compared to existing methods. The framework is evaluated using CinemaBench, enhancing the assessment of both text and video-directed camera generation.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "SplatLab is an autonomous research system for 3D Gaussian Splatting (3DGS) that reduces the research cycle from months to days. It automates the reproduction of published baselines and proposes extensions, achieving improvements in PSNR by +0.18 to +3.78 dB over reproduced targets. Key features include a verified-reproduction backbone and a robust logging system for traceability.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "RLSplat introduces a resource-linear budget-controllable framework for Feed-forward 3D Gaussian Splatting (FF3DGS). It enables efficient 3D scene reconstruction with a linear decrease in representation size and peak memory as the Gaussian budget is reduced. RLSplat achieves up to 4.1 times faster performance and 9.6 times less peak memory usage compared to prior methods.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "WorldForge V2 presents a training-free guidance framework for video diffusion models. It enhances camera control while maintaining generative capabilities, achieving state-of-the-art generation quality and trajectory accuracy. Key innovations include optical-flow analysis for motion-related latent channel guidance and a dual-path strategy for artifact correction, which improves spatial task performance in video generation with minimal training data.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "This survey paper presents a comprehensive framework for understanding video observations and their relationship with the evolving world. It organizes literature around four key operations—reading, writing, sharing, and interacting—highlighting a shift from traditional clip-level recognition to a focus on persistent state and controllable evolution. The authors identify open challenges and advocate for advancements in representation and model design.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "BrickWright introduces a framework for generating physically feasible LEGO brick builds from text or image prompts. It achieves 100% physical validity on a sample of 512 prompts, significantly outperforming baseline agents with validity rates between 9% and 69%. The framework includes BrickLayer, a Python toolkit that reduces inference costs by half compared to raw LDraw, ensuring builds are physically valid.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "FRED enhances World Action Models (WAMs) by improving future video representations through self-distillation and conditioning on historical observations. It significantly outperforms existing WAMs, achieving a 50.0% task success rate on long-horizon tasks in zero-shot settings, compared to 19.4% for the best competing model, streamlining action prediction in robotic applications.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "The \"Squaring-the-Sphere\" framework generates 360-degree panoramas using CubeAtlas, which combines cubemap geometry with a structured layout. This approach improves geometric fidelity and visual quality while reducing attention computation through a layout-aware sparse attention mask. It outperforms existing methods like equirectangular projection (ERP) in both quality and efficiency, enhancing cross-view consistency and high-resolution output.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "LayerEditor integrates instruction-guided image editing with the generation of reusable RGBA layers. It addresses limitations of existing models that produce flattened outputs by allowing semantic edits and precise control over individual layer content. The framework is supported by the LayerEditor-100K dataset, demonstrating strong editing fidelity and accurate layer generation in extensive experiments.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "UniVOE introduces a removal-driven framework for video object editing. It effectively trains both object removal and injection models, overcoming challenges of data scarcity and realism in paired supervision. By leveraging video inpainting techniques, UniVOE achieves state-of-the-art performance in handling complex interaction effects, significantly improving the quality of object injection in videos.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "RTAformer introduces a one-stage framework for video scene graph generation that addresses relational semantic inertia. It models entity persistence and relation changes separately, achieving significant improvements in recall on the Action Genome dataset. The design choices are validated through ablation studies, demonstrating superior performance compared to existing methods.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "Which entity-level tests catch identity changes that a whole-frame image-quality score would miss?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific user workflows benefit from FlexPart's flexibility?"
+      }
+    ]
+  }
+}

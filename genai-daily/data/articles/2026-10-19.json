@@ -1,0 +1,103 @@
+{
+  "fingerprint": "c359f98a0702f86600eed37b59867944f624527798672692f6c2fdfd34821e73",
+  "article": {
+    "headline": "How do you keep the rest of an edit intact?",
+    "lead": "OmniXRef accepts text, images and video as references for a video edit. MTEdit studies what happens over a sequence of image edits, building packed trajectories to limit the drift that accumulates between turns.",
+    "sections": [
+      {
+        "heading": "Multimodal video editing framework",
+        "paragraphs": [
+          {
+            "text": "OmniXRef introduces a unified framework for multimodal multi-reference video editing. It allows users to manipulate various attributes of a source video by leveraging text, image, and video references. The model employs a single-stream diffusion transformer and a novel reference-bank interface, achieving superior performance over task-specific baselines and commercial models, as demonstrated by comprehensive evaluations. The framework also includes OmniXRef-Data, a synthetic dataset for training, and OmniXRef-Bench, a benchmark for evaluating video-reference attribute transfer across multiple dimensions.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "The paper introduces MTEdit, a novel multi-turn image editing dataset that utilizes a packed trajectory canvas (PTC) generation pipeline to minimize visual-quality drift across editing turns, resulting in 500K multi-turn trajectories with an average of 5.38 turns.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "Can Visual Generation Expand What Unified Multimodal Models Know? — The paper introduces Knowledge Transfer Probing (KTP), a novel protocol that enhances unified multimodal models (UMMs) by incorporating image-generation supervision, leading to improved knowledge transfer from visual to textual modalities.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "Scene-Designer introduces a novel framework for 3D indoor scene generation that integrates design intelligence through a dual approach of design and critique, utilizing two specialized datasets: Scene-OTA-35K for design learning and Scene-OTC-15K for quality critique.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "Learning to Think and Explore in 3D World — The paper introduces ACT3D, a vision-language model that enhances 3D exploration and reasoning by leveraging reinforcement learning (RL) without direct supervision on exploration actions or viewpoints.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "BridgeWAM introduces a novel Bridge-of-Experts (BoE) architecture that utilizes 32 Latent Bridge Queries (LBQs) to effectively decouple video and action experts, improving action prediction by allowing selective visual-feature use and reducing redundant computation.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "The paper introduces GlobeBench, a comprehensive benchmark designed to evaluate text-based world models across 1,632 tasks in five domains and nineteen simulation skills, addressing the lack of standardized metrics in this area.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces AVC-Reward, an event-centric evaluation framework for assessing audio-video consistency in complex generated scenes, which improves upon traditional metrics by analyzing audio and visual events independently and aggregating results into a three-level consistency metric.",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Show HN — The Qwen3-4B model addresses common AI writing tics by employing a specialized training regimen that reduces repetitive phrasing and improves coherence in generated text.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 2,
+        "question": "At the same editing turn, how do packed trajectories compare with rollouts on regions the user left untouched?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific performance metrics were used in the evaluations?"
+      }
+    ]
+  }
+}

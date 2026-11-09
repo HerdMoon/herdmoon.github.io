@@ -1,0 +1,93 @@
+{
+  "fingerprint": "1cd206b7f349fe67bd376464c08ea41798b4c182ee2c1135beadf1798942dcfa",
+  "article": {
+    "headline": "How small a change in action can a world model see?",
+    "lead": "A study of LeWorldModel perturbs actions and measures how the latent representation changes. Its conclusions depend on the size of the perturbation, a useful detail for anyone choosing a world model for fine-grained control.",
+    "sections": [
+      {
+        "heading": "Evaluating action sensitivity",
+        "paragraphs": [
+          {
+            "text": "The study on LeWorldModel (LeWM) assesses its action sensitivity by measuring the effects of small action changes through Gram matrices across various perturbation scales. Results indicate that increasing the perturbation scale leads to a median normalized Gram discrepancy reduction of approximately 70% in the Reacher environment and 47% in the OGBench Cube. These findings suggest that scale-specific evaluation is crucial for understanding action geometry, as LeWM exhibits higher errors compared to an isotropic reference, indicating potential control issues that require further exploration.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Frameworks for video world models",
+        "paragraphs": [
+          {
+            "text": "A survey paper outlines a comprehensive framework for understanding video observations and their relationship with the evolving world through video world models. It organizes literature around four operations: reading, writing, sharing, and interacting. This shift emphasizes persistent state and controllable evolution, while also identifying challenges in achieving physical and causal validity in generative video models. The authors stress the importance of temporal coherence and interaction in evaluating model performance, which could inform future research directions in generative video modeling.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal evaluation and benchmarks",
+        "paragraphs": [
+          {
+            "text": "RoboJudge introduces a benchmark for evaluating multimodal large language models (MLLMs) as judges for embodied video generation. It focuses on Physical Adherence and Instruction Alignment across 800 human-annotated videos. The authors present RoboJudge-Train, a dataset of 12K videos with 25K human-verified scores. The fine-tuned MLLM, RoboJudge-9B, achieves a Pearson correlation of 0.719, surpassing the proprietary Gemini-3.7-Flash by 0.089, and shows improved performance on external benchmarks like VideoPhy2 and Physion-Eval. This benchmark aims to enhance the evaluation of multimodal models in video generation tasks.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Diverse approaches to multimodal agents",
+        "paragraphs": [
+          {
+            "text": "The Dual Exam framework evaluates the interaction between Multimodal Agents (MAs) and World Models (WMs) across various domains. It assesses 10 agent configurations over 1,088 items and 15 reporting categories, revealing uneven task performance and failures in maintaining task-relevant state. Notably, GPT 6 Astra achieves a leading Agent Index score of 31.3, while GPT-Image-2 leads the WM Overall score at 21.7. This highlights the need for further investigation into the implications of these results for reciprocal learning. Additionally, HiSTEVE 1.0 introduces a hierarchical VLA agent for open-world games, achieving an 85.0% score on MineStudio Bench, enhancing long-horizon autonomy and task execution.",
+            "refs": [
+              4,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "Easy-3Dfy introduces a novel compositional workflow for single-image 3D scene construction that decouples object generation from scene layout estimation, significantly improving fine-grained scene geometry and asset quality.",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "SliderEdit++ introduces a novel approach to instruction-based image editing by explicitly regularizing intermediate editing trajectories, which enhances continuous controllability and reduces interference between sliders.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "RynnUnify introduces a 16B unified embodied model that enhances embodied understanding and long-horizon visual planning through interleaved video-language reasoning, achieving a 9.75 point improvement in the Rynn-VP score over Cosmos 3 Nano.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "Do the perturbation scales that yield low geometric discrepancy match the action corrections a controller actually makes?"
+      }
+    ]
+  }
+}

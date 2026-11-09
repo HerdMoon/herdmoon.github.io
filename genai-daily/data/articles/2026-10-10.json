@@ -1,0 +1,151 @@
+{
+  "fingerprint": "6c6552330d66f4c20724574ee45d6e603e6bbd408a3dc64f371d41ca37a8d4f9",
+  "article": {
+    "headline": "Testing whether a generated robot motion follows the command",
+    "lead": "DreamTrue uses geometric calibration and counterfactual post-training to make predicted robot video follow an action. Hybrid Cinematography approaches control from filmmaking, with an editable 3D shot plan for generative reshoots.",
+    "sections": [
+      {
+        "heading": "Action-faithful video prediction",
+        "paragraphs": [
+          {
+            "text": "DreamTrue introduces a multi-view, cross-embodiment robot world model that addresses calibration and interaction coverage issues. It employs offline geometric calibration and counterfactual post-training to enhance video prediction accuracy. The model's effectiveness is validated by its first-place ranking in the world model track of the AgiBot World Challenge 2026, demonstrating state-of-the-art performance in action following tasks. This approach significantly reduces the human-assessed interaction defect rate, showcasing a practical improvement in robot interaction capabilities.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Hybrid Cinematography integrates physical video capture with generative reshooting to reduce hallucination risks during filmmaking. It uses an editable 3D shot plan and a mobile augmented reality application for real-time risk evaluation. This workflow allows filmmakers to adjust shooting plans based on gaps in recorded content, enhancing decision-making regarding camera movements while balancing creative intent and generative hallucination risks. A study with experienced filmmakers supports its effectiveness in improving shooting strategies.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "Remotion is an open-source library that enables users to create videos programmatically using React. It allows for dynamic video generation with a component-based architecture, leveraging React's declarative syntax for video composition. This approach improves flexibility and scalability in video production workflows, particularly for developers familiar with React.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "WOVEN provides a training source and benchmark for visual transition reasoning in multimodal large language models (MLLMs). It includes 36,076 examples across various scene and action types. Evaluation of 38 leading MLLMs reveals significant deficits in visual reasoning capabilities, with the strongest models underperforming compared to humans. Training on WOVEN data improves performance on 22 of 26 external benchmarks by up to 27.3 percentage points, allowing for substantial data reduction without accuracy loss.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "RiCo introduces a method for simulating rigid-body interactions using local contact reasoning. By focusing on sparse neighborhoods of contact surface points, it achieves a 31-35% reduction in position and orientation errors over 100 frames. The method maintains high contact fidelity, with penetration-time and mean-depth differences of 11.0% and 2.22 mm, respectively. RiCo demonstrates effective zero-shot generalization to complex scenes and shows potential for sim-to-real transfer applications.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "LeWAM presents a bidirectional transformer for world action modeling that enhances action and observation predictions. It leverages a decoder-free JEPA latent representation, trained end-to-end across multiple dynamics modes. LeWAM achieves better alignment of robot and object states compared to traditional models and matches the performance of flow-matching policies in closed-loop evaluations. It optimizes planning by sampling actions in the noise space of the policy head, improving closed-loop performance.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "Memento 3 presents a method for agents to learn and refine world models using a natural-language rulebook as persistent semantic memory. This enables recursive self-improvement (RSI) without altering the underlying LLM. The approach achieves a mean Relative Human Action Efficiency (RHAE) of 100.0 on the ARC-AGI-3 benchmark, utilizing only 44% of the human action count, and demonstrates effective performance in Atari Pong with a learned feedback controller.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "The paper introduces a physical attention bias for learned simulators of deformable linear objects (DLOs), focusing on cable dynamics prediction. By incorporating an additive term based on arc-length and Euclidean distances into the attention mechanism, the authors achieve a 15% reduction in prediction error and over a 50% decrease in segment length drift for unseen cables. This method shows improved performance across various metrics.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "GenIA introduces a framework for test-time input-aligned generation, enhancing 3D object reconstruction from monocular and sparse multi-view observations. It integrates geometric and photometric observations through visibility-biased attention and differentiable rendering. This approach significantly improves pose prediction and object reconstruction, outperforming existing methods on synthetic and real benchmarks. GenIA also accommodates external geometry inputs, enabling stable world-space placement for dynamic objects.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "TRELLIS.2 presents a method for 3D generation using native and compact structured latents. This approach improves the efficiency of 3D model generation by reducing latent space dimensionality while maintaining high fidelity outputs. The design emphasizes compactness and structure, facilitating faster training and inference times compared to traditional methods, enhancing scalability in 3D environments.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "RISEBench++ is a comprehensive benchmark for Reasoning-Informed Visual Editing (RISE), categorizing tasks across six reasoning dimensions. It includes 1000 human-annotated test cases in English and Chinese. The benchmark also introduces RISE-Agent, which integrates reasoning-driven planning and tool-augmented execution, outperforming existing visual editing methods. The best-performing model achieves only 56.6% accuracy, highlighting the challenges in this domain and aiming to improve capabilities of large multi-modality models.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "OmniCapBench introduces a deep-structured evaluation framework for fine-grained audio-visual captioning. It shifts the focus from free-form text to structured evaluation units across three tracks: entity references, visual shots, and audio events. Validated with 786 densely annotated videos, this framework identifies specific perception errors in MLLMs, revealing strong local perception but weak long-horizon reasoning capabilities. It serves as a diagnostic tool for advancing omnimodal models.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "This paper presents a model-agnostic framework that allows frozen LLMs and VLMs to learn from deployment experience in multimodal medical AI. It improves performance by up to 34.2% on medical tasks across six benchmarks. The framework incorporates external expertise forms—Skill, Knowledge Memory, and Multimodal Knowledge Base—enabling models to adapt to new clinical evidence without retraining, enhancing generalization to unseen cases.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "The Lattice of Transition Laws introduces a framework for predicting decoding schedules in generative models, bridging diffusion and autoregressive approaches. It establishes that the optimal number of decoding steps is determined by the treedepth of the underlying data graph. This relationship allows for more efficient decoding, validated across text, image, and video generation tasks, providing foundational design principles for future generative model architectures.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Audio and speech",
+        "paragraphs": [
+          {
+            "text": "VoiceStudio is an open-source alternative to ElevenLabs, providing fully local capabilities for voice cloning, design, video dubbing, dictation, transcription, and audiobook creation across 646 languages. Its design emphasizes local processing, enhancing privacy and reducing reliance on cloud services. This tool aims to democratize access to advanced voice synthesis technologies while maintaining high performance and versatility.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "The Immich project offers a high-performance, self-hosted solution for managing photos and videos. It emphasizes efficient storage and retrieval while focusing on scalability and user privacy. Users maintain control over their media without relying on third-party services, making it suitable for personal and small-scale use cases.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "With the camera and initial scene held fixed, how much does the predicted motion change when only the action changes?"
+      }
+    ]
+  }
+}

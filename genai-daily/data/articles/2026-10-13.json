@@ -1,0 +1,111 @@
+{
+  "fingerprint": "4f86cda11602b603e705cd70b3ce0c36af1b211ceff123872f0cf3d0c1be1eae",
+  "article": {
+    "headline": "Reconstructing how a street looked years earlier",
+    "lead": "CrossTimeEdit uses street views collected across a decade, with 43,653 location-level quadruplets. A convincing historical edit has to reconcile two changes at once: the camera may have moved, and the place itself may have changed.",
+    "sections": [
+      {
+        "heading": "Historical street-view generation",
+        "paragraphs": [
+          {
+            "text": "CrossTimeEdit utilizes the VIGOR-his dataset, which contains 43,653 location-level quadruplets. This dataset supports the model's training and evaluation, allowing for effective historical imagery generation. The model combines supervised fine-tuning with reinforcement learning to enhance performance, focusing on instruction alignment, background preservation, and quality. This approach enables the generation of more accurate historical street views compared to previous methods, demonstrating the potential of leveraging extensive datasets for generative tasks.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "SPLATIFY introduces a multi-agent framework that automates the conversion of 3D Gaussian Splatting (3DGS) research papers into trainable implementations, significantly reducing development time from weeks to minutes.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "T3lescope introduces a novel approach for high-fidelity 3D scene reconstruction from posed multi-view images, eliminating the need for per-scene optimization while maintaining global geometric consistency.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "GATOR introduces a novel generative framework for 3D object reconstruction from casual images, achieving high geometric and appearance fidelity while effectively recovering scene-relative poses from sparse observations.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "Video-Conditioned Generative Joint 2D-3D Hand Motion Recovery — The paper introduces JoHan, a novel generative framework for recovering 3D hand motion from video sequences without relying on intermediate per-frame pose predictions.",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "BudgetPix introduces a compute-adaptive tokenization framework for pixel-space image diffusion, allowing dynamic allocation of computational resources based on visual complexity, which significantly improves the quality-cost tradeoff.",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Few-Step Generation via Data-Space Iteration — The paper introduces a novel few-step generation framework called data-space iteration, which eliminates the need for fixed, manually chosen timestep discretization in generative models, thereby enhancing sampling efficiency and quality.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "Janas is an open-source framework that enables the execution of large language models (LLMs) that exceed the available RAM by streaming model parameters from SSD storage.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "VIS-Ground introduces a novel approach to video interactive storytelling by formulating contextual grounding as a method to transform heterogeneous inputs into executable constraints for video generation.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "The GitHub repository \"browser-use/video-use\" introduces a framework for editing videos using coding agents, enabling users to manipulate video content programmatically.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Audio and speech",
+        "paragraphs": [
+          {
+            "text": "sgl-project/sglang-omni — SGLang-Omni is a high-performance serving framework designed for audio models, including text-to-speech (TTS) and automatic speech recognition (ASR), as well as unified multimodal models.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How does the evaluation separate errors from camera misalignment from errors in reconstructing a historical change?"
+      }
+    ]
+  }
+}

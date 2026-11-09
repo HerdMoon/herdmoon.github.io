@@ -1,0 +1,141 @@
+{
+  "fingerprint": "c6e4a5089eabe34cf02070e75a019ad08d0d68c26729c2d6e929dd1cf0f219e3",
+  "article": {
+    "headline": "Can different robots share an action representation?",
+    "lead": "RynnWorld-Latent uses 3D-grounded latent actions to learn from interaction videos without a common control interface. Know, then Draw takes a different approach to sharing information: it divides knowledge acquisition and image rendering between two training stages.",
+    "sections": [
+      {
+        "heading": "Learning paradigm details",
+        "paragraphs": [
+          {
+            "text": "The paper \"Know, then Draw\" introduces a learning paradigm that separates knowledge acquisition through autoregressive pretraining from high-fidelity rendering via diffusion post-training. This approach improves learning efficiency and generation quality, achieving a GenEval score of 86 and a DPG-Bench score of 87 with a 3B-parameter text-to-image model trained in 6,600 H100 GPU-hours. The authors emphasize that semantic quality is more critical than autoregressive generation quality for final performance, leading to the development of a purely semantic tokenizer trained with language supervision.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Mobile image generation and editing",
+        "paragraphs": [
+          {
+            "text": "\"MoI-Bench\" introduces a benchmark for image generation and editing on mobile devices, consisting of 64 subtasks and 1150 samples. It features a two-dimensional Quality-Deployability capability map, emphasizing targeted improvements in specific tasks like text replacement. The benchmark includes MoI-Eval, which provides task-specific evaluation criteria to guide model development and assess mobile deployment costs.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video generation advancements",
+        "paragraphs": [
+          {
+            "text": "\"ReferStream\" presents a framework for interactive subject injection in streaming video generation, allowing integration of new visual references without additional training. It uses a joint latent approach and transient cache injection, improving text adherence and subject similarity. Evaluation on the ReferStream Bench shows significant improvements over existing offline methods. Meanwhile, \"VibeVideoBench\" evaluates multimodal agents on code-driven video generation, featuring 239 tasks and revealing delivery issues in planning and execution. The top-performing systems achieved a 76.3% success rate in meeting core requirements.",
+            "refs": [
+              3,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Diverse applications in generative models",
+        "paragraphs": [
+          {
+            "text": "Several papers explore diverse applications in generative models. \"GroundControl\" enhances novel view synthesis by integrating satellite imagery with street-level images, achieving superior performance in outdoor scenes without 3D reconstruction. \"ALADDIN\" introduces a face-swapping method that balances realism and target preservation while requiring fewer network evaluations. \"T-DIG\" enhances multi-image diversity in image generation while maintaining prompt alignment. Lastly, \"MatAnyone-E\" focuses on high-resolution video matting, achieving significant speedup and reduced memory usage while maintaining quality.",
+            "refs": [
+              4,
+              5,
+              10,
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "Understanding the limits of latent world models — This paper introduces the concept of faithful latent world models, emphasizing the need for an equivariance condition between the environment's transition map and learned latent dynamics.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "RynnWorld-Latent introduces a cross-embodiment video world model that leverages 3D-grounded latent actions to enable joint pretraining on diverse interaction videos without requiring a common action space.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "The paper introduces PhysEvolve, a verifier-grounded self-evolving framework that enhances vision-language models (VLMs) for causal physical reasoning by allowing them to generate and validate their own training environments using a deterministic physics engine.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "MLE-World introduces a learned world model finetuned from Qwen3.5-4B, capable of predicting the terminal outputs of machine learning programs based on their code and data descriptions, achieving a prediction accuracy of 77.9% on 17 MLE-bench Lite tasks, significantly outperforming larger prompted models at 41.1%.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "VideoLVR introduces a novel approach to visual reasoning in multimodal large language models (MLLMs) by constructing latent visual evidence from local regions in videos, enhancing the model's ability to revisit relevant visual content during reasoning.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "Learning and Reasoning with Geometry — The paper introduces GeoUG, a unified model that enhances spatial understanding by integrating geometric supervision during training and explicit geometric evidence during inference.",
+            "refs": [
+              13
+            ]
+          },
+          {
+            "text": "PDRVLA introduces a lightweight Physical Dynamics Module that enhances Vision-Language-Action (VLA) models by extracting physical tokens from vision-language features, enabling action generation without the latency of online video generation.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Orthogonal and Parametrized Multi-Attribute Steering of LLMs — The paper introduces a novel approach to activation steering in LLMs by identifying optimal steerable intervals for steering vectors and proposing a parameterized steering method that sets activation strengths directly rather than pushing them in a direction.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "upscayl/upscayl — Upscayl is an open-source AI image upscaling tool that enhances image resolution using advanced generative models.",
+            "refs": [
+              17
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "Which cross-embodiment experiments test transfer to an action or viewpoint absent during training?"
+      },
+      {
+        "ref": 1,
+        "question": "What is the impact of semantic quality on performance?"
+      }
+    ]
+  }
+}

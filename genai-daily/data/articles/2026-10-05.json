@@ -1,0 +1,78 @@
+{
+  "fingerprint": "c5469ac4d1ae6ebdadd2ba8bc5617afe309ff80d268a2962b86d507fde4e3734",
+  "article": {
+    "headline": "Adding spatial sound to an interactive generated world",
+    "lead": "HelixWorld couples a real-time visual world with spatial stereo sound. Rollout-Marginal Distillation focuses on a different challenge for long sessions, scoring individual video chunks to limit the effect of accumulated prediction errors.",
+    "sections": [
+      {
+        "heading": "Innovative audio-visual integration",
+        "paragraphs": [
+          {
+            "text": "HelixWorld introduces a real-time interactive audio-visual world model that synchronizes visual rendering with spatial stereo sound. This approach addresses the limitations of existing models that focus solely on visuals, achieving superior spatial-acoustic immersion while maintaining visual fidelity. The framework includes HelixBench for evaluating spatial-acoustic consistency during dynamic viewpoint motion, demonstrating its effectiveness in immersive environments. This model operates at 24 FPS on a single GPU, showcasing its efficiency in real-time applications.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Advancements in video generation",
+        "paragraphs": [
+          {
+            "text": "Rollout-Marginal Distillation (RMD) improves long-horizon autoregressive video generation by scoring video chunks independently against a chunk teacher. This method mitigates the impact of accumulated prediction errors, enhancing visual quality without sacrificing temporal coherence. RMD outperforms existing video-level distribution matching distillation baselines in extensive experiments, demonstrating its effectiveness in maintaining high visual quality beyond the training horizon. The authors provide code and video results to support their findings.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The Long-term Video Mask Transformer (LVMT) employs a GRU-based temporal propagation module and a Truncated Query Propagation training strategy for effective long-term video segmentation. This approach allows adaptive selection of object information and processes videos in manageable chunks, achieving state-of-the-art results across six benchmarks while being 10X faster than previous models.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multi-embodiment and action modeling",
+        "paragraphs": [
+          {
+            "text": "Dream4ACT enhances joint video-action representation through a shared visual action interface that utilizes action views from multiple virtual cameras. This method maintains articulated geometry and achieves an average success rate of 88.98% on RoboTwin 2.0. The model employs masked flow-matching for dynamic generation, streamlining the process of generating executable action sequences.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "Spatial Memory Intelligence (SMI) improves long-video world models with a systematic memory-management strategy. By implementing spatial clustering and action-aware retrieval, SMI enhances memory sparsity and generation stability across various benchmarks. This framework demonstrates significant improvements in spatial consistency compared to multiple baselines.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "ProAR enhances goal-oriented reasoning in autoregressive video generation by integrating goal-frame prediction and future representation self-alignment. This approach allows for coherent long-range outcome anchoring while maintaining efficient short-range transitions, achieving improved performance across visual reasoning benchmarks with only 25% of the training steps compared to standard models.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "ProWAM introduces a progressive world action model that enhances long-horizon prediction in robotic control. By jointly predicting actions and sparse visual sub-goals, it achieves state-of-the-art results on simulation benchmarks, including a 70.0% success rate in zero-shot real-world scenarios, surpassing previous bests.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "NAVA-WAM enables native action-prior learning from observation-only videos, eliminating the need for action-annotated trajectories. This two-stage training process significantly outperforms previous methods in both in-distribution and out-of-distribution scenarios, showcasing improved action-label efficiency and real-robot generalization.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "When the viewpoint turns, how closely does the apparent sound direction continue to track the visible source?"
+      }
+    ]
+  }
+}

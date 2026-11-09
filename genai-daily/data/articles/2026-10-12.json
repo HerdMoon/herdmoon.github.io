@@ -1,0 +1,97 @@
+{
+  "fingerprint": "cba6a363f88500a05fd36ce6cd2993c5a97a76f53adea4330814da4c1fe1c43b",
+  "article": {
+    "headline": "What does a drag gesture mean to an image editor?",
+    "lead": "ThinkDrag gives a multimodal editor both a point constraint and a reason to interpret it as a change to a particular object. SAGE investigates which visual factors a representation can discover without subtype labels.",
+    "sections": [
+      {
+        "heading": "Salient factor discovery",
+        "paragraphs": [
+          {
+            "text": "SAGE introduces a method for salient factor discovery and generation using visual foundation representations. It employs a frozen representation autoencoder and conditions a diffusion transformer on learned salient representations. This approach allows for the generation of subtype-specific examples without explicit labels. The method achieves a reconstruction fidelity (rFID) of less than 2 and significantly enhances subtype accuracy on Digits-ImageNet from 27.7% to 90.5%. Additionally, it improves probe accuracy for eyeglasses from 0.281 to 0.950 and effectively separates disease types in retinal OCT images with minimal labeling.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal image editing",
+        "paragraphs": [
+          {
+            "text": "ThinkDrag presents a unified framework for drag-based image editing that enhances semantic understanding. It associates point constraints with meaningful object and scene transformations, improving generation quality and plausibility. The framework maintains competitive point-following precision and is supported by a new dataset of semantic drag transformations and the DragBench++ benchmark for challenging editing scenarios. An explicit reasoning trace is included to enhance interpretability for ambiguous edits.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Sparse video reasoning",
+        "paragraphs": [
+          {
+            "text": "SAVER introduces a dense-to-sparse post-training framework that enhances sparse video reasoning by leveraging dense video references. It optimizes paired dense and sparse views with grounding rewards, achieving significant performance improvements across three temporal grounding benchmarks and six video question-answering benchmarks. SAVER matches or surpasses dense-frame Qwen3.5 baselines while using substantially fewer frames, demonstrating the effectiveness of temporal grounding in learning sparse video reasoning applicable to broader video understanding tasks.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal model evaluations",
+        "paragraphs": [
+          {
+            "text": "DataVista establishes the first benchmark for data video understanding, consisting of 961 real-world data videos and 6,775 evaluation questions. This benchmark evaluates 19 mainstream multimodal large language models (MLLMs). The top model, Gemini-3.1-Pro, achieves only 70.0% accuracy, revealing gaps in causal reasoning and narrative structure comprehension. Increasing frame counts and adding subtitles improve data perception and temporal reasoning but offer limited benefits for narrative understanding, highlighting failure modes in chart reading and evidence judgment.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces QuantMLA, a novel function-aligned framework for low-bit dual-path quantization in Multi-Head Latent Attention (MLA) models, achieving the first joint INT4 caching of content and RoPE caches with minimal accuracy degradation.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "microsoft/BitNet — The Microsoft BitNet repository introduces an official inference framework specifically designed for 1-bit large language models (LLMs), optimizing memory usage and computational efficiency.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "When to Rethink — The paper introduces MOTIVE, a Multi-View Self-VerificatiOn wiTh RelIability-Guided SelectiVE Rethinking framework, which enhances the reliability of vision-language models (VLMs) by evaluating candidate answers through multiple verification perspectives and learning a correctness-aligned reliability score.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "The paper introduces S-Space, a linear representation subspace in multimodal language models (MLLMs) that encodes spatial information through object-token representations along horizontal, vertical, and distance axes.",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 2,
+        "question": "When the same drag is plausible for two objects, which experiments show that the editor follows the intended one?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific techniques does SAGE use for subtype discovery?"
+      }
+    ]
+  }
+}

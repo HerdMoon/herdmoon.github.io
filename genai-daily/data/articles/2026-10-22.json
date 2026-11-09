@@ -1,0 +1,144 @@
+{
+  "fingerprint": "9222c4fcf9fd20ecb4ab7c3d4a87d8c442dcabd42416d066e3857ade35266148",
+  "article": {
+    "headline": "What stays behind when a player leaves a generated world?",
+    "lead": "WorldStream restores previously visited areas as it expands a playable world. CADRE investigates the video autoencoder underneath interactive simulation. Together they expose two separate constraints: remembering a place and rendering the next response quickly.",
+    "sections": [
+      {
+        "heading": "Video world models and compression",
+        "paragraphs": [
+          {
+            "text": "CADRE introduces a family of causal diffusion representation autoencoders for video world models. It systematically varies spatio-temporal compressions to enhance the latency-quality frontier, particularly with moving cameras. The study finds that temporal compression is more effective for manipulation tasks, whereas spatial compression is preferred for navigation tasks. This work provides insights into how compression affects video generation quality and includes an open-source implementation for further exploration.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "PhysiCalWorld introduces a novel approach for calibrating action-conditioned world models by utilizing in-context prompting to encode instance-specific dynamics into a compact physics descriptor token, eliminating the need for fine-tuning or analytical physics modeling.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The paper introduces ALPS, a pretrained visual state encoder that integrates physical-state information, language alignment, and pixel reconstruction into a unified representation, addressing the limitations of existing encoders that specialize in only one or two capabilities.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "DewHand introduces a unified model for direct joint reconstruction of world-space hand and camera motion from egocentric videos, significantly improving accuracy and temporal consistency over existing methods.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "WorldStream introduces a novel open-ended 3D world model that enhances interactive gameplay by allowing for the dynamic expansion of terrain beyond predefined maps, real-time interaction with language, and the restoration of previously visited areas with edits.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "Agent World Model in the Wild — The paper introduces WildAWM, a scalable pipeline for synthesizing controllable environments and tasks for training computer-use agents (CUAs), which supports multiple interaction interfaces including GUIs and command-line inputs.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "The paper presents RealMe, a novel framework for generating high-resolution (2K) volumetric videos from sparse, low-resolution captures, significantly improving visual fidelity and 4D consistency over existing methods.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "VoxProg introduces a novel voxel programming approach for 3D spatial reasoning, enabling language models to translate task interpretations into executable programs that manipulate local voxel views of scene surfaces.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "CompactSplat introduces a novel feedforward framework for 3D scene reconstruction that employs a spatially adaptive allocation of 3D Gaussians, improving upon traditional methods by reducing redundancy and enhancing structural modeling.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "SpatialScout introduces a benchmark for evaluating vision-language model (VLM) agents on active object-level 3D mapping, comprising 80 diverse indoor scenes and 3,140 target objects.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Looking Ahead — The paper introduces Future Chunk Prediction (FCP), an auxiliary objective that enhances autoregressive video generation by predicting temporally separated chunks without requiring access to intervening visual context.",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Training-free Acceleration for Blind Compressed Image Restoration via Activation-Calibrated Singular Value Decomposition — The paper introduces Activation-Calibrated Singular Value Decomposition (ASVD), a training-free method for accelerating blind compressed image restoration (CIR) by optimizing low-rank approximations of transformer-based models.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "From RL Papers to Framework Code — The paper analyzes the integration of reinforcement learning (RL) methods into seven open-source training frameworks, revealing that only 37 out of 1,598 proposed methods from 6,939 arXiv papers were adopted within 180 days, despite a growing number of submissions.",
+            "refs": [
+              13
+            ]
+          },
+          {
+            "text": "Answering in the User's Variety — The paper introduces Calibrated Accommodation Pairs (CAP), a novel approach that enhances generative chat models by rewarding them for matching users' dialect density while maintaining Standard English for Standard-English users.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "From VLM Planners to Robotic Agents — The paper introduces SERA (Self-Evolving Robotic Agent), which enhances vision-language-action (VLA) models for long-horizon manipulation tasks by integrating an editable harness that maintains task context and improves planning through execution feedback.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "How does the system decide what state to save so a player's changes are still visible on a return visit?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific improvements does CADRE achieve in latency-quality trade-off?"
+      }
+    ]
+  }
+}

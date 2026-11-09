@@ -1,0 +1,123 @@
+{
+  "fingerprint": "a0efaaea356dcbb2fefb9e6a84c42b3bd7193bac5a0a8823dcbe74c3a6e08077",
+  "article": {
+    "headline": "DreamX compresses a video transition into four action tokens",
+    "lead": "DreamX uses a pretrained video diffusion model to isolate changes that describe an action. Wonder 4 faces a different allocation problem in image restoration: it selects five of thirteen experts per block for each patch.",
+    "sections": [
+      {
+        "heading": "Latent action learning with DreamX",
+        "paragraphs": [
+          {
+            "text": "DreamX repurposes a pretrained video diffusion model to enhance latent action learning. It compresses video frames from 1,200 to just 4 tokens, effectively disentangling action-relevant dynamics from visual variations. This method facilitates zero-shot action transfer across different embodiments and environments, achieving state-of-the-art results on the LARY-Bench benchmark. Additionally, the shared latent action interface allows for efficient policy learning, significantly lowering the computational costs associated with video-diffusion-based policies.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Wonder 4 introduces a novel mixture-of-experts (MoE) model for simultaneous image quality enhancement, effectively addressing multiple defects in photographs by employing 13 experts per block and routing image patches to 5 selected experts without the need for degradation classifiers or task labels.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "Diffusion Plug-in Priors for Self-Supervised Ultrasound Video Restoration — The paper introduces UltraDiff, a novel approach for self-supervised restoration of ultrasound videos that leverages a frozen pre-trained diffusion model as a plug-in prior, achieving a PSNR improvement of 1.24 dB over the strongest baseline on EchoNet-LVH videos.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "From Natural Images to Medical Scans — This paper demonstrates that initializing diffusion models with natural images significantly enhances medical image generation, achieving a 21-34% improvement in generation quality as measured by relative gFID in pixel space, compared to only 14% in latent space.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "FlowTranslator introduces a training-free framework for in-image machine translation (IIMT) that leverages advanced text-to-image diffusion models, achieving significant performance improvements over traditional training-based methods.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "VidUEU-Agent introduces an automated pipeline for synthesizing high-quality instruction data from raw videos, addressing the challenges of multimodal learning.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Möbius introduces a unified motion-language model that integrates understanding, generation, and editing of human motion within a single framework, eliminating the need for separate modules.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "RoboTryOn introduces a novel approach for synthesizing robot demonstrations from human videos by treating the human-to-robot translation as a virtual try-on process, achieving a significant improvement in task performance.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "Low-Density 3D Point Cloud Classification — The paper introduces LD-PointNet++, a novel architecture specifically designed for classifying low-density 3D point clouds, addressing performance declines observed in existing methods under such conditions.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "Visibility-Aware Reference Generation for Benchmarking Visual 3D Reconstruction in Vegetation-Rich Environments — The paper presents a novel LiDAR-based reference-generation pipeline that enhances the evaluation of visual 3D reconstruction in vegetation-rich environments by generating per-view depth maps and visible reference point clouds from existing datasets.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "Factorized MLLM Embeddings for Composed Image Retrieval — The paper introduces Factorized MLLM Embeddings (FactEmbed), which enhances Composed Image Retrieval (CIR) by decoupling compositional query comprehension from the creation of discriminative embeddings.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "Is Forgetting Unified? Exploring Concept Unlearning in Unified Multimodal Models — The paper introduces UniForget, a novel approach for cross-pathway concept unlearning in unified multimodal models (UMMs), achieving joint forgetting rates of 80.0% on BAGEL-7B-MoT and 92.7% on Janus-Pro-7B.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Every Token Needs Its Own Teacher — The paper introduces Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), a novel method that allows each token in a response to select its preferred teacher from a multi-teacher pool, addressing the limitations of fixed teacher models in existing approaches.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "When the camera and subject move together, which parts of that change survive in the four action tokens?"
+      }
+    ]
+  }
+}

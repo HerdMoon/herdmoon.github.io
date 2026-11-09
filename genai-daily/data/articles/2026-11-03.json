@@ -1,0 +1,168 @@
+{
+  "fingerprint": "ff763fe62a4c69a8b6091fa33d3e39ff8e2368eb1d310e5b4ea937cc2979bc5b",
+  "article": {
+    "headline": "Where should a video model represent motion?",
+    "lead": "U-JiT learns video generation in pixel space. WorldFlow asks for a second output alongside the frames: the predicted path of points through 3D space. Read them together to see what changes when motion becomes an explicit training target.",
+    "sections": [
+      {
+        "heading": "Joint video and 3D motion prediction",
+        "paragraphs": [
+          {
+            "text": "WorldFlow introduces a generative world model that jointly predicts future video and 3D motion trajectories. It leverages a Mixture-of-Transformers (MoT) architecture to align 3D motion with video grid dynamics. This approach significantly improves performance, achieving a 54.2% reduction in average displacement error (ADE) on the SpatialCog set compared to the best external baseline. It also reduces ADE and final displacement error (FDE) by 55.9% and 68.5%, respectively, and is trained on a diverse dataset of 1.44 million samples.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "U-JiT trains a U-Net-like transformer on video pixels. The authors compare models trained from scratch on Kinetics-600. For frames-to-video at 128 resolution they report a 27% improvement in FVD over the previous best result and 14% over the pixel-space JiT baseline. The paper separately tests class-conditioned generation, which has different baselines.",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "ReXMo introduces an end-to-end framework for video character replacement, enhancing identity fidelity, motion consistency, and expression preservation compared to existing methods. It employs paired triplet supervision for scalable training with synthetic data and utilizes an In-Context Diffusion Transformer for identity transformation. An Expression Enhancement Adapter improves facial expression retention in complex scenes. The authors report superior performance in extensive experiments, and both the dataset and code will be publicly available.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "History Forcing is an on-policy distillation framework that enhances long-horizon video generation by leveraging historical context. It improves consistency in autoregressive models by utilizing the residuals between teacher predictions with and without historical context to refine the student's predictions. This results in state-of-the-art performance with a VBench quality score of 85.07 for 15-second video generation, along with significant improvements in scene evolution and consistency metrics, such as an Evolution Quality increase from 2.35 to 2.70.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "Lab2Sim introduces a benchmark of 218 science experiment videos with detailed specifications and 11,881 rubric items. It enables the transformation of these videos into interactive virtual experiments. The core technical contribution is EduVideo2Code, which hierarchically extracts experimental procedures and encodes them as state machines for code generation. This approach achieves an apparatus fidelity improvement of 24.15 points over existing multimodal models, enhancing the accuracy of virtual experiment reconstruction.",
+            "refs": [
+              13
+            ]
+          },
+          {
+            "text": "TaoMate-FVSR is an audio-guided facial video restoration framework that enhances the resolution of facial regions in AI-generated videos while ensuring lip synchronization with spoken audio. By employing a reference-guided video flow model and structured reference injection, the method achieves superior paired perceptual similarity and synchronization scores on talking-head restoration benchmarks, outperforming existing techniques. It effectively recovers fine facial details, including lip contours and dental structures, while addressing the challenges of visual dubbing.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "MoviEdit introduces an end-to-end framework for scalable long-form multi-shot video editing. It achieves significant improvements in coherence across scene changes and subject appearances. The framework utilizes a cascaded bidirectional-autoregressive architecture and generates 87K paired editing videos through automated data pipelines. It outperforms existing open-source models and matches industry standards in both text-guided and image-guided editing tasks. Additionally, MoviEdit-Bench provides a systematic evaluation benchmark for long-form video editing.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "VISAGE introduces a vertex-based conditional diffusion framework for synthesizing per-vertex albedo and roughness on arbitrary 3D head meshes. This method eliminates the need for consistent UV parameterization during training, enhancing structural coherence and detail recovery. It achieves a 42.7% reduction in FID on the NPHM dataset and reductions of 22.5% and 4.4% on zero-shot FaceVerse and i3DMM, respectively, compared to the strongest baseline, all within a compact 7.2M-parameter network. The framework uses visibility-aware cross-attention and region-specific modules for occlusion robustness and semantic specialization.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The MPath Mamba diffusion network combines state space modeling with diffusion-based generative techniques for 3D point cloud semantic scene completion. This framework utilizes a skip-triple Mamba structure and multi-directional dilations to enhance feature extraction from long-sequence data. It achieves competitive results on the SemanticKITTI benchmark, operating in a conditioned latent space of a variational autoencoder to improve representation and reconstruction of 3D point clouds.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "The authors present a vessel-specific reconstruction framework that leverages a learned 3D diffusion prior to enhance the reconstruction of coronary anatomy from sparse angiographic views. This method outperforms existing techniques, achieving improvements of approximately 0.13 in Dice and 0.22 in clDice metrics over the best baseline (deep image prior) with eight views at lower contrast. The framework utilizes visual-hull initialization and projection-based data consistency, demonstrating robustness across varying view counts and contrast levels, although clinical validation is still required.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "SCANO enhances the accuracy of neural operators trained on subsampled meshes by addressing boundary-condition completeness. It implements Boundary Quadrature Attention (BQA) and Anchored Global State (AGS), achieving up to a 15-fold reduction in whole-mesh error and at least a tenfold decrease in regional error across multiple datasets. The method predicts room-scale thermal fields in under one second, over 100 times faster than traditional methods, and is designed to be backbone-agnostic for adaptability to various neural architectures.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "SeMo3D introduces Selective Modeling, which unifies 3D generation, editing, and completion by allowing localized modifications while preserving unchanged content. This approach eliminates the need for task-specific paired data and employs region-selective denoising for training. It results in improved performance across benchmarks, surpassing state-of-the-art methods in all tasks. The architecture, Omni3DiT, integrates multi-modal guidance for enhanced control, facilitating efficient 3D creation through natural-language interaction.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "\"Learning to Falsify (LTF)\" is a hierarchical multiple instance learning framework that enhances the detection of AI-generated images. It models images as multiple bags of instances across different spatial levels, allowing for the identification of local artifacts that traditional holistic methods may miss. This approach improves generalization and robustness across benchmarks. The proposed Falsification-driven Test-time Aggregation Strategy (FATAS) can be integrated into existing detectors, significantly enhancing their performance in high-resolution scenarios without retraining.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "Kornia is a geometric computer vision library designed for spatial AI. It provides a set of differentiable computer vision functions that can be integrated into deep learning frameworks. Kornia enhances traditional computer vision capabilities by enabling operations such as image transformations, feature extraction, and geometric manipulations to be performed in a fully differentiable manner. This facilitates end-to-end training of models, with a focus on PyTorch compatibility and a modular architecture for easy extension and customization.",
+            "refs": [
+              17
+            ]
+          },
+          {
+            "text": "The article discusses the development of a model specifically trained to understand and edit Figma designs. This model aims to improve user interaction by allowing for more intuitive and context-aware modifications within Figma. However, specific performance metrics are not provided. The design choices focus on leveraging Figma's unique features and user workflows to optimize the editing experience.",
+            "refs": [
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "The paper introduces a 3D World Simulator that enhances multimodal world modeling by integrating a hybrid particle-voxel autoencoder with an action-conditioned latent dynamics model. This framework achieves interactive, long-horizon predictions at 50 Hz, allowing for geometrically consistent rendering from various viewpoints. It incorporates spatially aligned tactile signals, improving the scalability of data generation for policy training and evaluation across diverse objects and robot configurations, addressing limitations in existing models that typically operate in 2D.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "The paper presents an evaluation framework that dissects the sources of prediction errors in video world models. It reveals that these errors can stem from various factors beyond physical surprise, such as appearance and motion. The authors demonstrate that while models like V-JEPA2 provide some insight into the feasibility of events, prediction errors can misrepresent physical reality. Experiments on the IntPhys2 benchmark and the Kubric simulation framework show that incorrect actions and appearance changes significantly influence prediction errors.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "DR Pixel introduces a novel approach to deep research by utilizing vision-language models to directly retrieve and reason over rendered document page images. This method outperforms state-of-the-art OCR-based models, achieving over 10% improvement in accuracy and 15 points in retrieval recall on the newly constructed DRPixelBench benchmark. It also demonstrates efficiency with fewer tool calls. The method of counterfactual credit reweighting enhances training by providing fine-grained credit assignment, solidifying the advantages of page-native deep research.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "The discussion highlights the capabilities of the Qwen 3.8 27B model, which can interpret model weights directly on a laptop. This showcases its efficiency and accessibility for local deployment, allowing researchers to analyze and manipulate model parameters without extensive computational resources. This advancement potentially streamlines experimentation and development processes in generative modeling.",
+            "refs": [
+              19
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "Where do the authors evaluate 3D trajectories separately from the visual quality of the predicted frames?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific improvements does U-JiT offer over previous models?"
+      }
+    ]
+  }
+}

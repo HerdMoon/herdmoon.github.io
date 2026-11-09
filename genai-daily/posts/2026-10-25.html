@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="In masked diffusion language models, choosing which tokens to reveal takes compute. A controlled study trains an 856K-parameter policy and asks whether avoiding later model evaluations earns back that choice.">
+  <meta name="theme-color" content="#182d39">
+  <title>When does a learned unmasking policy pay for itself? · GenAI Daily</title>
+  <link rel="stylesheet" href="../assets/journal.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead"><div class="wrap masthead-inner">
+    <a class="brand" href="../index.html">GenAI <i>Daily</i></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html" >Latest</a>
+      <a href="../archive.html" >Archive</a>
+      <a href="../explore.html">Source explorer</a>
+    </nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="story">
+      <header class="story-head">
+        <div class="dateline"><strong>Daily edition</strong><time datetime="2026-10-25">Sunday, October 25, 2026</time></div>
+        <h1>When does a learned unmasking policy pay for itself?</h1>
+        <p class="lead">In masked diffusion language models, choosing which tokens to reveal takes compute. A controlled study trains an 856K-parameter policy and asks whether avoiding later model evaluations earns back that choice.</p>
+        <div class="byline"><span>1 collected item</span><a href="#reading-guide">Jump to reading picks ↓</a>
+        <a href="../posts/2026-10-25.html" aria-label="Permanent link to the 2026-10-25 edition">Permalink ↗</a></div>
+      </header>
+      <div class="columns"><div class="copy"><section><h2>Learned unmasking policy details</h2><p>The study by Hugging Face introduces a learned unmasking policy for masked diffusion language models. This policy reduces the number of function evaluations (NFE) needed, achieving a 10% decrease to counteract policy overhead. The authors trained a 856K-parameter policy on trajectory-contraction targets that leverage confidence and hidden states. The results show improved throughput and accuracy on benchmarks such as GSM8K, MATH-500, and HumanEval. Additionally, the policy demonstrates effective transferability to other models, including Dream-7B-Instruct. <span class="refs"><a href="https://huggingface.co/papers/2610.31576" title="What Makes a Good Unmasking Policy? A Controlled Study of Learned Unmasking in Diffusion Language Models">[1]</a></span></p></section><details class="sources"><summary>All source material (1)</summary><ol><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.31576">What Makes a Good Unmasking Policy? A Controlled Study of Learned Unmasking in Diffusion Language Models</a></li></ol></details>
+        <nav class="adjacent" aria-label="Adjacent editions"><a href="../posts/2026-10-24.html">← Previous edition</a><a href="../posts/2026-10-26.html">Next edition →</a></nav>
+      </div><aside><section class="guide" id="reading-guide"><h2>Worth a closer look</h2><ul><li><p>At matched task accuracy, how many denoiser calls can the policy remove before its own runtime offsets the saving?</p><a href="https://huggingface.co/papers/2610.31576">What Makes a Good Unmasking Policy? A Controlled Study of Learned Unmasking in Diffusion Language Models ↗</a></li></ul></section><section class="recent"><h2>Earlier editions</h2><ul class="editions"><li><a href="../posts/2026-10-24.html"><time datetime="2026-10-24">Oct 24</time><span>A low-frequency signal for auditing image-model training data</span></a></li><li><a href="../posts/2026-10-23.html"><time datetime="2026-10-23">Oct 23</time><span>Two kinds of control over generated 3D content</span></a></li><li><a href="../posts/2026-10-22.html"><time datetime="2026-10-22">Oct 22</time><span>What stays behind when a player leaves a generated world?</span></a></li><li><a href="../posts/2026-10-21.html"><time datetime="2026-10-21">Oct 21</time><span>Giving generated video a 3D representation you can use</span></a></li></ul><a class="archive-link" href="../archive.html">Full archive →</a></section></aside></div>
+    </article></main>
+  <footer class="wrap footer"><span>GenAI Daily · Generative media research</span><a href="../explore.html">Browse collected items ↗</a></footer>
+</body>
+</html>

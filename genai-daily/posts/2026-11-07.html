@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StepX-OPD brings two stages of image-model training together. A separate audio-video project targets inference by shrinking the model and using six sampling steps. The two efficiency claims concern different parts of the budget.">
+  <meta name="theme-color" content="#182d39">
+  <title>Two ways to cut the cost of diffusion · GenAI Daily</title>
+  <link rel="stylesheet" href="../assets/journal.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead"><div class="wrap masthead-inner">
+    <a class="brand" href="../index.html">GenAI <i>Daily</i></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html" >Latest</a>
+      <a href="../archive.html" >Archive</a>
+      <a href="../explore.html">Source explorer</a>
+    </nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="story">
+      <header class="story-head">
+        <div class="dateline"><strong>Daily edition</strong><time datetime="2026-11-07">Saturday, November 7, 2026</time></div>
+        <h1>Two ways to cut the cost of diffusion</h1>
+        <p class="lead">StepX-OPD brings two stages of image-model training together. A separate audio-video project targets inference by shrinking the model and using six sampling steps. The two efficiency claims concern different parts of the budget.</p>
+        <div class="byline"><span>3 collected items</span><a href="#reading-guide">Jump to reading picks ↓</a>
+        <a href="../posts/2026-11-07.html" aria-label="Permanent link to the 2026-11-07 edition">Permalink ↗</a></div>
+      </header>
+      <div class="columns"><div class="copy"><section><h2>Teaching an image model to sample in fewer steps</h2><p>StepX-OPD trains a student on the states it actually visits during generation. Frozen specialist teachers supervise those states, bringing capability transfer and few-step sampling into one training phase. On SD3.5-Medium and FLUX.1-dev, the authors report higher normalized scores than their forty-step Flow-OPD comparison and about 37% fewer GPU training hours than a sequential training recipe. Those are two separate baselines. <span class="refs"><a href="https://huggingface.co/papers/2611.04386" title="StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models">[1]</a></span></p></section><section><h2>Compressing the model that runs at inference</h2><p>A Show HN author reports shrinking a joint audio-video diffusion model from 31B to 14B parameters and running it in six steps with INT8 quantization. The demonstration is worth inspecting for synchronized sound and motion at the smaller size. Its headline gives the parameter and step counts but leaves the quality comparison to the underlying project. <span class="refs"><a href="https://github.com/Video-Rebirth/hyperflow-h3-flash" title="Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8">[3]</a></span></p></section><section><h2>A benchmark for keeping visual evidence in view</h2><p>VisSearch-Bench gives multimodal agents 204 human-written search tasks across seven domains. The best model in the authors’ evaluation completed 26.47% of the tasks. The process scores are especially interesting: they offer a way to investigate where the chain between a visual clue and a retrieved answer breaks. <span class="refs"><a href="https://huggingface.co/papers/2611.04894" title="VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents">[2]</a></span></p></section><details class="sources"><summary>All source material (3)</summary><ol><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.04386">StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.04894">VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents</a></li><li><span>Hacker News</span><a href="https://github.com/Video-Rebirth/hyperflow-h3-flash">Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8</a></li></ol></details>
+        <nav class="adjacent" aria-label="Adjacent editions"><a href="../posts/2026-11-06.html">← Previous edition</a><a href="../posts/2026-11-08.html">Next edition →</a></nav>
+      </div><aside><section class="guide" id="reading-guide"><h2>Worth a closer look</h2><ul><li><p>In the 37% GPU-hour comparison, how much training does the sequential baseline spend on each stage?</p><a href="https://huggingface.co/papers/2611.04386">StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models ↗</a></li><li><p>What specific challenges were identified in visual context management?</p><a href="https://huggingface.co/papers/2611.04894">VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents ↗</a></li></ul></section><section class="recent"><h2>Earlier editions</h2><ul class="editions"><li><a href="../posts/2026-11-06.html"><time datetime="2026-11-06">Nov 6</time><span>What can one generator learn to do well?</span></a></li><li><a href="../posts/2026-11-05.html"><time datetime="2026-11-05">Nov 5</time><span>Can a transformer learn to render Gaussian splats?</span></a></li><li><a href="../posts/2026-11-04.html"><time datetime="2026-11-04">Nov 4</time><span>DreamX compresses a video transition into four action tokens</span></a></li><li><a href="../posts/2026-11-03.html"><time datetime="2026-11-03">Nov 3</time><span>Where should a video model represent motion?</span></a></li></ul><a class="archive-link" href="../archive.html">Full archive →</a></section></aside></div>
+    </article></main>
+  <footer class="wrap footer"><span>GenAI Daily · Generative media research</span><a href="../explore.html">Browse collected items ↗</a></footer>
+</body>
+</html>

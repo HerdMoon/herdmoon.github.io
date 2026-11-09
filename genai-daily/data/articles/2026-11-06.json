@@ -1,0 +1,144 @@
+{
+  "fingerprint": "a5c6d9aacf439cd1f0c122727120572d553bc9f3f7f79bcbaaed6eccc73c44e1",
+  "article": {
+    "headline": "What can one generator learn to do well?",
+    "lead": "WeLM-Image brings image generation, editing and multi-reference synthesis into one model. EgoGeneralist tests a parallel idea on first-person video by coupling actions to frames. Both are worth reading for how they share a backbone while keeping control over distinct tasks.",
+    "sections": [
+      {
+        "heading": "Unified framework for action-video tasks",
+        "paragraphs": [
+          {
+            "text": "EgoGeneralist introduces a framework that integrates various egocentric action-video tasks. It employs a role-adaptive action renderer and cross-stream action-video coupling, which enhances action control and visual quality across five tasks. The method demonstrates strong generalization capabilities to diverse unseen scenes, bridging pretrained visual knowledge with metric 3D human motion, thereby improving the representation of human actions in video models. This approach is particularly notable for its performance despite being trained on controlled laboratory recordings.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "The paper introduces SM4RT, a cascaded feed-forward model that improves dynamic scene reconstruction from RGB videos by sequentially addressing 3D geometry reconstruction and motion estimation.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "InstantHand introduces a novel feed-forward framework for reconstructing animatable 3D Gaussian hand avatars from a single image, achieving reconstruction in 2.84 seconds and rendering at 161 FPS.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO — The paper presents a systematic comparison of on-policy distillation (OPD) and Group Relative Policy Optimization (GRPO), revealing that OPD can achieve the same accuracy as GRPO with up to 50× fewer distillation FLOPs when using a student's own GRPO checkpoint as the teacher.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "StrataFlux introduces a novel framework for low-bit LLM inference that mitigates accuracy loss associated with quantization while preserving memory and speed advantages.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "NVIDIA/TensorRT-LLM — NVIDIA's TensorRT-LLM introduces a Python API for defining and optimizing Large Language Models (LLMs) for efficient inference on NVIDIA GPUs, significantly enhancing performance through state-of-the-art optimizations.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "Edge-Assisted Crowdsensing for Explainable Cyclist Safety Perception — The paper presents an edge-assisted crowdsensing system that utilizes handlebar camera footage and a vision-language model to generate structured traffic attributes for predicting cyclist safety scores.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "Failure Prediction and Classification in Vision-Language-Action Models Via Calibrated Latent Probing — The paper introduces VLA-Tug, a lightweight probing method for Vision-Language-Action models that enhances early failure detection and reduces missed-detection and false-alarm rates by up to 30% compared to existing baselines, while maintaining minimal inference overhead.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "The paper introduces T3R, a Training-Free Two-Stage Token Refinement framework that enhances the efficiency and robustness of Vision-Language-Action (VLA) models by significantly reducing computational overhead.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "WeLM-Image introduces a unified image generation model that enhances text-to-image generation, instruction-guided editing, and multi-reference synthesis through a Mixture-of-Transformers (MoT) architecture, achieving state-of-the-art performance on PRISM-Bench, Qwen-Image-Bench, and UnicBench.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "The paper introduces SynthFaces, a balanced synthetic dataset designed to mitigate biases in human-centric AI tasks by providing diverse identity representations without relying on real personal images.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "EDGAR (Efficient Diffusion-Driven Gaussian Avatar Refinement) introduces a conditional diffusion framework that significantly enhances the quality of Gaussian avatars by correcting artifacts such as blurring and temporal instability while maintaining identity fidelity.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "TailSteer introduces a novel training framework that enhances multi-turn image editing by significantly reducing cumulative visual drift over 15-20 editing turns while maintaining the generative capabilities of base models.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "Future Representation Distillation for Imagination-free World Action Models — The paper introduces DreamFree, a novel World Action Model (WAM) that utilizes representation distillation to enable action prediction without generating future videos, significantly improving efficiency in robot control.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Open-HumanScale introduces a comprehensive framework for scaling egocentric pretraining to 50,000 hours, anchored by the Open-HumanScale-50K corpus, which is densely annotated with hand motion and natural language.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "How does the mixture route generation and editing inputs, and which benchmarks test consistency across multiple references?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific tasks does EgoGeneralist unify?"
+      }
+    ]
+  }
+}

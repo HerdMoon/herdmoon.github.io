@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="L3G-World keeps a compact 3D Gaussian representation of a scene as the viewpoint moves. Revisiting a location makes the value of that memory tangible: objects placed earlier should still occupy the same space.">
+  <meta name="theme-color" content="#182d39">
+  <title>What should a generated world remember? · GenAI Daily</title>
+  <link rel="stylesheet" href="../assets/journal.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead"><div class="wrap masthead-inner">
+    <a class="brand" href="../index.html">GenAI <i>Daily</i></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html" >Latest</a>
+      <a href="../archive.html" >Archive</a>
+      <a href="../explore.html">Source explorer</a>
+    </nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="story">
+      <header class="story-head">
+        <div class="dateline"><strong>Daily edition</strong><time datetime="2026-11-01">Sunday, November 1, 2026</time></div>
+        <h1>What should a generated world remember?</h1>
+        <p class="lead">L3G-World keeps a compact 3D Gaussian representation of a scene as the viewpoint moves. Revisiting a location makes the value of that memory tangible: objects placed earlier should still occupy the same space.</p>
+        <div class="byline"><span>4 collected items</span><a href="#reading-guide">Jump to reading picks ↓</a>
+        <a href="../posts/2026-11-01.html" aria-label="Permanent link to the 2026-11-01 edition">Permalink ↗</a></div>
+      </header>
+      <div class="columns"><div class="copy"><section><h2>Three ways to budget representation</h2><p>L3G-World stores scene information in latent 3D Gaussians. A camera can leave a region and later revisit its representation. The paper&#x27;s long-horizon experiments are a better place to assess that design than a short fly-through. <span class="refs"><a href="https://huggingface.co/papers/2610.40614" title="L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory">[1]</a></span></p><p>HairDeck and SpecSlot operate at smaller scales. HairDeck treats each stylized hair card as a token, producing animation-ready cards from a single image. SpecSlot assigns distinct frequency components to slots so that preserving fine image detail need not require a longer global attention sequence. <span class="refs"><a href="https://huggingface.co/papers/2610.40599" title="HairDeck: Animation-Ready Stylized Hair Cards from a Single Image">[2]</a> <a href="https://huggingface.co/papers/2610.40647" title="Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers">[3]</a></span></p></section><section><h2>Choosing a model before starting a media job</h2><p>The scenario-labs/skills repository packages image, video, audio and 3D generation workflows for agents. It puts model choice and cost estimates before execution, a practical feature when the same creative request can be sent to several media services. <span class="refs"><a href="https://github.com/scenario-labs/skills" title="scenario-labs/skills">[4]</a></span></p></section><details class="sources"><summary>All source material (4)</summary><ol><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.40614">L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.40599">HairDeck: Animation-Ready Stylized Hair Cards from a Single Image</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.40647">Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers</a></li><li><span>GitHub</span><a href="https://github.com/scenario-labs/skills">scenario-labs/skills</a></li></ol></details>
+        <nav class="adjacent" aria-label="Adjacent editions"><a href="../posts/2026-10-31.html">← Previous edition</a><a href="../posts/2026-11-02.html">Next edition →</a></nav>
+      </div><aside><section class="guide" id="reading-guide"><h2>Worth a closer look</h2><ul><li><p>How does consistency on a return visit change as the memory uses fewer 3D primitives?</p><a href="https://huggingface.co/papers/2610.40614">L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory ↗</a></li></ul></section><section class="recent"><h2>Earlier editions</h2><ul class="editions"><li><a href="../posts/2026-10-31.html"><time datetime="2026-10-31">Oct 31</time><span>Two ways to loosen the constraints on image tokens</span></a></li><li><a href="../posts/2026-10-30.html"><time datetime="2026-10-30">Oct 30</time><span>What does a scene sound like from a new position?</span></a></li><li><a href="../posts/2026-10-29.html"><time datetime="2026-10-29">Oct 29</time><span>Keeping a subject recognizable as the camera moves</span></a></li><li><a href="../posts/2026-10-28.html"><time datetime="2026-10-28">Oct 28</time><span>Can different robots share an action representation?</span></a></li></ul><a class="archive-link" href="../archive.html">Full archive →</a></section></aside></div>
+    </article></main>
+  <footer class="wrap footer"><span>GenAI Daily · Generative media research</span><a href="../explore.html">Browse collected items ↗</a></footer>
+</body>
+</html>

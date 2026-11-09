@@ -1,0 +1,105 @@
+{
+  "fingerprint": "25a9140fd10113820c4a22389ef7560ffc41f316a581ffcc425118080fde6a15",
+  "article": {
+    "headline": "Stopping video denoising early, token by token",
+    "lead": "Speculative Forcing accepts tokens whose early estimates are already usable. ACEdit studies a different accumulation of error, where one imperfect image edit becomes the input to the next. Both make the downstream effects of an early decision worth inspecting.",
+    "sections": [
+      {
+        "heading": "Efficient video generation methods",
+        "paragraphs": [
+          {
+            "text": "Speculative Forcing introduces a framework for autoregressive video generation that allows early acceptance of tokens based on initial estimates. This method reduces unnecessary denoising computations, achieving a speedup of over 1.5x while maintaining quality. It operates at 41.7 fps on LongLive with approximately 1.7 denoising steps per token and 24.5 fps on Lingbot-World 2.0 with 2.5 steps, demonstrating its efficiency (1).",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "Velox enhances video world models by using a training-free attention router that selects region-level context through frustum slab correspondences. This method improves attention speed by 4.36x and denoising speed by 2.43x, while maintaining performance close to dense models (3).",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "SoftCache introduces an adaptive step size caching mechanism for diffusion transformers, improving generation speed by 3.5x to 6.9x. It dynamically adjusts step sizes during sampling, enhancing computational efficiency without requiring additional training (7).",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "The paper introduces ACEdit, a novel training scheme for stable multi-turn image editing that mitigates degradation in quality across successive edits by employing a self-forcing mechanism.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The paper introduces SCOPE, a novel reinforcement learning framework for prompt engineering in text-to-image generation that enhances the semantic alignment of prompts by utilizing Group Relative Policy Optimization (GRPO).",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "Which Tokens to Merge? Diffusion Dynamics for Efficient Image Generation — The paper introduces Dynamics-aware Token Merging (DaTMe), a training-free framework that enhances the efficiency of diffusion models by intelligently merging tokens based on their importance derived from diffusion dynamics.",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "Grounding Generative Verification in 3D Content — The paper introduces 3DVerifierBench, a benchmark designed to evaluate the verification of generative 3D models across ten tasks, revealing a 21.6 percentage-point performance gap between human evaluators and the strongest model tested, GPT-6 Astra.",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces AVC-Reward, an event-centric evaluation framework for audio-video consistency that disaggregates audio and visual events, allowing for independent analysis and cross-validation of relations across modalities.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Mine, Sample, Render — The paper introduces MINE-SAMPLE-RENDER (MSR), a novel test-time approach that enhances the diversity of outputs from generative models by implementing a corpus-derived sampling procedure.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "Equal CER, Unequal Damage — The paper introduces semCER, a novel metric for evaluating OCR and vision-language models that assigns severity weights to character errors based on human judgments, improving upon the traditional Character Error Rate (CER) by providing a more nuanced assessment of transcription quality.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How often does an early-accepted token create an error that only becomes visible in later frames?"
+      }
+    ]
+  }
+}

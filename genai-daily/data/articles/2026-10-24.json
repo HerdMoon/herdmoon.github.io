@@ -1,0 +1,129 @@
+{
+  "fingerprint": "1628887343cb291e11398db6f28efbd48e4b461af2ccce485e8599a10caf649d",
+  "article": {
+    "headline": "A low-frequency signal for auditing image-model training data",
+    "lead": "SpectralCanary plants a visual signal in a dataset while leaving the captions alone. The reported result is interpretable at a particular operating point: 91.1% average true-positive rate at a 1% false-positive rate.",
+    "sections": [
+      {
+        "heading": "Auditing text-to-image models",
+        "paragraphs": [
+          {
+            "text": "SpectralCanary introduces a method for auditing text-to-image (T2I) models by embedding low-frequency canary images into training datasets. This method achieves a high average true positive rate (TPR) of 91.1% at a 1% false positive rate (FPR) across various tests. It maintains image fidelity with a structural similarity index (SSIM) of 0.989 and a learned perceptual image patch similarity (LPIPS) of 0.022. The approach shows robustness against adaptive attacks and has a minimal impact on Fréchet Inception Distance (FID) scores, with a mean ΔFID of 0.05. The choice of low-frequency signal placement enhances detection reliability compared to mid/high-frequency methods, making it a valuable tool for auditing T2I models.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "MoG-VLM presents a motion-adaptive framework for video anomaly detection. It employs a Temporal Gradient Magnitude (TGM) for content-aware sampling, focusing inference on informative regions. This method achieves state-of-the-art AUC-ROC scores across four benchmarks, with a notable 1.31x speedup in inference time compared to previous methods. The hierarchical dual-stream design allows for selective processing of frames based on anomaly likelihood, optimizing computational resources effectively.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The \"infinite-canvas\" repository offers an open-source platform for AI-assisted creative workflows. It integrates features such as AI image generation, reference image editing, video generation, and multi-agent collaboration, enhancing the efficiency of creative tasks by streamlining the integration of multiple AI tools.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "HiP3R introduces a hierarchical pose graph approach for long-horizon 3D reconstruction. It balances trade-offs between chunk-level and frame-level optimization by establishing a robust chunk-level \\(\\mathrm{Sim}(3)\\) graph for global layout and scale, followed by optimizing shared \\(\\mathrm{SE}(3)\\) cameras per frame. This method enhances camera trajectory consistency and 3D reconstruction accuracy across extensive video sequences without requiring additional training or fine-tuning.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "CellTrack-Bench is a comprehensive benchmark for evaluating Vision-Language Models (VLMs) in microscopic cell tracking. It includes 1,537 problems derived from 15 standard datasets across four imaging modalities. The benchmark focuses on a challenging subset that highlights common failure modes among various algorithms, facilitating assessment of both closed-source and open-weight models in spatiotemporal reasoning for cell dynamics.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "DuoCook introduces a benchmark for evaluating VLMs in coordinated cooking tasks within Unreal Engine. It features 20 maps across five categories that test centralized coordination and resource allocation. The strongest model achieves a mean order completion rate of 26.2%. A memory ablation study reveals mixed effects of shared notebook memory on model performance, indicating varying impacts on different models.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "AgentVQA is a unified offline benchmark designed to evaluate VLMs in agentic contexts across five domains: Web Agents, Robotics, Egocentric Videos, Games, and Spatial Planning. It curates 1,000 challenging examples from 23 datasets, enabling reliable comparisons. The best-performing model achieves an accuracy of only 58.5%, with errors primarily stemming from difficulties in grounding and maintaining accurate visual representations.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "MambaAct introduces a compact Mamba-based action expert for flow-matching vision-language-action (VLA) models. It achieves a 64.8% reduction in denoising latency and a 10x smaller action expert compared to previous transformer-based approaches. This design retains the pretrained visual-language prefix encoder while employing a lightweight Context Compressor, resulting in a 1.08 percentage point improvement in mean success on the LIBERO benchmark.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "WeVisOne-VL presents a unified vision-language model that enhances fine-grained visual perception by integrating object-level and pixel-level tasks through structured next-token prediction. It employs a lightweight pixel decoder with a special <OBJ> token, achieving leading performance on over 30 benchmarks. The model's training utilizes a three-stage curriculum followed by mixed-task reinforcement learning, demonstrating robust rejection of object-absent queries.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "GAFU introduces a post-training framework that leverages native generation-side representations in unified multimodal models (UMMs) to enhance fine-grained visual understanding. It compresses these representations into compact \\(G\\) tokens, significantly improving task-conditioned retrieval and outperforming standard fine-tuning baselines by up to 20.00% on various visual understanding benchmarks.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Advantage-Based On-Policy Distillation (AOPD) improves online policy distillation by selectively reinforcing teacher actions that enhance the student's expected outcomes. This method estimates advantages using standard student rollouts, eliminating the need for additional rollouts or reward evaluations. AOPD shows improved efficiency and performance in tasks such as math, coding, and Medqa, outperforming traditional distillation and reinforcement learning baselines.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "The study evaluates four LLM inference optimization techniques on Apple Silicon: KV-cache pruning, speculative decoding, ported GPU kernels, and post-training quantization. It reveals that KV-cache pruning can improve end-to-end throughput by up to 1.75 times. However, speculative decoding generally reduces throughput on Apple compared to significant gains on NVIDIA GPUs, indicating that performance is highly dependent on hardware and workload.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "TILDE (Teacher-In-the-Loop Distillation from Embodied Foundation Models) transfers manipulation capabilities from pretrained Embodied Foundation Models (EFMs) to policies without extensive action pretraining. It leverages on-policy distillation and an autonomous data aggregation pipeline, accelerating recovery-trajectory collection by over 2x compared to traditional methods and enhancing task performance by up to 4.1x over behavior cloning across three real-world tasks.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "The guide provides a comprehensive overview of AI image generation techniques, focusing on diffusion models and their integration with agent-based systems. It details practical implementation, strengths in generating high-quality images, and challenges associated with training and deployment, emphasizing the importance of understanding diffusion processes to optimize performance in real-world applications.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "At the same false-positive rate, how does detection change with the amount of marked data used in training?"
+      }
+    ]
+  }
+}

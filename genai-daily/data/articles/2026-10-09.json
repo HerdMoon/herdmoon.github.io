@@ -1,0 +1,157 @@
+{
+  "fingerprint": "c58acc2dd4f3796afd791fd438af5beac03f7742d1ea14851f76561032f21b19",
+  "article": {
+    "headline": "Animating a 3D scene so the motion loops",
+    "lead": "OuroWorld turns a static Gaussian-splat scene into a looping 3D cinemagraph without requiring a mask. A smooth loop has two opportunities to break: the final moment must meet the first, and the motion must still make sense from another viewpoint.",
+    "sections": [
+      {
+        "heading": "Dynamic 3D scene generation",
+        "paragraphs": [
+          {
+            "text": "OuroWorld introduces a mask-free framework that converts static 3D Gaussian Splatting scenes into dynamic, endlessly looping 3D cinemagraphs. By using a vision-language model to infer motion and a Fourier-series deformation field for guaranteed looping, it captures a wider range of dynamics. In user studies, it outperformed all baselines, achieving a preference rate of 70.8%-99.0% across 39 scenes, indicating strong user engagement with the generated content. The method also employs innovative evaluation metrics focusing on vividness, naturalness, loop seam coherence, and scene quality, marking a significant step in 3D scene generation.",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "This approach contrasts with traditional methods that often rely on manual adjustments or limited dynamic capabilities. By automating the generation of motion and ensuring seamless loops, OuroWorld enhances the interactivity of 3D models, making them more appealing for applications in gaming and virtual environments.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "The paper introduces Rubric-CEPR, a self-evolving framework for image editing that enhances a pretrained editor's performance without relying on human-edited targets or external reward models.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "What 30,000 Hours of Ego-centric Video Does Not Teach — This paper evaluates the limitations of scaling ego-centric video data for training world models, using a dataset of 30,000 hours of video.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "The paper introduces **WorldGuide**, a novel closed-loop video world model that enhances procedural task execution by integrating action prediction and video generation.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "WorldCast introduces a distributed multiplayer world model that significantly enhances real-time performance and scalability by allowing each player to operate a local client with a video generator and state model.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "WorldAlign introduces a decoupled 4D reward framework that enhances world-consistent video generation by semantically separating static regions and dynamic subjects, improving both static and dynamic consistency without suppressing overall motion.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "SPW-Nav introduces a novel streaming panoramic world model that generates 2K 360-degree video in real-time based on language-guided navigation, significantly improving camera-following accuracy and video quality over existing methods.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The paper presents LEGO, a novel lifting-free approach for generating egocentric videos from exocentric recordings, which improves upon state-of-the-art methods by eliminating the need for depth estimation and point cloud reconstruction.",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "SpaceFlow introduces a training-free pipeline for locally controllable 3D generation from text descriptions and geometric primitives, allowing users to specify local control levels for geometric adherence and appearance synthesis.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "The repository \"Robbyant/lingbot-map\" presents the LingBot-Map, a Geometric Context Transformer designed for streaming 3D reconstruction, which is a candidate for the ECCV 2026 Best Paper Award.",
+            "refs": [
+              15
+            ]
+          },
+          {
+            "text": "The repository \"cartesiancs/map3d\" introduces a tool for generating 3D city maps using R3F (React Three Fiber), incorporating detailed building and road information.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Audio and speech",
+        "paragraphs": [
+          {
+            "text": "The paper introduces MIRA (Musical Intent Refinement Agent), which enhances text-to-music generation by aligning outputs more closely with user intent through a structured evaluation framework.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "The paper introduces CARE, a method for certifying the selection of acceleration techniques in vision-language-action (VLA) models, ensuring that acceleration-induced failures remain below a user-defined threshold.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "The paper introduces SatNav, a scalable benchmark for long-horizon UAV vision-language navigation (VLN) using high-resolution satellite imagery, overcoming limitations of existing benchmarks that rely on costly 3D assets.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "On-Policy Distillation Teaches New Skills but Not New Knowledge — The paper presents a novel approach to on-policy distillation (OPD) that enhances compositional reasoning skills in language models without expanding their factual knowledge.",
+            "refs": [
+              13
+            ]
+          },
+          {
+            "text": "unslothai/unsloth — The repository \"unsloth\" provides a local user interface for running and training large language models (LLMs) and diffusion models, supporting formats such as GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, and FLUX.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "Which examples remain seamless at the loop boundary after the viewer moves away from the original camera position?"
+      }
+    ]
+  }
+}

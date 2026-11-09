@@ -1,116 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GenAI Daily</title>
-  <meta name="description" content="A weekly-archived blog of generative-AI papers, news and trending repositories." />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-  <link rel="stylesheet" href="./assets/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A video tutorial contains two accounts of what happened: the steps visible on screen and the explanation in the audio. The /watch tool makes both available to Claude as frames and a transcript.">
+  <meta name="theme-color" content="#182d39">
+  <title>How claude-video turns a clip into evidence Claude can inspect · GenAI Daily</title>
+  <link rel="stylesheet" href="./assets/journal.css">
+  <script>if(location.hash==="#overview")location.replace("./explore.html#overview");</script>
 </head>
 <body>
-  <div id="app" data-state="loading">
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <div class="brand">
-          <div class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.5l2.4 6.1 6.1 2.4-6.1 2.4L12 21.5l-2.4-6.1L3.5 11l6.1-2.4L12 2.5z" fill="currentColor"/></svg>
-          </div>
-          <div>
-            <h1>GenAI&nbsp;Daily</h1>
-            <p class="tagline">An LLM-curated blog of generative-AI research, news &amp; trending code.</p>
-          </div>
-        </div>
-        <nav class="top-nav">
-          <button class="nav-btn active" data-view="digest" type="button">Digest</button>
-          <button class="nav-btn" data-view="overview" type="button">Overview</button>
-        </nav>
-        <div class="header-meta">
-          <a class="ghlink" href="https://github.com/HerdMoon/herdmoon.github.io" target="_blank" rel="noopener">source</a>
-          <span id="updated" class="updated"></span>
-        </div>
-      </div>
-    </header>
-
-    <div class="wrap layout">
-      <aside class="sidebar">
-        <div class="side-block">
-          <div class="search-box">
-            <span class="search-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </span>
-            <input id="search" type="search" placeholder="Search all weeks..." autocomplete="off" />
-          </div>
-        </div>
-
-        <div class="side-block">
-          <h4>Sources</h4>
-          <div id="sourceFilters" class="pills"></div>
-        </div>
-
-        <div class="side-block">
-          <h4>Min topic score <b id="minTopicVal">0</b></h4>
-          <input id="minTopic" type="range" min="0" max="10" value="0" step="1" />
-        </div>
-
-        <div class="side-block" id="tagBlock">
-          <h4>Topics</h4>
-          <div id="tagFilters" class="pills tag-pills"></div>
-        </div>
-
-        <button id="clearFilters" class="clear-btn" type="button" hidden>Clear filters</button>
-
-        <div class="side-block archive">
-          <h4>Archive</h4>
-          <div id="archiveList" class="archive-list"></div>
-        </div>
-      </aside>
-
-      <main class="content">
-        <section id="overviewPanel" class="overview" hidden>
-          <div class="stats" id="stats"></div>
-          <div class="charts">
-            <div class="card chart-card chart-wide">
-              <h3>Items per day</h3>
-              <div class="chart-holder"><canvas id="chartDaily"></canvas></div>
-            </div>
-            <div class="card chart-card">
-              <h3>By source</h3>
-              <div class="chart-holder"><canvas id="chartSource"></canvas></div>
-            </div>
-            <div class="card chart-card chart-wide">
-              <h3>Top topics</h3>
-              <div class="chart-holder"><canvas id="chartTags"></canvas></div>
-            </div>
-          </div>
-        </section>
-
-        <div id="weekNav" class="week-nav">
-          <button id="prevWeek" class="week-arrow" type="button" aria-label="Older week">&larr;</button>
-          <div class="week-title">
-            <span id="weekLabel"></span>
-            <span id="weekCount" class="week-count"></span>
-          </div>
-          <button id="nextWeek" class="week-arrow" type="button" aria-label="Newer week">&rarr;</button>
-        </div>
-
-        <div id="filterBanner" class="filter-banner" hidden></div>
-
-        <section id="feed" class="feed" aria-live="polite"></section>
-        <div id="empty" class="empty" hidden>No items match your filters.</div>
-      </main>
-    </div>
-
-    <footer class="site-footer">
-      <div class="wrap">
-        <span>Generated automatically from an Obsidian vault. Papers &amp; repos belong to their respective authors.</span>
-      </div>
-    </footer>
-  </div>
-
-  <div id="loading" class="loading-screen">Loading digest...</div>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="./assets/app.js" defer></script>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead"><div class="wrap masthead-inner">
+    <a class="brand" href="./index.html">GenAI <i>Daily</i></a>
+    <nav aria-label="Main navigation">
+      <a href="./index.html" aria-current="page">Latest</a>
+      <a href="./archive.html" >Archive</a>
+      <a href="./explore.html">Source explorer</a>
+    </nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="story">
+      <header class="story-head">
+        <div class="dateline"><strong>Daily edition</strong><time datetime="2026-11-08">Sunday, November 8, 2026</time></div>
+        <h1>How claude-video turns a clip into evidence Claude can inspect</h1>
+        <p class="lead">A video tutorial contains two accounts of what happened: the steps visible on screen and the explanation in the audio. The /watch tool makes both available to Claude as frames and a transcript.</p>
+        <div class="byline"><span>1 collected item</span><a href="#reading-guide">Jump to reading picks ↓</a>
+        <a href="./posts/2026-11-08.html" aria-label="Permanent link to the 2026-11-08 edition">Permalink ↗</a></div>
+      </header>
+      <div class="columns"><div class="copy"><section><h2>What the tool hands to Claude</h2><p>In the local workflow, /watch samples timestamped frames and pairs them with captions or a transcript. If a presenter says “click here,” Claude can use a frame to identify the menu and the transcript to recover the instruction. The important design choice is when to sample: two screenshots on either side of a brief pop-up may both miss it. <span class="refs"><a href="https://github.com/bradautomates/claude-video" title="bradautomates/claude-video">[1]</a></span></p></section><details class="sources"><summary>All source material (1)</summary><ol><li><span>GitHub</span><a href="https://github.com/bradautomates/claude-video">bradautomates/claude-video</a></li></ol></details>
+        <nav class="adjacent" aria-label="Adjacent editions"><a href="./posts/2026-11-07.html">← Previous edition</a></nav>
+      </div><aside><section class="guide" id="reading-guide"><h2>Worth a closer look</h2><ul><li><p>When a crucial step lasts only a moment, which frame-sampling setting captures it at an acceptable input cost?</p><a href="https://github.com/bradautomates/claude-video">bradautomates/claude-video ↗</a></li></ul></section><section class="recent"><h2>Earlier editions</h2><ul class="editions"><li><a href="./posts/2026-11-07.html"><time datetime="2026-11-07">Nov 7</time><span>Two ways to cut the cost of diffusion</span></a></li><li><a href="./posts/2026-11-06.html"><time datetime="2026-11-06">Nov 6</time><span>What can one generator learn to do well?</span></a></li><li><a href="./posts/2026-11-05.html"><time datetime="2026-11-05">Nov 5</time><span>Can a transformer learn to render Gaussian splats?</span></a></li><li><a href="./posts/2026-11-04.html"><time datetime="2026-11-04">Nov 4</time><span>DreamX compresses a video transition into four action tokens</span></a></li></ul><a class="archive-link" href="./archive.html">Full archive →</a></section></aside></div>
+    </article></main>
+  <footer class="wrap footer"><span>GenAI Daily · Generative media research</span><a href="./explore.html">Browse collected items ↗</a></footer>
 </body>
 </html>

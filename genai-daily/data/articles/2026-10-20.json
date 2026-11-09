@@ -1,0 +1,164 @@
+{
+  "fingerprint": "78c3c401ccee7d5e4c059674063e038a29023210d18c4c65d7c5310e3763b668",
+  "article": {
+    "headline": "Learning robot motion from human and robot footage",
+    "lead": "Ropedia W0 brings together 10,000 hours of human experience and 3,000 hours of robot data to model locomotion and manipulation. In video production, Mise-en-Video uses a 3D layout to keep creative decisions consistent from one shot to the next.",
+    "sections": [
+      {
+        "heading": "Loco-manipulation world model",
+        "paragraphs": [
+          {
+            "text": "Ropedia W0 introduces an egocentric loco-manipulation world foundation model. It effectively combines locomotion and manipulation across various embodiments. The model is trained on a curated dataset, Xp-Data, which includes 10,000 hours of human data and 3,000 hours of robot data with unified multimodal annotations. This extensive training allows Ropedia W0 to achieve significant improvements in performance across five cross-embodiment benchmarks, demonstrating its effectiveness in real-time rollouts for live VR interactions and applications in policy evaluation and model-based planning.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces Mise-en-Video (MeV), a novel multi-shot video generation framework that enhances controllability and inter-shot consistency by integrating a hierarchical attention mechanism with 3D-aware layout guidance.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "Manga2Animate introduces a novel multi-agent framework for animating manga that maintains fidelity to the original source material by decomposing the task into an animation script and a visual storyboard, each generated and reviewed by dedicated agents.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "SpecKCast introduces a novel training-free method for forecasting model outputs in the frequency domain using a 2D discrete cosine transform (DCT) and a lightweight Kalman filter, addressing the limitations of existing forecasting methods in generative diffusion models.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "UniAVC introduces a unified model for audio-video creation that enhances text-conditioned joint synthesis, bidirectional cross-modal generation, and instruction-guided editing by leveraging a two-phase training approach.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "The paper introduces HumanoidPose, a novel framework that estimates humanoid robot joint configurations from video by treating vision as proprioception.",
+            "refs": [
+              16
+            ]
+          },
+          {
+            "text": "The repository \"mifi/lossless-cut\" provides a tool for lossless video and audio editing, enabling users to trim and cut media files without re-encoding, which preserves the original quality.",
+            "refs": [
+              17
+            ]
+          },
+          {
+            "text": "PC2005-cloud/dsh-pet — The DSH Pet project provides a desktop application that enables users to create and customize transparent animated pets with a single command installation.",
+            "refs": [
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Text-to-Image Generative Modeling Without Language Pretraining — The paper introduces Halcyon, a family of early-fusion multimodal autoregressive models that achieve strong text-to-image (T2I) generation without relying on language pretraining.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "The paper introduces GenOlympiad, a benchmark designed to evaluate the limitations of leading text-to-image models across nine capability axes, including reasoning and physical consistency.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "A Language-Informed Loss for Visual Generation — The paper introduces LILIE (Language-Informed and Lossless Image Encoder), an invertible image transform that leverages language-informed supervision to enhance visual generation.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "The paper introduces ACEdit, a novel training scheme for stable multi-turn image editing that mitigates degradation in quality across successive edits by employing a self-forcing mechanism.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "InfiniDream introduces a novel VLM-driven framework for open-ended procedural 3D world generation, significantly enhancing the creation of photorealistic assets through Symbolically Constrained Asset Generation.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "Any 3D Scene is Worth 1K Tokens — The paper introduces a novel approach for 3D scene generation by leveraging a high-dimensional implicit 3D latent space derived from advanced 2D foundation models, addressing the limitations of traditional 2D multi-view diffusion methods.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "FineSplat introduces a novel feed-forward 3D Gaussian Splatting framework that enhances fine-grained geometry and appearance recovery in scene reconstruction and novel-view synthesis.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "Agent World Model in the Wild — The paper introduces WildAWM, a scalable pipeline for synthesizing controllable environments and tasks for training computer-use agents (CUAs), which integrates graphical user interfaces, model context protocol services, and command-line interfaces.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "ActionRoPE introduces a parameter-free action interface that directly maps action-driven camera displacements to world-coordinate rotary positions, enhancing spatially consistent control in planar-camera game world models.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "The paper introduces RealityBench, a benchmarking framework that simulates eleven real-world environments in Blender to evaluate vision-language models' capabilities in documenting human physical work.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "DeepInfer is a high-performance inference framework designed specifically for DeepSeek models, optimizing the deployment of deep learning applications.",
+            "refs": [
+              19
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "Which experiments isolate the contribution of the human footage from the effect of adding more robot data?"
+      }
+    ]
+  }
+}

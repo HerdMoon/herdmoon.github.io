@@ -1,0 +1,52 @@
+{
+  "fingerprint": "8b0ff88c784352e399ea451523ab65f5a92072914a4e5c62fbf703119ae711d2",
+  "article": {
+    "headline": "Two ways to cut the cost of diffusion",
+    "lead": "StepX-OPD brings two stages of image-model training together. A separate audio-video project targets inference by shrinking the model and using six sampling steps. The two efficiency claims concern different parts of the budget.",
+    "sections": [
+      {
+        "heading": "Teaching an image model to sample in fewer steps",
+        "paragraphs": [
+          {
+            "text": "StepX-OPD trains a student on the states it actually visits during generation. Frozen specialist teachers supervise those states, bringing capability transfer and few-step sampling into one training phase. On SD3.5-Medium and FLUX.1-dev, the authors report higher normalized scores than their forty-step Flow-OPD comparison and about 37% fewer GPU training hours than a sequential training recipe. Those are two separate baselines.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Compressing the model that runs at inference",
+        "paragraphs": [
+          {
+            "text": "A Show HN author reports shrinking a joint audio-video diffusion model from 31B to 14B parameters and running it in six steps with INT8 quantization. The demonstration is worth inspecting for synchronized sound and motion at the smaller size. Its headline gives the parameter and step counts but leaves the quality comparison to the underlying project.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "A benchmark for keeping visual evidence in view",
+        "paragraphs": [
+          {
+            "text": "VisSearch-Bench gives multimodal agents 204 human-written search tasks across seven domains. The best model in the authors’ evaluation completed 26.47% of the tasks. The process scores are especially interesting: they offer a way to investigate where the chain between a visual clue and a retrieved answer breaks.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "In the 37% GPU-hour comparison, how much training does the sequential baseline spend on each stage?"
+      },
+      {
+        "ref": 2,
+        "question": "What specific challenges were identified in visual context management?"
+      }
+    ]
+  }
+}

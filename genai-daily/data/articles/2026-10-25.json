@@ -1,0 +1,26 @@
+{
+  "fingerprint": "791f78b7e17a1c965bc9e901de1f6e751d15347b5e6eba03d7b6354c33ab029c",
+  "article": {
+    "headline": "When does a learned unmasking policy pay for itself?",
+    "lead": "In masked diffusion language models, choosing which tokens to reveal takes compute. A controlled study trains an 856K-parameter policy and asks whether avoiding later model evaluations earns back that choice.",
+    "sections": [
+      {
+        "heading": "Learned unmasking policy details",
+        "paragraphs": [
+          {
+            "text": "The study by Hugging Face introduces a learned unmasking policy for masked diffusion language models. This policy reduces the number of function evaluations (NFE) needed, achieving a 10% decrease to counteract policy overhead. The authors trained a 856K-parameter policy on trajectory-contraction targets that leverage confidence and hidden states. The results show improved throughput and accuracy on benchmarks such as GSM8K, MATH-500, and HumanEval. Additionally, the policy demonstrates effective transferability to other models, including Dream-7B-Instruct.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "At matched task accuracy, how many denoiser calls can the policy remove before its own runtime offsets the saving?"
+      }
+    ]
+  }
+}

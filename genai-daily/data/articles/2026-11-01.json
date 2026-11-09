@@ -1,0 +1,44 @@
+{
+  "fingerprint": "0c56718cc5ad7447061e0f42b7746bc6f89261366a2e05989a43873fa5070474",
+  "article": {
+    "headline": "What should a generated world remember?",
+    "lead": "L3G-World keeps a compact 3D Gaussian representation of a scene as the viewpoint moves. Revisiting a location makes the value of that memory tangible: objects placed earlier should still occupy the same space.",
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How does consistency on a return visit change as the memory uses fewer 3D primitives?"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Three ways to budget representation",
+        "paragraphs": [
+          {
+            "text": "L3G-World stores scene information in latent 3D Gaussians. A camera can leave a region and later revisit its representation. The paper's long-horizon experiments are a better place to assess that design than a short fly-through.",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "HairDeck and SpecSlot operate at smaller scales. HairDeck treats each stylized hair card as a token, producing animation-ready cards from a single image. SpecSlot assigns distinct frequency components to slots so that preserving fine image detail need not require a longer global attention sequence.",
+            "refs": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Choosing a model before starting a media job",
+        "paragraphs": [
+          {
+            "text": "The scenario-labs/skills repository packages image, video, audio and 3D generation workflows for agents. It puts model choice and cost estimates before execution, a practical feature when the same creative request can be sent to several media services.",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

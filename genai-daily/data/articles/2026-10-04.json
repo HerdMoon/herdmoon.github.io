@@ -1,0 +1,41 @@
+{
+  "fingerprint": "4ce2f49ea291cabf659630d15c86ed1c78c8e473e57a065d319f3a19ed66fb20",
+  "article": {
+    "headline": "How OneStreamer remembers a video before the question arrives",
+    "lead": "A streaming assistant may need a detail from several minutes earlier. OneStreamer records timestamped captions while footage arrives, so a later question can draw on earlier evidence. A separate systems item examines running Qwen on consumer hardware.",
+    "sections": [
+      {
+        "heading": "Remembering something you did not know to look for",
+        "paragraphs": [
+          {
+            "text": "OneStreamer builds a hierarchy of captions and summaries while video arrives, preserving timestamps for later questions. A second training objective teaches the assistant when to respond. The authors evaluate a 4B model across eight streaming benchmarks and release OneStreamer-1M for studying this combination of memory and response timing.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "A local inference engine for Qwen",
+        "paragraphs": [
+          {
+            "text": "Strata is an inference engine for running Qwen3.8-Flash-Next on consumer hardware. The collected Hacker News item describes an RTX 4090 configuration. The useful numbers to compare across setups are generation speed, context length and how much of the model fits in memory.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "Which tasks need fine-grained timestamped captions, and which can be answered from the higher-level memory alone?"
+      },
+      {
+        "ref": 2,
+        "question": "What optimizations allow Qwen 3.8 to run on consumer hardware?"
+      }
+    ]
+  }
+}

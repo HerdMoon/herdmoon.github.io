@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WorldGuide selects actions from the visual state it has already generated, closing the loop during a procedural task. SpaceFlow gives an artist local control over 3D geometry through text and primitives. Each offers a way to correct a generation before accepting the result.">
+  <meta name="theme-color" content="#182d39">
+  <title>Letting a video model revise its next action · GenAI Daily</title>
+  <link rel="stylesheet" href="../assets/journal.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead"><div class="wrap masthead-inner">
+    <a class="brand" href="../index.html">GenAI <i>Daily</i></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html" >Latest</a>
+      <a href="../archive.html" >Archive</a>
+      <a href="../explore.html">Source explorer</a>
+    </nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="story">
+      <header class="story-head">
+        <div class="dateline"><strong>Daily edition</strong><time datetime="2026-10-11">Sunday, October 11, 2026</time></div>
+        <h1>Letting a video model revise its next action</h1>
+        <p class="lead">WorldGuide selects actions from the visual state it has already generated, closing the loop during a procedural task. SpaceFlow gives an artist local control over 3D geometry through text and primitives. Each offers a way to correct a generation before accepting the result.</p>
+        <div class="byline"><span>6 collected items</span><a href="#reading-guide">Jump to reading picks ↓</a>
+        <a href="../posts/2026-10-11.html" aria-label="Permanent link to the 2026-10-11 edition">Permalink ↗</a></div>
+      </header>
+      <div class="columns"><div class="copy"><section><h2>Using feedback during generation</h2><p>WorldGuide feeds generated visual states back into its planner to choose the next step of a procedure. SpaceFlow gives a human a more local kind of control: text and geometric primitives constrain different parts of a 3D generation without training a new model. In both cases, success depends on whether a requested change reaches the intended part of the output. <span class="refs"><a href="https://huggingface.co/papers/2610.12459" title="WorldGuide: Goal-Directed Video World Model for Procedural Task Execution">[1]</a> <a href="https://huggingface.co/papers/2610.12399" title="SpaceFlow: Locally Controllable 3D Generation">[2]</a></span></p></section><section><h2>Checking geometry and correspondence</h2><p>Pumpire tests whether a 3D foundation model can estimate the metric distance between two points using images or video. FreeMatching addresses the complementary problem of identifying corresponding points across views, with applications to reference-guided generation and editing. A match identifies which points to compare; a distance estimate puts a scale on them. <span class="refs"><a href="https://huggingface.co/papers/2610.12423" title="Pumpire: Unified Benchmark for Metric Distance Estimation">[3]</a> <a href="https://huggingface.co/papers/2610.12421" title="Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching">[4]</a></span></p></section><section><h2>Training across tasks and fitting inference into memory</h2><p>Hebero offers a GPU-parallel setting for training and evaluating reinforcement learning across 40 heterogeneous tasks. AirLLM targets inference on constrained hardware: its repository describes running a 70B language model with a single 4GB GPU. For the latter, fitting the weights and achieving useful token throughput are separate questions. <span class="refs"><a href="https://huggingface.co/papers/2606.03335" title="A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning">[5]</a> <a href="https://github.com/lyogavin/airllm" title="lyogavin/airllm">[6]</a></span></p></section><details class="sources"><summary>All source material (6)</summary><ol><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.12459">WorldGuide: Goal-Directed Video World Model for Procedural Task Execution</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.12399">SpaceFlow: Locally Controllable 3D Generation</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.12423">Pumpire: Unified Benchmark for Metric Distance Estimation</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.12421">Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2606.03335">A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning</a></li><li><span>GitHub</span><a href="https://github.com/lyogavin/airllm">lyogavin/airllm</a></li></ol></details>
+        <nav class="adjacent" aria-label="Adjacent editions"><a href="../posts/2026-10-10.html">← Previous edition</a><a href="../posts/2026-10-12.html">Next edition →</a></nav>
+      </div><aside><section class="guide" id="reading-guide"><h2>Worth a closer look</h2><ul><li><p>Which failed tasks come from choosing the wrong next action, and which come from rendering a chosen action incorrectly?</p><a href="https://huggingface.co/papers/2610.12459">WorldGuide: Goal-Directed Video World Model for Procedural Task Execution ↗</a></li></ul></section><section class="recent"><h2>Earlier editions</h2><ul class="editions"><li><a href="../posts/2026-10-10.html"><time datetime="2026-10-10">Oct 10</time><span>Testing whether a generated robot motion follows the command</span></a></li><li><a href="../posts/2026-10-09.html"><time datetime="2026-10-09">Oct 9</time><span>Animating a 3D scene so the motion loops</span></a></li><li><a href="../posts/2026-10-08.html"><time datetime="2026-10-08">Oct 8</time><span>Compressing video latents before the expensive generation steps</span></a></li><li><a href="../posts/2026-10-07.html"><time datetime="2026-10-07">Oct 7</time><span>Forty controlled tasks probe the physics of generated video</span></a></li></ul><a class="archive-link" href="../archive.html">Full archive →</a></section></aside></div>
+    </article></main>
+  <footer class="wrap footer"><span>GenAI Daily · Generative media research</span><a href="../explore.html">Browse collected items ↗</a></footer>
+</body>
+</html>

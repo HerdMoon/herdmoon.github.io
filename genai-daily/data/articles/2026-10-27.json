@@ -1,0 +1,146 @@
+{
+  "fingerprint": "37748ef5f05c0ee611299c54bad61de3f4f8b9927f98a3e5ee36c2bff0677455",
+  "article": {
+    "headline": "An image edit you can adjust with 29 sliders",
+    "lead": "PREEN turns an example photo's color treatment into editable smartphone presets. A user can inspect and change the resulting settings. That makes preset transfer a different design problem from predicting the final pixels.",
+    "sections": [
+      {
+        "heading": "Color style transfer with PREEN",
+        "paragraphs": [
+          {
+            "text": "PREEN introduces a method for color style transfer that predicts a compact vector of 29 editor slider values instead of generating raster images. This approach achieves superior pixel and perceptual fidelity on the PST50 benchmark, as reported by the authors. The method employs a CLIP-conditioned regressor refined with LoRA and utilizes a style-transfer teacher to create pseudo-presets, enabling sub-second on-device latency and continuous strength adjustment for varying style intensities. This design allows users to transition smoothly between vivid and default styles without the need for retraining.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "TAPESTRY introduces a novel approach to robot control by leveraging a pretrained video diffusion transformer without the need for resource-intensive video generation at inference.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "Vision-Language Agents Can Learn in Their Own Latent Worlds — The paper introduces Dwell, a model-based reinforcement learning framework that enhances vision-language models (VLMs) by treating them as recurrent latent transition operators, allowing agents to predict and act in latent space.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "Ψ-0.6 introduces a unified vision-language world model that adaptively integrates perception, language, geometry, and simulation through a shared reasoning process termed \"streams of thought.\" This model achieves superior zero-shot performance on multi-view spatial reasoning compared to leading open-weight models, with notable improvements in visual question-answering accuracy through reinforcement learning from task feedback.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Visual Autoregressive Generation with Next Token Imagination — The paper introduces Next Token Imagination (NTI), a novel approach in visual autoregressive generation that allows models to explore plausible visual realizations beyond their training data, thereby enhancing the model's ability to capture a broader visual distribution.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "Provenance Signatures for Low Rank Adaptations of Image Diffusion Models — The paper introduces a novel protocol for detecting adaptations of diffusion models, specifically addressing the challenge of identifying Low Rank Adaptations (LoRA) in an open-world scenario where the set of possible models is unknown.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "How Far Can Coding Agents Go in Visual Generation? — The paper introduces a novel approach using general-purpose coding agents for image generation, which constructs images through executable programs rather than relying solely on learned parameters.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "Evaluation-Guided Demonstration Refinement for Vision-Language-Action Policies — The paper presents a novel approach to fine-tuning vision-language-action policies by implementing evaluation-guided demonstration refinement, which led to the authors' submission, MAI, achieving the highest score of 96.66 in the MetaFine Open Competition.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "RoboJev-27B is an open-weight vision-language model designed for robot success detection, achieving 95.2% balanced accuracy and 0.993 AUROC on held-out episodes, while generalizing well to unseen labs with an AUROC of 0.890.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "The paper introduces CellTrack-Bench, a comprehensive benchmark for evaluating Vision-Language Models (VLMs) in the context of microscopic cell tracking, comprising 1,537 problems derived from 15 standard datasets across four imaging modalities.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces DCKV, a differentiable codec for the key-value (KV) cache in hybrid language models, which is the first end-to-end trained KV-cache codec.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "The paper introduces HiLo-RD, a novel self-distillation method for masked diffusion language models (MDLMs) that enhances performance under limited generation budgets.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "CausalAlign introduces a novel framework for enhancing camera ego-motion consistency in diffusion-based video generation models (VGMs) by aligning representations to a 3D foundation model through delta-token space.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "More Memory, Better Videos? A Controlled Study of Visual Memory in Long-Video Generation — The study introduces VMem-Bench, a diagnostic framework that evaluates the impact of visual memory on long-video generation.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "The paper introduces AV-FABLE, a dual-timeline benchmark for detecting sparse manipulations in long-form audio-visual videos, comprising 16,650 pristine-manipulated twin pairs (998 hours) with 27 editing configurations.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "Learning from Automatic 3D Gaussian Splatting Edits for Online Bayesian Scene Change Detection — The paper presents a novel approach for online scene change detection that leverages automatic edits to a 3D Gaussian Splatting (3DGS) model to generate labeled training views without manual annotations.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "Which reference looks can the 29 sliders reproduce faithfully, and where does the editor's parameterization run out?"
+      }
+    ]
+  }
+}

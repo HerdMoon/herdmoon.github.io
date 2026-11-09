@@ -1,0 +1,156 @@
+{
+  "fingerprint": "e55e3947b0f2f452f3a18c6d3d2de25f494fec7c3594437342d219f99b54b72c",
+  "article": {
+    "headline": "Spending denoising steps where a video patch needs them",
+    "lead": "ForcingBooster changes the compute budget across patches of the same video. Gen4P uses a pretrained video generator for a different job, recovering geometry and motion without iterative denoising. Their speed claims refer to different outputs.",
+    "sections": [
+      {
+        "heading": "4D perception from video",
+        "paragraphs": [
+          {
+            "text": "Gen4P introduces a framework that transforms pretrained video generators into a feed-forward 4D perceiver. This method allows for the recovery of 4D geometry and motion from monocular video efficiently, utilizing on-demand querying and continuous-time queries. It incorporates a frozen geometry prior via a pretrained video-depth LoRA, which enhances performance on tasks like 3D point tracking, video depth, and camera pose estimation. Gen4P achieves state-of-the-art results, demonstrating the effectiveness of leveraging video generative pretraining for unified 4D perception.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "The paper introduces T2-Z, a novel approach for test-time optimization of environment latents in robotic world models, achieving a reduction in object prediction error from 15.20 to 7.00 and increasing action success rates from 33.73% to 72.96% across various tasks.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "Perceive, Predict, and Plan — The paper introduces P$^{3}$-WAM, a unified world action model that enhances egocentric dexterous manipulation by integrating 3D perception, action-conditioned prediction, and goal-directed planning.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "GeoState introduces a view-decoupled geometry representation for 3D world modeling, effectively separating scene-state evolution from camera-dependent observations.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "Can World and Action Modeling Benefit Each Other under Unified Causal Training? — The paper introduces OneWM, a unified causal training framework that enhances both world and action modeling by treating actions as conditions for world prediction and targets for policy learning within a shared architecture.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "SimForcing introduces a novel simulation-guided framework for robot world models that distills motion priors from simulation to enhance real-domain video generation.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "SUPRA-TEX introduces a novel approach to single image 3D generation by decoupling visible-material estimation, surface alignment, and observation-guided 3D completion, which enhances fidelity and detail preservation.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "The paper introduces 3DCodeVerse, a comprehensive ecosystem for coding agents to generate and verify 3D content, featuring a large-scale dataset of 2 million executable 3D code snippets and a multi-agent framework for automated content refinement.",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Not Just a Subject — The paper introduces EOS-Story, a training-free framework that enhances visual storytelling by harmonizing identity consistency with scene-specific adaptation in text-to-image generation.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "Beyond Pairwise Repulsion — The paper introduces Determinant Noise Optimization (DetNO), a novel approach for enhancing diversity in text-to-image diffusion models by maximizing the log-determinant of an RBF Gram matrix over initial noise vectors.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces ForcingBooster, a novel framework for adaptive patch-wise denoising in autoregressive video diffusion models, which dynamically allocates denoising steps based on the complexity of individual video patches.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "The CoWorld Reasoner introduces a novel framework for agentic multimodal reasoning that leverages a Video World Model (VWM) as a unified visual reasoning engine, allowing for flexible visual imagination across diverse tasks.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "H-DDCM introduces a scalable generative compression framework that replaces dense Gaussian codebooks with implicit randomized Hadamard dictionaries, achieving O(d log d) compute for projection and reconstruction and O(d) memory usage.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "The PAIR framework introduces a novel approach to bridging perception and action in vision-language-action (VLA) models by learning a shared perception-action representation.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "VLA-Δ introduces a novel framework for vision-language-action models that explicitly supervises physical state transitions, addressing the limitations of existing methods that rely solely on observation-action correspondences.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "When the KV Cache Is Slower Than the GPU — The paper presents a novel approach to optimizing the use of remote key-value (KV) caches in long-context LLM serving, specifically for the GLM-5.3 model.",
+            "refs": [
+              15
+            ]
+          },
+          {
+            "text": "lightseekorg/tokenspeed — TokenSpeed is an inference engine designed for large language models (LLMs) that optimizes performance to achieve near real-time processing speeds.",
+            "refs": [
+              17
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "At a fixed latency budget, which patches receive additional steps and how does that affect fast-moving edges?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific tasks does Gen4P improve performance on?"
+      }
+    ]
+  }
+}

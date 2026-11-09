@@ -1,0 +1,82 @@
+{
+  "fingerprint": "8b4a685eb0e9405e205dd9e3863e25b00ab2b62d3ba398eb3646d6367c240e3f",
+  "article": {
+    "headline": "Reading 3D motion out of a video generator",
+    "lead": "Gen4P repurposes a pretrained generator to recover geometry and motion from a single-camera video in a feed-forward pass. SUPRA-TEX explores the complementary single-image problem of aligning visible texture and completing surfaces outside the frame.",
+    "sections": [
+      {
+        "heading": "4D perception with Gen4P",
+        "paragraphs": [
+          {
+            "text": "Gen4P introduces a framework that leverages a pretrained video generator to function as a feed-forward 4D perceiver. It employs an on-demand querying mechanism for flexible spatial and temporal sampling, integrating a frozen video-depth LoRA to enhance geometric knowledge without increasing trainable parameters. This method demonstrates significant advancements in unified 4D perception capabilities, achieving state-of-the-art performance in 3D point tracking, video depth, and camera pose estimation, as reported by the authors.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "SUPRA-TEX introduces a novel approach to single image 3D generation by decoupling visible-material estimation, surface alignment, and observation-guided 3D completion, which enhances fidelity and coherence in generated textures.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Beyond Policy Rollouts — The paper introduces EDEN (Embedding-space Directional Exploration via anchored Noise), which enhances reinforcement learning with verifiable rewards (RLVR) by modifying the rollout process to include perturbed embeddings, allowing for greater exploration beyond standard policy rollouts.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "mozilla-ai/otari — Mozilla's Otari is an open-source LLM gateway that allows users to interface with over 40 different language model providers through a single endpoint.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "LibreChat-AI/LibreChat — LibreChat is an open-source ChatGPT clone that enhances user interaction through features like multi-agent capabilities, model switching (including support for GPT-5 and Mistral), and integration with various APIs (e.g., DALL-E-3, OpenAI).",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "The paper introduces OmniVerifier-C1, a decomposed graded verifier that enhances the robustness of visual verifiers in complex multimodal scenarios by providing continuous pointwise scores instead of binary judgments.",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The repository \"Kruk2/jasna\" presents a video restoration tool that leverages advanced generative models to enhance video quality by effectively removing artifacts and improving resolution.",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How does the accuracy of queried geometry change for points that become occluded during the video?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "fingerprint": "cdc91d4f7fdeea44ba9302304898877c5e2042498676b35dfe383bc5b116dd83",
+  "article": {
+    "headline": "Two ways to shorten the path from intent to action",
+    "lead": "Wizard steers characters inside a generated game world. OSWAM produces an action in one generation step for embodied control. For an interactive system, the practical question is how much authority the user or controller retains as latency falls.",
+    "sections": [
+      {
+        "heading": "Agentic control in game worlds",
+        "paragraphs": [
+          {
+            "text": "The Wizard framework introduces an agentic game world model that enables real-time control over character motions. It achieves zero-shot generalization across 750 scenes and 178 characters, utilizing structured representations of skeleton and geometry. This method incorporates an adaptive masking mechanism to improve video generation alignment, significantly enhancing gameplay customization and interactivity compared to existing models. This work demonstrates a notable improvement in visual quality within virtual environments, making it a valuable contribution to game design and development.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Efficiency in action generation",
+        "paragraphs": [
+          {
+            "text": "OSWAM presents a World Action Model that achieves one-step action generation, enhancing efficiency in autonomous driving and embodied control. By reducing the denoising steps from tens to one, it enables real-time inference with latencies as low as 40ms on an NVIDIA RTX 5090 GPU. This method employs imagination tokens to provide structured action priors, resulting in a threefold speedup over existing direct-policy models while maintaining action quality. This efficiency is crucial for applications requiring rapid decision-making.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image enhancement and generation techniques",
+        "paragraphs": [
+          {
+            "text": "GLOW-FM introduces a one-step latent flow-matching framework for low-light image enhancement. It achieves competitive image quality with only a single function evaluation and 34 GFLOPs for its small variant. By applying Terminal Velocity Matching (TVM) within the latent space of a frozen Tiny-VAE, GLOW-FM reduces computational costs while maintaining state-of-the-art generalization across datasets. This marks the first application of TVM in image restoration, positioning GLOW-FM as a practical solution for low-light scenarios.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "FrameForge leverages pretrained video foundation models for unified conditional image generation. It employs a Mixture of Temporal Experts (MoTE) to dynamically select temporal representations, resulting in significant performance improvements on benchmarks like DreamBench and COCO2017. This approach facilitates transformation from condition to target through an intermediate state, enhancing tasks such as subject-driven generation and image editing.",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal advancements",
+        "paragraphs": [
+          {
+            "text": "Latent Reasoning in Continuous Space (LARC) enhances Unified Multimodal Models by enabling reasoning over continuous hidden states. This approach improves generation quality and prompt adherence, achieving a 7% performance gain on the GenEval benchmark compared to methods like BAGEL. LARC's two-stage training process includes curriculum supervised fine-tuning and information-gain reinforcement learning, facilitating effective scaling during image generation tasks.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "SketchDirector introduces a framework for complex scene sketching that integrates agentic layout reasoning and detail refinement. It utilizes a large language model to decompose scenes into draft assets represented as Bézier curves, achieving superior semantic quality compared to existing methods. The MCSketch8K dataset provides a resource for future research with editable vector assets and annotations.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "Apriel Voice 27B Preview is an open speech-language model that integrates speech recognition, reasoning, and tool usage. It achieves a task success rate of 65.51% on τ-Voice and a score of 98.90 on Big Bench Audio, processing speech directly without a separate dialogue model, which enhances interactive voice interactions.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "Venus-DefakerOne2 is a vision-forensics foundation model that enhances forgery detection across various media types. It achieves state-of-the-art performance with accuracy rates of 96.7% for DeepFake faces and 96.0% for AI-generated videos, surpassing its predecessor and other specialized models in forensic benchmarks.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 2,
+        "question": "Which control tasks retain their success rate when the action denoiser is reduced to one step?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific improvements does Wizard offer over existing models?"
+      }
+    ]
+  }
+}

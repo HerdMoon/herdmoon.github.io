@@ -1,0 +1,51 @@
+{
+  "fingerprint": "515e13902075e15d53649654f54e672b329c6e30f8a260bf7a404af8783c0f18",
+  "article": {
+    "headline": "Letting a video model revise its next action",
+    "lead": "WorldGuide selects actions from the visual state it has already generated, closing the loop during a procedural task. SpaceFlow gives an artist local control over 3D geometry through text and primitives. Each offers a way to correct a generation before accepting the result.",
+    "picks": [
+      {
+        "ref": 1,
+        "question": "Which failed tasks come from choosing the wrong next action, and which come from rendering a chosen action incorrectly?"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Using feedback during generation",
+        "paragraphs": [
+          {
+            "text": "WorldGuide feeds generated visual states back into its planner to choose the next step of a procedure. SpaceFlow gives a human a more local kind of control: text and geometric primitives constrain different parts of a 3D generation without training a new model. In both cases, success depends on whether a requested change reaches the intended part of the output.",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Checking geometry and correspondence",
+        "paragraphs": [
+          {
+            "text": "Pumpire tests whether a 3D foundation model can estimate the metric distance between two points using images or video. FreeMatching addresses the complementary problem of identifying corresponding points across views, with applications to reference-guided generation and editing. A match identifies which points to compare; a distance estimate puts a scale on them.",
+            "refs": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Training across tasks and fitting inference into memory",
+        "paragraphs": [
+          {
+            "text": "Hebero offers a GPU-parallel setting for training and evaluating reinforcement learning across 40 heterogeneous tasks. AirLLM targets inference on constrained hardware: its repository describes running a 70B language model with a single 4GB GPU. For the latter, fitting the weights and achieving useful token throughput are separate questions.",
+            "refs": [
+              5,
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

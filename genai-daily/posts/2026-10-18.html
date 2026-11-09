@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gen4P repurposes a pretrained generator to recover geometry and motion from a single-camera video in a feed-forward pass. SUPRA-TEX explores the complementary single-image problem of aligning visible texture and completing surfaces outside the frame.">
+  <meta name="theme-color" content="#182d39">
+  <title>Reading 3D motion out of a video generator · GenAI Daily</title>
+  <link rel="stylesheet" href="../assets/journal.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead"><div class="wrap masthead-inner">
+    <a class="brand" href="../index.html">GenAI <i>Daily</i></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html" >Latest</a>
+      <a href="../archive.html" >Archive</a>
+      <a href="../explore.html">Source explorer</a>
+    </nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="story">
+      <header class="story-head">
+        <div class="dateline"><strong>Daily edition</strong><time datetime="2026-10-18">Sunday, October 18, 2026</time></div>
+        <h1>Reading 3D motion out of a video generator</h1>
+        <p class="lead">Gen4P repurposes a pretrained generator to recover geometry and motion from a single-camera video in a feed-forward pass. SUPRA-TEX explores the complementary single-image problem of aligning visible texture and completing surfaces outside the frame.</p>
+        <div class="byline"><span>7 collected items</span><a href="#reading-guide">Jump to reading picks ↓</a>
+        <a href="../posts/2026-10-18.html" aria-label="Permanent link to the 2026-10-18 edition">Permalink ↗</a></div>
+      </header>
+      <div class="columns"><div class="copy"><section><h2>4D perception with Gen4P</h2><p>Gen4P introduces a framework that leverages a pretrained video generator to function as a feed-forward 4D perceiver. It employs an on-demand querying mechanism for flexible spatial and temporal sampling, integrating a frozen video-depth LoRA to enhance geometric knowledge without increasing trainable parameters. This method demonstrates significant advancements in unified 4D perception capabilities, achieving state-of-the-art performance in 3D point tracking, video depth, and camera pose estimation, as reported by the authors. <span class="refs"><a href="https://huggingface.co/papers/2610.22371" title="Gen4P: Video Generators are 4D Perceivers">[1]</a></span></p></section><section><h2>Geometry and reconstruction</h2><p>SUPRA-TEX introduces a novel approach to single image 3D generation by decoupling visible-material estimation, surface alignment, and observation-guided 3D completion, which enhances fidelity and coherence in generated textures. <span class="refs"><a href="https://huggingface.co/papers/2610.22352" title="SUPRA-TEX: 3D Generation with Super-Aligned Texture">[2]</a></span></p></section><section><h2>Models, methods and tools</h2><p>Beyond Policy Rollouts — The paper introduces EDEN (Embedding-space Directional Exploration via anchored Noise), which enhances reinforcement learning with verifiable rewards (RLVR) by modifying the rollout process to include perturbed embeddings, allowing for greater exploration beyond standard policy rollouts. <span class="refs"><a href="https://huggingface.co/papers/2610.16105" title="Beyond Policy Rollouts: Embedding-Space Directional Exploration with Anchored Noise for LLM RLVR">[3]</a></span></p><p>mozilla-ai/otari — Mozilla&#x27;s Otari is an open-source LLM gateway that allows users to interface with over 40 different language model providers through a single endpoint. <span class="refs"><a href="https://github.com/mozilla-ai/otari" title="mozilla-ai/otari">[6]</a></span></p><p>LibreChat-AI/LibreChat — LibreChat is an open-source ChatGPT clone that enhances user interaction through features like multi-agent capabilities, model switching (including support for GPT-5 and Mistral), and integration with various APIs (e.g., DALL-E-3, OpenAI). <span class="refs"><a href="https://github.com/LibreChat-AI/LibreChat" title="LibreChat-AI/LibreChat">[7]</a></span></p></section><section><h2>Multimodal learning</h2><p>The paper introduces OmniVerifier-C1, a decomposed graded verifier that enhances the robustness of visual verifiers in complex multimodal scenarios by providing continuous pointwise scores instead of binary judgments. <span class="refs"><a href="https://huggingface.co/papers/2610.22355" title="OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling">[4]</a></span></p></section><section><h2>Video models and tools</h2><p>The repository &quot;Kruk2/jasna&quot; presents a video restoration tool that leverages advanced generative models to enhance video quality by effectively removing artifacts and improving resolution. <span class="refs"><a href="https://github.com/Kruk2/jasna" title="Kruk2/jasna">[5]</a></span></p></section><details class="sources"><summary>All source material (7)</summary><ol><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.22371">Gen4P: Video Generators are 4D Perceivers</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.22352">SUPRA-TEX: 3D Generation with Super-Aligned Texture</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.16105">Beyond Policy Rollouts: Embedding-Space Directional Exploration with Anchored Noise for LLM RLVR</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2610.22355">OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling</a></li><li><span>GitHub</span><a href="https://github.com/Kruk2/jasna">Kruk2/jasna</a></li><li><span>GitHub</span><a href="https://github.com/mozilla-ai/otari">mozilla-ai/otari</a></li><li><span>GitHub</span><a href="https://github.com/LibreChat-AI/LibreChat">LibreChat-AI/LibreChat</a></li></ol></details>
+        <nav class="adjacent" aria-label="Adjacent editions"><a href="../posts/2026-10-17.html">← Previous edition</a><a href="../posts/2026-10-19.html">Next edition →</a></nav>
+      </div><aside><section class="guide" id="reading-guide"><h2>Worth a closer look</h2><ul><li><p>How does the accuracy of queried geometry change for points that become occluded during the video?</p><a href="https://huggingface.co/papers/2610.22371">Gen4P: Video Generators are 4D Perceivers ↗</a></li></ul></section><section class="recent"><h2>Earlier editions</h2><ul class="editions"><li><a href="../posts/2026-10-17.html"><time datetime="2026-10-17">Oct 17</time><span>Stopping video denoising early, token by token</span></a></li><li><a href="../posts/2026-10-16.html"><time datetime="2026-10-16">Oct 16</time><span>Spending denoising steps where a video patch needs them</span></a></li><li><a href="../posts/2026-10-15.html"><time datetime="2026-10-15">Oct 15</time><span>Erasing an object while the video is still arriving</span></a></li><li><a href="../posts/2026-10-14.html"><time datetime="2026-10-14">Oct 14</time><span>Keeping a shared 3D world consistent across viewpoints</span></a></li></ul><a class="archive-link" href="../archive.html">Full archive →</a></section></aside></div>
+    </article></main>
+  <footer class="wrap footer"><span>GenAI Daily · Generative media research</span><a href="../explore.html">Browse collected items ↗</a></footer>
+</body>
+</html>

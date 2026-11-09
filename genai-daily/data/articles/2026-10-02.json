@@ -1,0 +1,151 @@
+{
+  "fingerprint": "77646c4abb9bcd82997eae796af8b166f088d8434d1a1e3ae52682a7325c1589",
+  "article": {
+    "headline": "Checking generated events against a program's record",
+    "lead": "ROWBench uses program-specified events and logged entity states to check what a video actually depicts. Sphere Encoder 2 tackles a different kind of fidelity, changing representation learning to preserve fine image detail.",
+    "sections": [
+      {
+        "heading": "Improvements in image generation",
+        "paragraphs": [
+          {
+            "text": "Sphere Encoder 2 addresses limitations of its predecessor by enhancing generation quality. It ensures effective training across the entire latent sphere and replaces pixel-wise reconstruction loss with a method that preserves high-frequency details, leading to sharper images. The authors report substantial improvements in image generation quality while maintaining speed and simplicity in the model's design. This work is detailed in the arXiv paper by the authors [1].",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces PROWBench, a novel benchmark designed to evaluate the fidelity of video models to program-specified world events, featuring 170 programmatically constructed episodes and 600 proxy videos.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The paper introduces Generative Cinematographer (GenCine), a novel system that enhances controllable video generation by allowing artists to manipulate both camera and object motion in a 3D scene scaffold derived from a single image.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "MosaiChunk introduces a novel spatio-temporal memory mechanism for autoregressive video generation, enabling the retention of fine-grained visual details from historical key-value entries, which improves revisit consistency significantly over traditional sliding-window and whole-chunk retrieval methods.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "SemanTok introduces a novel flexible video tokenizer that enhances autoregressive video generation by utilizing frozen DINO features and lightweight reconstruction heads, achieving superior semantic alignment and video fidelity.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "VTR-Bench introduces a novel benchmark specifically designed to evaluate the Visual Text Rendering capabilities of video generation models, addressing a critical gap in existing assessments that focus primarily on visual quality.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "DataMagic introduces a novel approach for authoring data videos from raw tabular data through declarative multi-agent orchestration, significantly improving the quality of generated content.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "Before It Fades — The paper introduces Temporal Activation Injection (TAI), a novel method that enhances temporal reasoning in Video Large Language Models (VideoLLMs) by addressing the decay of temporal representations across layers.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "The paper introduces SILSA, a novel topology-aware 3D generation framework that utilizes compact sliding-window slice latents to enhance high-resolution 3D shape generation.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "4Director introduces a novel video world model that utilizes an explicit 4D scene representation, allowing for precise control of camera and object motion through canonical mesh reconstructions and prescribed rigid transformations.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "HiPhy introduces a reinforcement learning framework for video generation that enforces adherence to physical laws through a dual-level objective, addressing the challenge of generating scenes with multiple co-occurring physical principles.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "The paper introduces World Observer, a novel framework that enhances persistent world modeling by decoupling observation from action, allowing for continuous monitoring of regions beyond an actor's view.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "The paper introduces LOCI, a hybrid spatial-memory architecture for video world models that combines key-value caches and recurrent linear-attention memory to improve the retrieval of past observations based on camera geometry.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "Latent-Foresight introduces an end-to-end framework for learning predictable representations in latent world models by jointly optimizing a latent tokenizer and a flow-based generative dynamics model, eliminating the need for decoupled two-stage pipelines.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "Memorizon introduces a novel approach to training world models that decouples long-span supervision from attention mechanisms, allowing for efficient processing of extended sequences without incurring quadratic costs.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "PhysVista introduces a novel benchmarking framework for evaluating physical intelligence in Vision-Language Models (VLMs) through a closed cognitive loop that integrates perception, reasoning, and assessment.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "tile-ai/tilelang — Tilelang is a domain-specific language aimed at optimizing the development of high-performance kernels for GPU, CPU, and accelerator architectures.",
+            "refs": [
+              17
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 2,
+        "question": "Can the event metrics detect a missed interaction in a clip that still looks convincing frame by frame?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific improvements in training methods contribute to image sharpness?"
+      }
+    ]
+  }
+}

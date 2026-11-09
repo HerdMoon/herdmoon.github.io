@@ -1,0 +1,94 @@
+{
+  "fingerprint": "814a69e6783dd7eb320e4945fa7f186e24c46d6ad8ef7d64b9b7301454391a20",
+  "article": {
+    "headline": "How much scene memory does a long video need?",
+    "lead": "Honeycomb represents a scene with a fixed-size memory across six planes. Ego2Act evaluates whether a first-person video completes an intended manipulation. A stable background and a correctly completed action ask different things of the same clip.",
+    "sections": [
+      {
+        "heading": "Memory efficiency in video generation",
+        "paragraphs": [
+          {
+            "text": "Honeycomb introduces HexMemory, a fixed-size memory representation that efficiently stores scene features across six spatial and spatiotemporal planes. This approach significantly reduces storage requirements during long-horizon video generation, as shown in experiments on WorldScore and RealEstate10K. The model employs a feed-forward writer that processes only new observations, enhancing efficiency without compromising performance. The confidence-weighted pooling mechanism further contributes to robust video generation quality and revisit consistency, addressing the challenges of maintaining coherence in long video sequences.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Evaluating goal-directed manipulation",
+        "paragraphs": [
+          {
+            "text": "Ego2Act establishes a benchmark for goal-directed manipulation in egocentric video generation, featuring 2,640 videos across 110 tasks of varying complexity. It includes Ego2ActJudge, a reference-free evaluation pipeline that aligns better with human consensus on task completion compared to existing methods. The study highlights that many current models struggle with executing multi-step actions accurately, leading to incomplete simulations and poor handling of complex physical dynamics.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Survey of video generation strategies",
+        "paragraphs": [
+          {
+            "text": "A comprehensive survey reviews post-training and alignment strategies for video generation models. It categorizes approaches into supervised fine-tuning, self-training and distillation, preference- and reward-based methods, and inference-time techniques. The authors discuss the unique challenges of maintaining temporal coherence and adhering to human intent, while also addressing open challenges like scalable reward design and long-horizon temporal consistency, guiding future research in the field.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Distillation dynamics and multimodal improvements",
+        "paragraphs": [
+          {
+            "text": "The study on distillation dynamics investigates how rollout policy impacts model training. It reveals that token-level KL direction affects task performance and output coverage, with on-policy data enhancing generalization for complex tasks. Where-OPD introduces an on-policy self-distillation method for multimodal large language models, achieving a 3.23-point performance improvement across benchmarks by integrating spatially grounded textual guidance. PyRUA-Lean enhances robot control by using feedback-driven primitive composition, resulting in a 14% increase in task success rate while reducing token usage significantly.",
+            "refs": [
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "calesthio/OpenMontage — OpenMontage is the first open-source, agentic video production system, featuring 12 production pipelines and over 100 tools, along with 700+ agent skill and production-knowledge files.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Show HN — The project \"Giving Opus 5.5 a simulated paint canvas\" introduces a novel interactive painting interface that enhances the generative capabilities of the Opus 5.5 model by allowing users to manipulate a virtual canvas in real-time.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "From the creator of Redis; run LLM locally with ds4 — The ds4 framework allows users to run large language models (LLMs) locally with a focus on efficiency and ease of use, leveraging Redis for optimized data handling.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "As the camera revisits more locations, which details disappear first under the fixed memory budget?"
+      }
+    ]
+  }
+}

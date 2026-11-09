@@ -1,0 +1,157 @@
+{
+  "fingerprint": "7024ee7c52de4b2c7036603a557ee19a4a88fd5849fb66d5a745b4da753334c7",
+  "article": {
+    "headline": "Keeping a subject recognizable as the camera moves",
+    "lead": "OmniShowcase uses multiple reference views and surface normals to constrain how a subject looks from different angles. The paper is worth opening for the cases where one reference hides a surface that another reveals.",
+    "sections": [
+      {
+        "heading": "World dynamics in robotic action",
+        "paragraphs": [
+          {
+            "text": "ThinkWorld is a Vision-Language-Action (VLA) framework that enhances action reasoning in robotic manipulation. It employs a Chain-of-Dynamics (CoD) representation to capture the intermediate dynamics of actions, enabling the model to learn from unannotated human videos. This approach allows for effective transfer from human demonstrations to robotic tasks across various environments, showing significant improvements in generalization capabilities, although specific performance metrics are not detailed in the abstract. This framework highlights the potential of grounding action reasoning in world dynamics to improve robotic learning efficiency.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals? — The paper introduces Factorized Vector Quantization (FVQ), a novel approach that quantizes visual features using symmetric parallel codebooks, effectively addressing the saturation of existing quantizers.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "Zero-Shot Multimodal Event Spotting in Soccer Broadcasts — The paper presents a zero-shot framework for multimodal event spotting in soccer broadcasts, achieving a 72.0% F1 score at 5 seconds on three annotated matches without task-specific training.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "A note on data-efficient finetuning of vision foundation models — This paper presents a systematic evaluation of data-efficient fine-tuning methods for vision foundation models, specifically comparing Visual Prompting (VP) with traditional approaches like Linear Probing (LP), Full Fine-tuning (FFT), and Low Rank Adaptation (LoRA).",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "PerceptRL introduces a novel reinforcement learning framework that enhances visual perception in multimodal large language models (MLLMs) by utilizing a multi-agent pipeline to extract verified errors from dense image captions, converting them into QA pairs with fixed answer labels and rule-based rewards.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "EmbeddingGemma 2 introduces a unified multimodal embedding model that efficiently represents text, images, audio, and video in a single space, achieving state-of-the-art performance across unimodal and cross-modal benchmarks.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "HuGe introduces a novel family of Humanoid Generalist Vision-Language-Action models pre-trained on over 2,000 hours of egocentric human and robot data, significantly improving the transferability of learned policies to humanoid robots.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "Zooming without Zooming v2 — The paper introduces EvidenceConnect, a data synthesis framework that enhances multimodal perception by generating targeted training data focused on the capability of connecting evidence from visual inputs.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "Can LLMs Uncover Hidden Physical Laws through Free Exploration? — The paper introduces LongChang, an automated framework that enables large language models (LLMs) to explore simulated worlds with altered physical laws, allowing them to discover these laws through free exploration without predefined tasks.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Repurposing Video Diffusion Transformers for Cross-View Temporal Object Correspondence — The paper introduces XTrack, a unified framework that repurposes pretrained video Diffusion Transformers (DiTs) to improve cross-view temporal object correspondence by integrating semantic and spatiotemporal priors for RGB-to-mask latent transport.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "Perceiving and Predicting Dynamic Sports — The paper presents a novel approach to spatiotemporal intelligence in vision models for egocentric tennis video, introducing a dataset that includes synchronized egocentric and allocentric videos, along with detailed annotations for various prediction tasks.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "OmniShowcase introduces a novel approach to omnidirectional subject-consistent video generation by leveraging a fully automated data synthesis pipeline and a geometry-conditioning method that utilizes surface-normal maps from multiple reference views.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "The repository \"PurpleDoubleD/locally-uncensored\" presents an all-in-one local AI studio that integrates chat, image and video generation, and a coding agent into a single free, open-source application for Windows and Linux.",
+            "refs": [
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces Denoising Token Credit Assignment (DTCA), a novel framework for token-level credit assignment in reinforcement learning applied to diffusion language models (DLMs).",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "Beyond the Estimate — The paper introduces Wiener-informed Decoding (WiD), a novel approach that leverages coarse second-order image statistics to enhance the training of pixel-space flow models.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning — The paper introduces Fin-SD, a novel localized hindsight self-distillation method for enhancing multi-step financial reasoning in models constrained by data residency.",
+            "refs": [
+              15
+            ]
+          },
+          {
+            "text": "Mistral Large 4 (Le Chonk) is now Open Weight — Mistral Large 4 (Le Chonk) has been released as an open-weight model, featuring 7 billion parameters and achieving state-of-the-art performance on various benchmarks, including a 60% improvement in zero-shot tasks compared to its predecessor.",
+            "refs": [
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection — The paper presents Quaternion Approximate Networks (QUAN), a deep learning framework that utilizes quaternion algebra for rotation equivariant image classification and object detection, achieving state-of-the-art performance for quaternion CNNs.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "What happens to identity and texture when the generated camera reaches an angle poorly covered by the references?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific improvements in generalization capabilities were observed?"
+      }
+    ]
+  }
+}

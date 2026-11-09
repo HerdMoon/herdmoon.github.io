@@ -1,0 +1,145 @@
+{
+  "fingerprint": "d41bee4385b95799806ee536b2d1d5a131cd30061bbbd8b0b90fdbe1fc422316",
+  "article": {
+    "headline": "Can a transformer learn to render Gaussian splats?",
+    "lead": "GaussianRenderFormer gives a concrete measure of the cost of replacing rasterization. On 300 unseen objects it reaches 38.08 dB PSNR, compared with 44.02 dB for rasterized pruned inputs. The gap makes its decoder experiments especially informative.",
+    "sections": [
+      {
+        "heading": "Improving planning success rates",
+        "paragraphs": [
+          {
+            "text": "The paper introduces motion-guided contrastive regularization for latent world models, which tackles the issue of static collapse that affects action-conditioned latent dynamics. This method enhances representation learning by focusing on motion-related transitions rather than static backgrounds. As a result, it achieves a planning success rate of 78% on OGBench-Cube with randomized backgrounds, a notable increase from 52%. Additionally, it reaches 54% on LIBERO-Object, up from 14%, while maintaining performance on other benchmarks.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces PixelSpline, a novel continuous space-time video super-resolution (STVSR) framework that improves upon existing methods by utilizing long-context encoding and an endpoint-anchored PixelSpline to model pixel motion as a single continuous trajectory.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "LiveFoley introduces a novel streaming causal autoregressive diffusion architecture for video-to-audio generation that achieves real-time performance with imperceptible latency.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "VidDub introduces a novel replacement-aware cross-audio supervision method for video dubbing, significantly improving lip synchronization by 0.833 in cross-audio Sync-C metrics.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "EmoReward introduces a novel self-evolving reward calibration mechanism for emotional video generation in reinforcement learning, significantly improving the adaptability of multi-reward weight allocation based on real-time training data.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Same Layout, Different Count — The paper investigates the behavior of text-to-image models when generating images with varying object counts, specifically beyond ten objects.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "Agent-Driven Generative Priors for Pathology Image Synthesis and Segmentation — The paper presents a novel three-stage framework for pathology image synthesis and segmentation that integrates automated data screening, generative representation learning, and task adaptation.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "The paper introduces LongBanana, the first expert-verified benchmark for long-context multi-reference image synthesis, featuring 90 tasks with a total of 4,670 expert-specified evaluation items.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "Context-Aware Autoregressive Image Generation for Emerging Reasoning Properties — The paper introduces a context-aware autoregressive image generation framework that dynamically determines the next token location based on global context and local information, improving structural robustness and reasoning capabilities in image generation.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "TailSteer introduces a novel final-stage training framework that enhances multi-turn image editing by significantly reducing cumulative visual drift over 15-20 editing turns while maintaining the generative capabilities of existing models.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "UniRestorer++ introduces a scalable framework for universal image restoration that utilizes multi-granularity degradation modeling, achieving state-of-the-art performance across various benchmarks.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "EvoWorld introduces a novel framework for generative video models that addresses the gap in reasoning about world evolution by implementing the Out-of-Sight Causal Evolution problem.",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "GaussianRenderFormer introduces a transformer-based approach for rendering 3D Gaussian splats without a rasterizer, achieving a PSNR of 38.08 dB on 300 unseen objects, compared to 44.02 dB for rasterized pruned inputs.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "AnchorComplete introduces a novel framework for reconstructing complete scene meshes from partial point clouds, significantly improving the fidelity of 3D reconstructions by preserving observed geometry and accommodating varying scene scales.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "Solv3R introduces a novel looped transformer architecture for multi-view geometry that allows for continuous refinement of camera poses and scene geometry without the need for task-specific training.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "NitroFusion2 introduces Text-Stream Adversarial Distillation (TSAD) and Aspect-Cued Discrimination (ACD) to enhance multimodal diffusion transformers (MMDiTs) by utilizing intermediate text-token states for adversarial training.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 9,
+        "question": "In the decoder experiments, how much image error comes from estimating each Gaussian's footprint in the target view?"
+      },
+      {
+        "ref": 1,
+        "question": "What specific techniques enhance representation learning in this method?"
+      }
+    ]
+  }
+}

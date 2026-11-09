@@ -1,0 +1,158 @@
+{
+  "fingerprint": "4242fcd0f1271a35f0ce93ae4a7b983a1d44e60e7f36baa399af8477afb6b5a0",
+  "article": {
+    "headline": "Can a physical description guide what happens in a video?",
+    "lead": "Physis-Lang uses language to represent physical behavior during video generation. WorldAuditBench turns the observer into an active investigator, asking an agent to explore 3D environments for anomalies. They give two entry points for studying physical consistency.",
+    "sections": [
+      {
+        "heading": "Self-evolving video models",
+        "paragraphs": [
+          {
+            "text": "Physis-Lang introduces a self-evolving framework that utilizes physical language as a shared representation for video world models. This approach enhances the physical plausibility of generated videos. The authors employ PhysCapBench for evaluating and refining physical captions, leading to consistent improvements across four benchmarks. Models enhanced with Physis-Lang outperform the proprietary Veo 3.1 model, starting from the open-source Cosmos3-Nano backbone, demonstrating significant advancements in video generation capabilities.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Benchmarking multimodal agents",
+        "paragraphs": [
+          {
+            "text": "WorldAuditBench presents a benchmark for 3D world auditing, featuring 213 anomaly detection tasks across 13 environments. This benchmark evaluates multimodal agents' performance in identifying anomalies through action and visual reasoning. The study assesses five leading models, achieving success rates between 6.6% and 42.3%, which are notably lower than the human benchmark of 83.4%. This highlights the challenges faced by multimodal agents in effectively coupling action and visual reasoning within interactive 3D environments.",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Memory-efficient video world models",
+        "paragraphs": [
+          {
+            "text": "LOCI introduces a hybrid spatial-memory architecture for video world models, combining key-value caches and recurrent linear-attention memory. This design allows for efficient retrieval of past observations based on camera geometry, achieving a 30% reduction in peak memory usage compared to full softmax models. LOCI maintains higher fidelity in reproducing revisited content on the MIND memory benchmark and held-out trajectories, enabling streaming of long videos at constant memory usage without sacrificing performance.",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Diverse approaches to video generation",
+        "paragraphs": [
+          {
+            "text": "Several methods enhance video generation and reasoning. The Looped Diffusion Transformer (Looped-DiT) improves text-to-image models through iterative refinement, outperforming larger models while requiring less compute. PMosFM introduces a framework for one-step physics-constrained generation, reducing costs and improving fidelity. VR-JEPA enhances video generation for reasoning tasks by integrating localized contrastive-state learning, achieving an 11.33% relative improvement over existing models. Each approach addresses different aspects of video generation and reasoning, showcasing the diversity of strategies in this field.",
+            "refs": [
+              3,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "ViTeX-Bench introduces a comprehensive benchmark for high-fidelity video scene text editing, featuring the ViTeX-Dataset with 387 real-world 720p videos and a three-axis evaluation protocol that assesses text correctness, visual and temporal quality, and edit locality.",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "MatLoom introduces a novel, compact, layer-oriented language for text-to-material generation that leverages pretrained language models to create materials with explicit dependencies between patterns, color, and relief.",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "The paper introduces ATLAS (Aligned Transport of Latent Structure), a novel training objective that enhances latent world model planning by preserving relational geometry while calibrating the global latent distribution.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "Beyond the Remembered World — The paper introduces EvolvingNav, a novel approach for Evolving-World Navigation that enhances persistent spatial memory in agents by constructing a time-indexed belief system from timestamped 3D object histories.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "SpatialCORE introduces a novel post-training framework that enhances spatial reasoning in Large Vision-Language Models (LVLMs) by incorporating the model's confidence in generated grounding as a learning signal.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "Rethinking Latent Visual Reasoning — The paper introduces ReaLVR, a novel framework that enhances latent visual reasoning (LVR) in multimodal large language models by incorporating visual-evidence supervision into the model's latent trajectories.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "It's Not What the Image Shows — The paper introduces MIST, the Misleading-Image Stress Test, which evaluates the impact of images on the labeling decisions of vision-language models (VLMs).",
+            "refs": [
+              13
+            ]
+          },
+          {
+            "text": "LoopVL introduces a novel approach to vision-language modeling by employing Loop Transformers through a combination of Module-Loop and Model-Loop computations, enabling iterative updates of a unified vision-language state.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "sgl-project/sglang — SGLang is a high-performance serving framework designed for large language models and multimodal models, optimizing inference speed and resource utilization.",
+            "refs": [
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Mitigating the Length-Scaling Tax with Online Distillation — The paper introduces Length Self-Distillation (LSD), a novel approach that mitigates the length-scaling tax (LST) in reinforcement learning post-training by routing solved prompts to on-policy distillation while maintaining the original RL objective for unsolved prompts.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "MakazhanAlpamys/Soup — The repository \"Soup\" enables fine-tuning of large language models (LLMs) using a single YAML configuration file, significantly simplifying the process.",
+            "refs": [
+              16
+            ]
+          },
+          {
+            "text": "The repository \"Shubhamsaboo/awesome-llm-apps\" curates over 100 free and open-source applications leveraging large language models (LLMs), focusing on AI agents, their skills, and retrieval-augmented generation (RAG) applications.",
+            "refs": [
+              17
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "Which kinds of physical errors improve after refining the descriptions, and which persist in the generated motion?"
+      }
+    ]
+  }
+}

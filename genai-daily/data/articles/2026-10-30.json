@@ -1,0 +1,164 @@
+{
+  "fingerprint": "6a14cec8e5ca4abf6c55d27e64fd7d188a107e2be7f351970c1220e5cde4484f",
+  "article": {
+    "headline": "What does a scene sound like from a new position?",
+    "lead": "SonoWorld4D starts with one video and models a dynamic scene with sound. L3G-World tackles the visual side of persistence with compact 3D Gaussian memory. Both make a moving viewpoint a more revealing test than a fixed camera.",
+    "sections": [
+      {
+        "heading": "4D audio-visual scene generation",
+        "paragraphs": [
+          {
+            "text": "The SonoWorld4D framework introduces a method for generating 4D audio-visual scenes from a single video. It employs dual-space audio diffusion synchronization to reconstruct motion trajectories of sound-emitting objects and synthesize a coherent sound field. This results in perceptually realistic audio that aligns with the visual content. Evaluation shows that SonoWorld4D supports real-time rendering of both visuals and spatial audio, marking a significant step in audio-visual integration.",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "L3G-World presents a Latent 3D Gaussian Memory (L3G) that enhances real-time infinite world generation. It combines feed-forward reconstruction with a compact scene representation, allowing for spatially consistent content generation during long-horizon exploration. The system achieves state-of-the-art performance with 38.6× fewer 3D primitives and 3.2× faster memory updates, enabling real-time generation at 9 FPS without explicit 3D memory re-encoding.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The world2vec approach learns mechanistic world models by capturing latent dynamics from observations and actions without relying on reward information. It achieves state-of-the-art performance in controlling continuous environments using significantly fewer parameters than existing models, enhancing mechanistic interpretability and facilitating scientific discovery in model-based reinforcement learning.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "The Fight World Model (FWM) decouples rule-governed combat execution from video rendering, allowing for customizable combat in video games. Trained on the FightWorld Corpus, FWM supports extensive gameplay modifications without retraining the renderer, maintaining hit reactions and character appearance across various combat scenarios.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "The Algebraic World Model (AWM) enables formal reasoning about unknown environments by developing executable Python hypotheses through interaction. AWM demonstrates superior performance in proving unreachable goals, achieving correct bounds in 67% of cases, and allows for step-by-step inspection and testing of mathematical models.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "LucidLyra introduces a framework for generative 3D scene reconstruction that allows direct querying of semantics and object identities from video latents. It eliminates the need for multi-view data and manual 3D annotations by distilling knowledge from a video diffusion model. This method achieves superior performance on 3D segmentation and reconstruction tasks while supporting novel-view rendering and dynamic scene reconstruction.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "PhysInsert enhances object insertion by employing a Geometry-Guided Adaptation method and 2D Object-Scene Spatial Supervision. This framework improves image fidelity and object placement accuracy using a new dataset, Insert World, and is evaluated on the PhysInsert-Bench, demonstrating effectiveness in complex scenarios.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "HairDeck generates animation-ready stylized hair cards from a single image using a set diffusion transformer. This method significantly improves efficiency and output quality, achieving a 44% reduction in Chamfer distance and operating 33 times faster than previous techniques, providing animatable assets for downstream applications.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "Holo4D introduces a video reshooting framework that enhances monocular video synthesis by leveraging reconstructed 3D trajectories. This method improves scene geometry preservation and occluded region completion, demonstrating significant advancements in camera control and novel-view synthesis without retraining the video generator.",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Intrinsic Distribution Matching (IDM) enhances text-to-image generation by improving distribution matching distillation through explicit moment constraints. IDM achieves state-of-the-art performance on benchmarks while utilizing the generator's exponential-moving-average features, demonstrating significant gains from the moment loss.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "EditAgent expands action and observation spaces for agentic image editing, allowing for more effective handling of complex requests. It routes tasks to both general and specialized editors, improving candidate evaluation and achieving expert preference in 78.5% of comparisons with reduced judge calls.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Accurate Block Attention (AB-Attention) enhances video diffusion transformers by reducing attention computation by 89-92% while improving PSNR by up to 4.4 dB. This method employs a training-free approach for effective block selection, achieving significant end-to-end speedup compared to existing methods.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "Co-Design Bench introduces a benchmark for evaluating coding agents' capabilities in handling multimodal user requests. It features two tracks assessing Grounded Understanding and Functional Implementation, revealing significant gaps in agentic execution for real-user application revisions with a 69.9% average criterion pass rate.",
+            "refs": [
+              13
+            ]
+          },
+          {
+            "text": "Youtu-Parsing-Omni presents an omni-modal parser that processes documents, images, audio, and video using a single encoder. It achieves state-of-the-art performance on multiple benchmarks, enhancing cross-modal fusion and temporal alignment while maintaining competitive performance in transcription tasks.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "OpenFlyV2 introduces a unified vision-language-action model for aerial robots, achieving a 48% navigation success rate in real-world environments without prior training data. The model optimizes computational efficiency for closed-loop execution, demonstrating effective zero-shot transfer from simulation.",
+            "refs": [
+              15
+            ]
+          },
+          {
+            "text": "Look Only When Needed (LOWN) reduces computational overhead in diffusion vision-language models by selectively processing visual tokens. This method achieves a 35.3% reduction in decoding FLOPs while maintaining 99.6% of the original model's performance across benchmarks.",
+            "refs": [
+              16
+            ]
+          },
+          {
+            "text": "NVIDIA-NeMo/Speech is a scalable generative AI framework for researchers focusing on Large Language Models and speech AI. It emphasizes modularity and extensibility, allowing users to integrate and customize components for various speech tasks efficiently.",
+            "refs": [
+              17
+            ]
+          },
+          {
+            "text": "The project explores AI agent swarms in Minecraft and Mindustry, demonstrating improved coordination and task completion efficiency through decentralized decision-making. The agents achieve a 30% increase in task efficiency compared to previous swarm models, contributing to the understanding of emergent behaviors in multi-agent systems.",
+            "refs": [
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "The \"nesformer\" repository presents a compact generative model for simulating Nintendo Entertainment System games, achieving functional implementation within approximately 1GB of Qwen weights. This model balances performance and memory usage, enabling real-time game generation and interaction with significant improvements in fidelity and responsiveness.",
+            "refs": [
+              19
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How does the evaluation separate sound localization from synchronization with visible motion?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "fingerprint": "4934937a8ac07b6691e3ce71dedda546564b5fea537e58a68e5f91cfede9301a",
+  "article": {
+    "headline": "Compressing video latents before the expensive generation steps",
+    "lead": "GRACE targets the number of tokens a video generator must process. JoHan also uses a generative model, but asks it to recover aligned 2D and 3D hand motion. The useful comparison for each is the detail retained after intermediate computation is removed.",
+    "sections": [
+      {
+        "heading": "Efficient video generation",
+        "paragraphs": [
+          {
+            "text": "The GRACE framework introduces a two-stage approach for generation-aware latent compression. By utilizing a frozen base latent from a pretrained video autoencoder, it learns a residual latent to recover lost information. This method ensures compatibility with the pretrained Diffusion Transformer (DiT) during adaptation through lightweight fine-tuning and asymmetric denoising, maintaining the generation quality of the original pipeline. The authors report an 8x reduction in token count and an 11.1x decrease in latency compared to the Wan2.1-I2V-14B model at a resolution of 480x832x81, making it a significant advancement in video generation efficiency. [1]",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "Video-Conditioned Generative Joint 2D-3D Hand Motion Recovery — The paper introduces JoHan, a novel generative framework for recovering 3D hand motion from video sequences without relying on intermediate per-frame pose predictions.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "Tetris3D introduces a novel generative framework for single-image 3D scene reconstruction that ensures spatial compatibility among objects by explicitly conditioning their generation on the geometry and physical relationships of neighboring objects.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "Conditional Flow Matching for Generation of 3D Multi-variable Instantaneous Urban Microclimate Fields — The paper introduces Conditional Flow Matching (CFM), a generative framework that efficiently predicts three-dimensional instantaneous urban wind and temperature fields, achieving a Normalized Root Mean Square Error (NRMSE) of 2.99% for wind and 1.77% for temperature against large-eddy simulation (LES) data.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "NAMVIS introduces a novel framework for multi-view image synthesis that eliminates the need for iterative denoising found in diffusion-based methods, achieving over three times faster inference.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "QuadTok introduces a hierarchical quadtree visual tokenizer for autoregressive image generation, improving token efficiency by approximately 10% on ImageNet and 9% on COCO compared to fixed 256-token grids, while maintaining reconstruction fidelity.",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "The paper introduces PAMI (Part Anchored Motion), a novel framework for text-conditioned human-object interaction generation that improves the accuracy of object motion and contact geometry by 14.5% in contact recall compared to previous state-of-the-art methods.",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation — The paper introduces Diffusion On-Policy Context Distillation (D-OPCD), a method that integrates agent-improved prompts into the weights of diffusion models, enhancing Text-to-Image generation performance.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "invoke-ai/InvokeAI — InvokeAI is an advanced creative engine for Stable Diffusion models, featuring a robust WebUI that enhances user interaction and accessibility for generating visual media.",
+            "refs": [
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "Real-Time Joint Audio-Video Generation by Parallel Adapter Composition — The paper presents a novel approach for real-time joint audio-video generation using parallel adapter composition, achieving approximately 26 frames per second at a resolution of 480x832 without quantization.",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "The paper introduces Self Gradient Forcing Plus (SGF+), a novel approach for autoregressive video generation that decouples the parameters for context writing and denoising, addressing the negative gradient alignment that typically hampers optimization.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "Salt++ introduces a two-stage post-training framework that enhances few-step streaming audio-video generation by addressing context-related challenges in causal modeling and step distillation.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "Vincentwei1021/video-shotcraft — The repository \"video-shotcraft\" provides a framework for generating cinematic product videos using AI, specifically designed for integration with Claude Code and Codex.",
+            "refs": [
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "RoboJEPA introduces a novel world model based on the Joint Embedding Predictive Architecture (JEPA), achieving significant advancements in robotic planning by establishing scaling laws for multi-embodiment models trained on real robot data.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "UniWAM introduces a unified architecture that integrates a physical reasoner, world generator, and action predictor, enhancing semantic understanding and action prediction in embodied tasks.",
+            "refs": [
+              12
+            ]
+          },
+          {
+            "text": "Rethinking World-Action Model for Compositional and In-Context Robotic Manipulation — The paper introduces Visual Goal-conditioned Action Reasoning (ViGAR), a hierarchical framework for long-horizon compositional robotic manipulation that enhances existing world-action models by incorporating explicit subtask-level reasoning.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "FastOPD introduces an efficient on-policy distillation framework for Vision-Language-Action (VLA) models, enabling the deployment of large-scale VLAs with significantly reduced computational costs.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Gains and Collapse in On-Policy Distillation:A Reinforcement Learning Perspective — The paper presents a reinforcement learning perspective on on-policy distillation (OPD) in language model post-training, revealing that while OPD can enhance performance, it may also lead to excessive repetition in generated outputs due to misaligned implicit rewards from the teacher model.",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "At the reported token reduction, which motion and fine-texture tests show the cost of compression?"
+      }
+    ]
+  }
+}

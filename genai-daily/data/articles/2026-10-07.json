@@ -1,0 +1,125 @@
+{
+  "fingerprint": "352a00b7d3331325d82331289d0dc1470284cc4e65e061fdc38753572d6f6f4c",
+  "article": {
+    "headline": "Forty controlled tasks probe the physics of generated video",
+    "lead": "World Models' Last Exam in Physics uses controlled cases spanning mechanics and optics. DepthWorld tackles a narrower measurement problem in robot manipulation, where reprojection error gives a geometric check against the recorded scene.",
+    "sections": [
+      {
+        "heading": "Evaluating physical consistency",
+        "paragraphs": [
+          {
+            "text": "The benchmark called \"World Models' Last Exam in Physics\" assesses the physical consistency of video world models across various domains, including mechanics and optics. It pairs initial images with generation prompts and predefined physical criteria, allowing for interpretable assessments without reference videos. Experiments show that existing models struggle with physical accuracy, with the top performer scoring only 57.76 out of 100, highlighting the need for more reliable generative video models for embodied AI applications. This work emphasizes the importance of physical fidelity in generative media (1).",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Advancements in 3D world models",
+        "paragraphs": [
+          {
+            "text": "DepthWorld presents a 3D world model for robot manipulation that integrates learned stereo depth with a joint factor graph. It achieves a reprojection error of less than 0.7 pixels on 90% of episodes in the DROID dataset and enhances RGB prediction by +1.48 dB PSNR compared to a baseline model. This model provides accurate metric depth for improved geometric reasoning (2).",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Innovative frameworks for video editing and understanding",
+        "paragraphs": [
+          {
+            "text": "ALIVE introduces a framework for first-frame-guided video editing, allowing inserted objects to interact coherently with the source video. It achieves a 43.9% improvement in overall performance and enhances interaction fidelity by 0.95 points (3). Meanwhile, EC-RAG organizes video content into event chains to capture temporal dependencies, improving performance on benchmarks like Video-MME and LongVideoBench without additional training (7).",
+            "refs": [
+              3,
+              7
+            ]
+          },
+          {
+            "text": "WorldSonus offers a video-to-audio framework that achieves real-time spatial sound synthesis, enhancing interactive control through an audio-centric captioning pipeline. It matches or surpasses state-of-the-art models in acoustic quality (4). Additionally, S2PD combines autoregressive and parallel diffusion for video generation, improving adherence to physical laws and achieving better temporal stability (9).",
+            "refs": [
+              4,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Benchmarks for generative models",
+        "paragraphs": [
+          {
+            "text": "RenderBench evaluates render-to-real video transfer capabilities, achieving a depth si-RMSE of 0.2170 and instance mIoU of 0.3673 across 1,496 paired frames (6). WorldSolver assesses LLM agents' capabilities in generating solvers for dynamic systems, revealing that even advanced models struggle, with scores around 48.7% (5). Finally, Adaptive LeWorldModel optimizes predictive information organization in latent representations, improving success rates in controlled systems (11).",
+            "refs": [
+              5,
+              6,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Forensic Reserve — The paper introduces Reserve-Guided Elicitation (RGE), a novel framework for image forgery detection that leverages latent forensic knowledge from pretrained vision models.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "The paper introduces WildMatch, a novel weakly supervised adaptation method for pretrained keypoint matchers tailored for wildlife re-identification, utilizing only identity labels without requiring detailed keypoint-level annotations.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "Magic-W0 introduces a structured world-action foundation model that enhances robot policies by integrating structured physical state evolution with continuous action generation, achieving a state-of-the-art average score of 27.10 on the RoboDojo-Sim benchmark.",
+            "refs": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "Learning to Read the Contextual Tokens in Diffusion Transformers — The paper introduces a framework for interpreting contextual tokens in Multimodal Diffusion Transformers (MM-DiTs) by mapping these tokens to a frozen Large Language Model (LLM) for natural-language interrogation.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Learning Discriminative Geometry for Drifting Models — The paper introduces persistent representation learning, which enhances the performance of Drifting Models by continuously optimizing the discriminative geometry of representations during training.",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "Harness-Aware Distillation for Small Language Model Agents — The paper introduces Harness-Aware Distillation (HAD), a novel approach for distilling small language model agents that focuses on the unique contributions of the teacher model beyond the harness, rather than imitating the full outputs.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "Which tasks distinguish a visually plausible trajectory from one that satisfies the physical constraint under test?"
+      }
+    ]
+  }
+}
