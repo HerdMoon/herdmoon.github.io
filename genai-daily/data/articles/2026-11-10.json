@@ -1,0 +1,128 @@
+{
+  "fingerprint": "776999fada902270cc7415d9b779e3f224edea0f372cb481baea1eb2c7bb9b87",
+  "article": {
+    "headline": "Joint models for 3D generation and control",
+    "lead": "Recent methods enhance 3D generation and control through innovative architectures and frameworks. They improve performance in tasks like hand-object interaction, plant reconstruction, and spatial reasoning.",
+    "sections": [
+      {
+        "heading": "3D generation and interaction",
+        "paragraphs": [
+          {
+            "text": "\"Grasping-the-Future\" predicts joint 3D hand-object motion using internet videos, achieving superior performance on 3D datasets through masked spatiotemporal completion and flow matching (1). Similarly, \"Plant Orbiter\" reconstructs 3D plant morphology from a single image, utilizing video diffusion to enhance accuracy and practicality, achieving the highest 3D F-score compared to existing methods (3). \"Click3R\" allows users to interactively correct geometric errors in stereo 3D reconstruction with minimal input, significantly reducing reconstruction error (9). InstantHMR enables real-time 3D human mesh recovery on mobile devices, achieving fast performance while maintaining competitive accuracy (10).\"},{",
+            "refs": [
+              1,
+              3,
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "What kills $v$-prediction? A Patch-wise PCA Perspective on Pixel-Space Flow Matching — The paper introduces the Raw-injected Transformer (RiT), which enhances the effectiveness of $v$-prediction in generative modeling by addressing bandwidth bottlenecks identified through patch-wise PCA analysis.",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The paper introduces reComposer, an editable planning interface for image generation that enhances user control by decomposing creative decisions into distinct components such as subject, composition, and color palette.",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "The paper introduces SWAM, a novel approach to scaling World Action Models (WAM) that enhances language-video-action alignment through a comprehensive study of data supervision and model architecture.",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "The paper introduces $Σ$-LeWM, an enhancement to the LeWorldModel architecture for learning world models in robot control by incorporating two additional latent losses: a backward dynamics predictor and an inverse dynamics action predictor.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "The paper introduces the Library of Hands (LoH), a novel training-free method that enhances world model performance by correcting the mapping from commands to actions without retraining the model.",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "How Many Exposures Does a World Model Need? Learning Unseen Game Mechanics at Test Time — The paper introduces MechEval, a framework for evaluating how many exposures a world model needs to learn mechanics in new environments, and presents WARC, a 35M-parameter vision transformer that updates all parameters after each transition.",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "The paper introduces Spatial Harness, a novel framework that enhances spatial reasoning in vision-language models (VLMs) by grounding it in executable world states using physics engines.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "Beyond Modality Preference — The paper introduces a novel intervention technique for multimodal large language models (MLLMs) that addresses the issue of modality conflict by controlling modality arbitration at inference time.",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "SkinMind introduces a novel multimodal retrieval-augmented generation (RAG) framework that enhances dermatology AI by employing human-inspired graph probing for autonomous evidence seeking.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces FewStepRL, a framework that adapts reinforcement learning (RL) objectives for fine-tuning few-step diffusion models, significantly reducing training costs associated with many-step samplers.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "JoVox introduces a novel discrete flow matching framework for voxel generation that significantly enhances both fidelity and efficiency.",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "What specific techniques improve 3D hand-object motion prediction?"
+      },
+      {
+        "ref": 3,
+        "question": "How does Plant Orbiter achieve high accuracy in plant reconstruction?"
+      },
+      {
+        "ref": 10,
+        "question": "What are the performance metrics for InstantHMR on mobile devices?"
+      }
+    ]
+  }
+}
