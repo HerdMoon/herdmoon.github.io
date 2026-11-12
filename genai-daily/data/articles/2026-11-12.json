@@ -1,0 +1,97 @@
+{
+  "fingerprint": "aa34d4506f77346e04ed24f1b87098ca3b72a4f1d5c5547cfc72255dab8de7a1",
+  "article": {
+    "headline": "C$^2$-Routing and other methods improve inference efficiency",
+    "lead": "Several recent methods enhance efficiency in various AI tasks while maintaining accuracy. Notable contributions include C$^2$-Routing for visual question answering and Forward-Value Discretization for stochastic diffusion sampling.",
+    "sections": [
+      {
+        "heading": "Efficiency improvements in AI models",
+        "paragraphs": [
+          {
+            "text": "C$^2$-Routing is a model-agnostic method that combines cropping and compression strategies for efficient visual question answering (VQA) in vision-language models (VLMs). It reduces end-to-end FLOPs by 36.53% and visual tokens by 42.36%, with a mean relative task-score decrease of only 0.77%, demonstrating significant efficiency improvements without sacrificing accuracy (1).",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "Forward-Value Discretization enhances stochastic diffusion sampling efficiency without high-order approximations. The methods, Forward DPMSolver (F-DPMSolver) and Forward DDPM (F-DDPM), achieve lower FID scores than existing stochastic baselines while maintaining first-order convergence with only one model evaluation per iteration. This approach narrows the efficiency gap between stochastic and deterministic sampling, improving sample quality across multiple datasets (2).",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Evaluating visual interaction and forecasting models",
+        "paragraphs": [
+          {
+            "text": "The Interactive Visual Gym (IVG) introduces a framework for evaluating visual interaction models with simulated users. It includes three simulators for everyday tasks and a persona-conditioned user simulation harness, resulting in the IVG-Bench benchmark with 315 interaction scenarios. Evaluation shows that even the best model, Gemini 4 Argon, only completes 53.4% of tasks within the time limit, indicating areas for improvement in factual grounding and actionable guidance (3).",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "LO-World presents a unified 4D world model that forecasts LiDAR point clouds and 3D semantic occupancy within a shared BEV latent space. This approach improves occupancy forecasting Intersection over Union (IoU) by 10.9% and reduces LiDAR Chamfer Distance by 30.1%, achieving real-time throughput exceeding 25 FPS on a single RTX 4090 (4).",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Advancements in control and quantization",
+        "paragraphs": [
+          {
+            "text": "FAME-QP introduces a GPU-accelerated solver for dense quadratic programs in linear model predictive control. It reduces latency compared to existing GPU solvers while preserving solution accuracy and control performance, validated through numerical benchmarks and simulations (5).",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "SteerDistill enhances low-bit quantized LLM agents through a closed-loop teacher steering mechanism. This method allows a full-precision teacher to guide the student in correcting failed responses, resulting in an average score improvement of 1.67–2.18 points over the strongest quantized baseline (6).",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Tools for image generation and model training",
+        "paragraphs": [
+          {
+            "text": "The repository \"shanliuling/dsh-image-gen\" offers an AI image studio for generating, editing, and comparing images within a chat interface, featuring over 500 built-in prompts and multi-model workflows (7).",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "The Hugging Face Transformers library provides a framework for defining and training models across various domains, supporting both inference and training with a unified API and extensive pre-trained model offerings (8).",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "The ggml-org/llama.cpp repository focuses on efficient inference of large language models (LLMs) with optimizations for memory usage and computational speed, aiming to improve performance in resource-constrained environments (9).",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "What are the specific cropping and compression strategies used in C$^2$-Routing?"
+      },
+      {
+        "ref": 2,
+        "question": "How does Forward-Value Discretization maintain first-order convergence?"
+      },
+      {
+        "ref": 3,
+        "question": "What limitations did the IVG reveal in current visual language models?"
+      }
+    ]
+  }
+}
