@@ -1,0 +1,127 @@
+{
+  "fingerprint": "c37759fa89aa11d4a1bd464d2bd867ee5ff0afd3ef92f4e4cc467c5d91b4c624",
+  "article": {
+    "headline": "Advancements in video generation and multimodal frameworks",
+    "lead": "Recent works enhance video generation quality and efficiency through innovative methods. These approaches improve controllability, consistency, and interaction in generative models.",
+    "sections": [
+      {
+        "heading": "Innovative video generation techniques",
+        "paragraphs": [
+          {
+            "text": "PixVid enhances latent video diffusion models by generating video frames directly in pixel space, achieving 2x higher resolution while maintaining controllability (1). The vid2vid-long method improves long-range temporal consistency using explicit patch-level correspondences, outperforming existing models (2). K2V integrates a language model for keyframe generation, enhancing physical reasoning in video diffusion and achieving state-of-the-art results on benchmarks (4). PhysLoop leverages large language models to improve physical consistency and causal dynamics in video generation, enabling self-improvement with minimal human intervention (13).",
+            "refs": [
+              1,
+              2,
+              4,
+              13
+            ]
+          },
+          {
+            "text": "BirdDreams introduces a driving world model that generates perspective and bird's-eye-view videos, enhancing realism without requiring HD maps (10). The WorldDraft benchmark evaluates generative renderers in video models, revealing operational tensions between world preservation and visual realization (12). TTB enhances decoder-only view synthesis models, achieving up to 23x rendering speedup while maintaining quality (15).",
+            "refs": [
+              10,
+              12,
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal datasets and frameworks",
+        "paragraphs": [
+          {
+            "text": "Spatial Foundry presents a multimodal dataset with 5,280 furnished 3D scene configurations, integrating various data types to advance spatial intelligence research (6). The Open Vision Banana framework transforms pretrained image generators into multi-task perception systems, achieving significant improvements in generalization (11). Unbundling Multimodal Vision Encoding demonstrates that jointly trained vision encoders can match pretrained performance, advocating for flexible integration during multimodal fusion (8).",
+            "refs": [
+              6,
+              8,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Reinforcement learning and interactive models",
+        "paragraphs": [
+          {
+            "text": "Experience-Handoff Reinforcement Learning enables agents to utilize past experiences for improved performance, demonstrating superior results on agentic benchmarks (16). Duo v1 introduces a full-duplex world model for real-time user interaction, marking a significant advancement in generative world models (9).",
+            "refs": [
+              9,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Applications and tools for video editing",
+        "paragraphs": [
+          {
+            "text": "BrickFlow infers the pose of LEGO parts from images, improving assembly quality with minimal training data (5). The Veyra-NRVideo repository enhances video playback and capture using AI-powered techniques, significantly improving user experience (17). The ffmpeg-skill framework integrates multiple FFmpeg tools for local video editing, enhancing privacy and control (18).",
+            "refs": [
+              5,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "Neural Render Proxies for Interactive and Differentiable Lighting — The paper introduces a novel neural render proxy (NRP) that facilitates differentiable relighting of static scenes at interactive rates (30-60 Hz), significantly improving the efficiency of lighting adjustments in CG animation by decoupling traditional rendering into path sampling and emission computation.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "The paper introduces HiVE-VQA, a novel framework for no-reference video quality assessment (NR-VQA) that utilizes a frozen V-JEPA 2.1 video encoder to extract hierarchical spatio-temporal features.",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "UniSpark-9B introduces a unified multimodal model leveraging hybrid attention mechanisms, combining full attention and GatedDeltaNet linear attention to enhance visual understanding and generation tasks.",
+            "refs": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Edge0-145B introduces a 145 billion parameter model designed for high-performance generative tasks on local hardware, significantly reducing the dependency on cloud resources.",
+            "refs": [
+              19
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How does PixVid maintain alignment during fast motion?"
+      },
+      {
+        "ref": 4,
+        "question": "What specific improvements does K2V achieve on benchmarks?"
+      },
+      {
+        "ref": 10,
+        "question": "How does BirdDreams enhance realism without HD maps?"
+      }
+    ]
+  }
+}
