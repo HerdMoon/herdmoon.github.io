@@ -1,0 +1,62 @@
+{
+  "fingerprint": "4c63a6669f15fc663d0aa8bc912b7391a466ab2b6c0de545726971e4999a9141",
+  "article": {
+    "headline": "Video generation with PixVid improves controllability and resolution",
+    "lead": "PixVid enhances video generation by lifting latent models to pixel space, achieving high-resolution outputs. TurtLES provides a benchmark dataset for turbulent fluid dynamics, while other works explore multimodal vision encoding and LLM access.",
+    "sections": [
+      {
+        "heading": "Video generation advancements",
+        "paragraphs": [
+          {
+            "text": "PixVid introduces a method for video generation by lifting a pretrained latent video model to pixel space. It replaces the VAE decoder with a convolutional head for direct pixel output, enabling the generation of high-resolution videos at twice the resolution while maintaining the same per-frame token count. This approach significantly improves controllability and interactivity in video generation. Finetuned from Wan2.1-14B, PixVid shows competitive performance against latent baselines using 1.3 million training clips. [1]",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Benchmarking turbulent fluid dynamics",
+        "paragraphs": [
+          {
+            "text": "TurtLES presents a 14 TB dataset designed for benchmarking machine-learning surrogates in turbulent fluid dynamics. It features 400 trajectories of 3D turbulent cylinder wakes with high-fidelity implicit large-eddy simulations. This dataset combines realistic turbulence dynamics, dense irregular meshes, and long-horizon temporal data, allowing for the evaluation of state-of-the-art neural operators. It highlights critical failure modes such as temporal instability and energy loss in small scales, aiming to advance surrogate models for complex fluid flow scenarios at industrially relevant resolutions. [2]",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal vision and LLM access",
+        "paragraphs": [
+          {
+            "text": "The paper \"Unbundling Multimodal Vision Encoding\" presents a framework to evaluate design choices in multimodal language models, particularly in visual input encoding. The authors find that a jointly trained vision encoder can perform comparably to a pretrained one, emphasizing the importance of dedicated vision capacity for visual understanding. They also suggest that vision modules integrated during multimodal fusion can be as effective as traditional pre-fusion encoders, offering a more efficient model design. [3]",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "The repository \"freellmapi\" offers a unified API for accessing 87 free LLM providers and 1,313 model endpoints. It supports handling up to 10.1 billion tokens per month and features smart routing, automatic failover, and encrypted keys. This tool simplifies leveraging multiple free LLMs through a single endpoint, facilitating personal experimentation with OpenAI-compatible endpoints. [4]",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How does PixVid maintain token count while increasing resolution?"
+      },
+      {
+        "ref": 2,
+        "question": "What are the critical failure modes highlighted by TurtLES?"
+      },
+      {
+        "ref": 3,
+        "question": "What design choices impact multimodal vision model performance?"
+      }
+    ]
+  }
+}
