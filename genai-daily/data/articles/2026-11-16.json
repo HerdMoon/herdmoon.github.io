@@ -1,0 +1,91 @@
+{
+  "fingerprint": "0dee42e6b2941ff532dc838258f68cd1dccd4b51d178093296356a52d9dfd38c",
+  "article": {
+    "headline": "Video-language integration and generative model benchmarks",
+    "lead": "Recent studies reveal significant advancements in video-language integration and generative model evaluation. These works highlight improved performance metrics and novel methodologies for better understanding dynamic attributes and scene generation.",
+    "sections": [
+      {
+        "heading": "Video-language integration methods",
+        "paragraphs": [
+          {
+            "text": "The V-JEPA-LM model enhances video-language integration by using counterfactual supervision, achieving a score of 72.1 on video benchmarks. This model outperforms existing open-source models by 10.3 points for 4B configurations and 7.3 points for 8B configurations, emphasizing the importance of encoder design and counterfactual supervision (1).",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "The Gamer model introduces a generalist vision-language-action foundation for long-horizon tasks in interactive environments. It integrates perception and multi-step reasoning, achieving competitive performance in 2D and 3D game benchmarks (6).",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Generative model benchmarks",
+        "paragraphs": [
+          {
+            "text": "VibePrevisBench evaluates 4D scene reconstruction in Blender, revealing that while agents perform well in basic tasks, they struggle with complex requests. This highlights the need for better multimodal understanding in generative models (2).",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "The study on underwater image quality metrics assesses 73 no-reference metrics against human preferences, finding no consistent alignment. The introduction of TrustUIQA provides a dataset for further evaluation of these metrics (8).",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Innovative techniques in video generation",
+        "paragraphs": [
+          {
+            "text": "Disen-Forcing enhances autoregressive video diffusion models by disentangling semantic anchoring from motion, improving long-range consistency and motion dynamics. This method outperforms traditional frame-sink strategies (3).",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "JVT simplifies pixel-space video diffusion by eliminating the need for pretrained models and achieving competitive generation quality with improved computational efficiency (4).",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "Endpoint Distribution Matching Distillation (eDMD) improves few-step diffusion model accuracy by training a shared fake score model on final outputs, outperforming existing methods in 4-step generation (5).",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Motion tracking advancements",
+        "paragraphs": [
+          {
+            "text": "OneSteer enhances humanoid motion tracking with a one-step diffusion controller, achieving a local tracking error reduction and a significant increase in adaptability during physical trials (7).",
+            "refs": [
+              7
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "What specific improvements does counterfactual supervision provide?"
+      },
+      {
+        "ref": 2,
+        "question": "How do agents perform on complex requests in VibePrevisBench?"
+      },
+      {
+        "ref": 8,
+        "question": "What are the limitations of current underwater image quality metrics?"
+      }
+    ]
+  }
+}
