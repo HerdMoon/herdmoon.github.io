@@ -1,0 +1,154 @@
+{
+  "fingerprint": "cfbe6b21f16f027e385a374d44f5b9cbba71084568c1af057838a0a1566b509f",
+  "article": {
+    "headline": "Reference Forcing improves long video generation consistency",
+    "lead": "Reference Forcing enhances long video generation by ensuring consistency in subject and background. It achieves state-of-the-art results as video length increases.",
+    "sections": [
+      {
+        "heading": "Video generation methods",
+        "paragraphs": [
+          {
+            "text": "Reference Forcing introduces a method for long video generation that uses initial frames as appearance references. It employs attention masks to ensure that new frames correspond to regions in the initial frames, achieving improved consistency as video length increases (1).",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "MovieRoll presents a framework for long-form video generation that enhances streaming quality while reducing cache memory usage by up to 78%. It utilizes Window-wise Teacher Forcing for training and hierarchical KV-cache compression to manage historical context effectively (11).",
+            "refs": [
+              11
+            ]
+          },
+          {
+            "text": "DuoFlow offers a dual-stream latent flow transformer for synchronized speech and motion generation, allowing for fine-grained control over vocal style and body movement. It enhances synchronization and instruction consistency in generated sequences (5).",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Manipulation and planning frameworks",
+        "paragraphs": [
+          {
+            "text": "Lazy-MOSAIC accelerates skill-centric manipulation planning by using a learned skill-effect world model to predict skill feasibility and outcomes quickly. This approach reduces computational burden and maintains or exceeds success rates compared to existing methods (2).",
+            "refs": [
+              2
+            ]
+          },
+          {
+            "text": "LynnReal-Hand enhances interactive object manipulation through a hand-controlled video world model, achieving real-time streaming and high-quality interaction dynamics (3).",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "JEPA4R implements 4D point planning in joint-embedding predictive architecture (JEPA) world models, achieving a mean point error of 1.1 cm and outperforming pixel-based models on multiple benchmarks (9).",
+            "refs": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Evaluation and benchmarks",
+        "paragraphs": [
+          {
+            "text": "Flexible Multi-Stack Super-Resolution (MS-HVED) improves brain MRI reconstruction fidelity and tissue segmentation, preferred by expert neuroradiologists in a blinded study (4).",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "DominoBench evaluates multi-step physical reasoning in vision-language models, revealing a gap in models' abilities to predict outcomes without assistance (14).",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "GlyphAtlas enhances scene text synthesis by decoupling glyph resolution from target-region size, achieving leading performance in complex layouts (15).",
+            "refs": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal and inference advancements",
+        "paragraphs": [
+          {
+            "text": "Wildfire-SSR integrates satellite imagery and street-view data for structure-level wildfire risk assessment, achieving significant performance improvements over unimodal baselines (7).",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "BitDecoding-FP4 introduces an efficient native FP4 key-value decoding method that significantly improves accuracy and throughput in long-context LLM serving (16).",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Multimodal learning",
+        "paragraphs": [
+          {
+            "text": "How VLMs Plan What's Next — The paper presents a novel mechanism used by vision-language models (VLMs) to sequentially describe images, characterized by four main components: binding heads for matching text tokens to image regions, a progress signal to track the description process, a selection step for choosing the next unwritten region, and gaze heads for executing the selection.",
+            "refs": [
+              6
+            ]
+          },
+          {
+            "text": "UMM-JEPA introduces a novel generative pretraining approach that reformulates generation as the progressive prediction of continuous visual-understanding representations, improving the alignment between generative and perceptual tasks.",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "Sage S2.1 Flash Technical Report — The Sage S1.5 Flash model is a 320-billion-parameter mixture-of-experts architecture that excels in reasoning over scientific evidence and performing tasks in interactive environments, achieving top rankings on 33 benchmarks across seven domains.",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "BLIP-Live introduces a novel framework for proactive streaming video agents that balances response timeliness and firing precision, achieving up to a 44% improvement over baseline models on four proactive streaming benchmarks.",
+            "refs": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Models, methods and tools",
+        "paragraphs": [
+          {
+            "text": "Dataset Distillation via Drifting — The paper introduces a novel dataset distillation method called \"drifting,\" which learns a small set of synthetic samples that better approximate per-class data distributions without relying on a classification objective.",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How does Reference Forcing ensure consistency in long videos?"
+      },
+      {
+        "ref": 11,
+        "question": "What techniques does MovieRoll use to manage historical context?"
+      },
+      {
+        "ref": 5,
+        "question": "What are the key features of DuoFlow's dual-stream architecture?"
+      }
+    ]
+  }
+}
