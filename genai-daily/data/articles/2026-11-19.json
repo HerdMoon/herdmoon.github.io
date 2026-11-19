@@ -1,0 +1,73 @@
+{
+  "fingerprint": "70f813927bb9194f168c50aa8fee8504cedb5315c40fe8e79bfd36ca96b8727e",
+  "article": {
+    "headline": "Unified models for world understanding and video generation",
+    "lead": "Recent advancements in generative models enhance world understanding and video tasks. Key contributions include improved accuracy, efficiency, and user accessibility across various applications.",
+    "sections": [
+      {
+        "heading": "World modeling advancements",
+        "paragraphs": [
+          {
+            "text": "$Z$-sight introduces a unified robot foundation model that integrates vision-language-action with generative latent world modeling, achieving an 81.9% success rate on SIMPLE, a 9.6-point increase, and 73.3% across six Unitree G1 tasks, a 20.0-point increase, while processing at 110 ms per chunk (1). WorldRuler enables customizable gameplay through a 3D rule graph, addressing rule-state persistence and visual realization, validated by the RuleVerse dataset (2). The role of action conditioning in autonomous driving is explored in Does the Action Matter?, showing that incorporating ego vehicle actions enhances prediction accuracy, improving mid-term mean Intersection over Union by up to 2.5 points (3). Counterfactual World Models leverage factual transitions to reason about alternative actions, achieving a counterfactual $R^2$ improvement from 38-46% to 86-96% (4). HandWorldBench evaluates hand-centric world models, revealing that enhanced hand-pose control does not guarantee improved object-state evolution (6). StrideWorld benchmarks scene rigidity and action consistency, finding significant scene deformation in most models (10). HINT-WAM enhances robot manipulation by utilizing hindsight information from future demonstrations, improving data efficiency (11). RoughCut-Bench provides a benchmark for automatic video rough-cut, revealing that current models struggle to produce expert-aligned cut plans (12).",
+            "refs": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Generative modeling and evaluation",
+        "paragraphs": [
+          {
+            "text": "Jeveration enables high-quality image generation in a single forward pass, achieving 78 ms per 512x512 image, significantly faster than existing models (5). UltraTex generates high-fidelity PBR texture maps from a single reference image, improving visual fidelity and material accuracy (7). Ultimate3D enhances multimodal large language models with a dataset of 240K visual question-answer pairs, improving accuracy by 29.7% in camera-object relation tasks (8). WaveView improves generative novel view synthesis by injecting warped images into the noise phase of a pretrained generator, achieving a 0.84 dB PSNR increase (9). BLIP-Live balances response timeliness and firing precision in proactive streaming video agents, achieving up to 44% performance improvement (13). AVTR enhances multimodal reasoning by integrating visual imagination, resulting in a 4.5-point improvement over the Qwen3.5 baseline (14). FVScore introduces a neuro-symbolic framework for video evaluation, improving alignment with human judgments (15). NexSight creates verifiable tasks for long-video understanding, achieving a significant accuracy improvement from 21.29% to 42.26% (16).",
+            "refs": [
+              5,
+              7,
+              8,
+              9,
+              13,
+              14,
+              15,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Open-source tools and platforms",
+        "paragraphs": [
+          {
+            "text": "AutoClip automates video editing for long videos, emphasizing user-friendliness with one-click operations (17). Torchtitan is a PyTorch-native platform for training generative AI models, enhancing efficiency and scalability (18). FreeVideo enables video generation on consumer hardware, lowering the barrier for researchers (19). The repository \"jingyaogong/minimind\" allows training a 64M parameter language model in just 2 hours, making it accessible for experimentation (20).",
+            "refs": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "What specific improvements does $Z$-sight achieve in task success rates?"
+      },
+      {
+        "ref": 3,
+        "question": "How does action conditioning impact prediction accuracy in autonomous driving?"
+      },
+      {
+        "ref": 12,
+        "question": "What challenges do current LVLMs face in producing expert-aligned cut plans?"
+      }
+    ]
+  }
+}
