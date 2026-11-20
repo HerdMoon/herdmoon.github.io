@@ -1,0 +1,154 @@
+{
+  "fingerprint": "436a3dfac8ebe19a0addf382fad60c26a721ef54de0ce64d82e5f41cb60cf0a5",
+  "article": {
+    "headline": "Generative models for video and world generation",
+    "lead": "Recent advancements in generative models enhance video and world generation capabilities, balancing efficiency and quality. Techniques like latent-free diffusion and audio-driven streaming show promise in improving detail and performance across various tasks.",
+    "sections": [
+      {
+        "heading": "Innovative frameworks for video generation",
+        "paragraphs": [
+          {
+            "text": "ScaleWorld presents a causal video model that combines low-resolution world prediction with high-resolution refinement, optimizing computational efficiency through task-asymmetric on-policy distillation (TA-OPD). This method enhances streaming generation and video output quality (1).",
+            "refs": [
+              1
+            ]
+          },
+          {
+            "text": "Coda-DaVinci introduces a task-adaptive framework using Code2Video for improved control over video structure and dynamics. It integrates physics simulation and achieves better instruction following and scene consistency, although it faces challenges in transition stability (4).",
+            "refs": [
+              4
+            ]
+          },
+          {
+            "text": "AURA enables real-time streaming of talking-head videos using an audio-driven model with a rolling KV cache. It significantly outperforms its predecessors in speed and maintains quality, providing a dataset for further research (5).",
+            "refs": [
+              5
+            ]
+          },
+          {
+            "text": "Plan4D enhances future video prediction by integrating dense 4D geometry with RGB video generation, achieving state-of-the-art performance in generative 4D modeling. Its model-stitching architecture improves visual fidelity and geometric accuracy (6).",
+            "refs": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Advancements in world modeling",
+        "paragraphs": [
+          {
+            "text": "WM^MLLM introduces an interactive world model that leverages multimodal large language models (MLLMs) for persistent world generation from a single image. It outperforms six baseline models, improving local edit completion rates significantly (9).",
+            "refs": [
+              9
+            ]
+          },
+          {
+            "text": "SpecWM enhances streaming world models by integrating verification into the refinement process, achieving a notable speedup in visual quality generation and improving navigation scores (10).",
+            "refs": [
+              10
+            ]
+          },
+          {
+            "text": "AFFECT improves world models by learning the distribution of visual changes from action perturbations, leading to better fidelity in rollouts and task success rates (12).",
+            "refs": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Training efficiency and model generalization",
+        "paragraphs": [
+          {
+            "text": "Asuka-FM enables efficient pretraining of dual-stream Diffusion Transformers on consumer hardware, achieving competitive performance while reducing resource requirements (7).",
+            "refs": [
+              7
+            ]
+          },
+          {
+            "text": "ProtoDiffusion reduces representation size for multi-layer image generation, achieving high-fidelity reconstructions and significant speed improvements over traditional methods (8).",
+            "refs": [
+              8
+            ]
+          },
+          {
+            "text": "VETO introduces a fine-tuning method for Video Large Language Models that suppresses reliance on textual shortcuts, enhancing performance across various benchmarks (13).",
+            "refs": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Evaluation and safety in multimodal interactions",
+        "paragraphs": [
+          {
+            "text": "TwinD improves deepfake detection performance on entire face synthesis, utilizing synthetic twins to capture forensic cues effectively (14).",
+            "refs": [
+              14
+            ]
+          },
+          {
+            "text": "LightningMoBA enhances Mixture of Block Attention efficiency, improving generation speed and resource utilization (15).",
+            "refs": [
+              15
+            ]
+          },
+          {
+            "text": "DailySafe benchmarks dynamic safety awareness in multimodal interactions, focusing on MLLMs' ability to recognize evolving safety risks in realistic contexts (16).",
+            "refs": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Geometry and reconstruction",
+        "paragraphs": [
+          {
+            "text": "Direct3D-V3 introduces a novel latent-free diffusion transformer framework that operates directly in the native voxel domain, eliminating the need for variational autoencoders (VAEs).",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "World models and control",
+        "paragraphs": [
+          {
+            "text": "One Prior, Two Dynamics — The paper introduces O²LaF, a novel framework that repurposes pretrained video diffusion transformers to enhance self-supervised latent action learning by utilizing a single prior for both inverse and forward dynamics.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Video models and tools",
+        "paragraphs": [
+          {
+            "text": "HiUni introduces a unified multimodal model that harmonizes visual understanding and generation by employing extensive parameter sharing through a single language-aligned ViT and dense Transformer backbone.",
+            "refs": [
+              11
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "What are the implications of TA-OPD on video generation efficiency?"
+      },
+      {
+        "ref": 9,
+        "question": "How does WM^MLLM improve local edit completion rates?"
+      },
+      {
+        "ref": 12,
+        "question": "What impact does AFFECT have on task success rates in planning?"
+      }
+    ]
+  }
+}
