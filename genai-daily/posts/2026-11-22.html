@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recent methods improve efficiency and safety in generative tasks. Direct3D-V3 enhances 3D shape generation, while AURA streamlines video creation with audio input.">
+  <meta name="theme-color" content="#182d39">
+  <title>Latent-free diffusion and audio-driven video generation methods · GenAI Daily</title>
+  <link rel="stylesheet" href="../assets/journal.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead"><div class="wrap masthead-inner">
+    <a class="brand" href="../index.html">GenAI <i>Daily</i></a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html" >Latest</a>
+      <a href="../archive.html" >Archive</a>
+      <a href="../explore.html">Source explorer</a>
+    </nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="story">
+      <header class="story-head">
+        <div class="dateline"><strong>Daily edition</strong><time datetime="2026-11-22">Sunday, November 22, 2026</time></div>
+        <h1>Latent-free diffusion and audio-driven video generation methods</h1>
+        <p class="lead">Recent methods improve efficiency and safety in generative tasks. Direct3D-V3 enhances 3D shape generation, while AURA streamlines video creation with audio input.</p>
+        <div class="byline"><span>7 collected items</span><a href="#reading-guide">Jump to reading picks ↓</a>
+        <a href="../posts/2026-11-22.html" aria-label="Permanent link to the 2026-11-22 edition">Permalink ↗</a></div>
+      </header>
+      <div class="columns"><div class="copy"><section><h2>Generative methods for 3D and video</h2><p>Direct3D-V3 presents a latent-free diffusion transformer framework that operates directly in the voxel domain. This method eliminates the need for variational autoencoders (VAEs), enhancing geometric reliability and improving the alignment between conditioning images and generated 3D shapes by predicting camera parameters as an auxiliary task. The approach results in richer local detail in generated meshes and facilitates generative reconstruction through normal-guided refinement with diffusion processes (1). 
+
+AURA introduces an audio-driven video generation model that enables real-time streaming of talking-head videos. It achieves significantly reduced latency by utilizing a rolling KV cache, generating video chunk by chunk based on current audio input. AURA 1.3B reaches 20.7 fps at 576p, while AURA 5B achieves 9.7 fps at 720p, outperforming its bidirectional teacher by 23x and 17x, respectively (2). Both models utilize a two-stage distillation process to enhance quality and efficiency. <span class="refs"><a href="https://huggingface.co/papers/2611.26511" title="Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain">[1]</a> <a href="https://huggingface.co/papers/2611.26540" title="AURA: AUdio-dRiven streaming Avatar">[2]</a></span></p></section><section><h2>Advancements in action learning and programming</h2><p>The O^{2}LaF framework repurposes pretrained video diffusion transformers for self-supervised latent action learning. By utilizing a single prior for both inverse and forward dynamics, it significantly improves few-shot action probing and zero-shot action transfer across various contexts, achieving state-of-the-art results in navigation and robotic manipulation tasks (3). 
+
+Edit-Ready Training (ERT) enhances LLM-driven weight-space programming on vision models, achieving the highest mean success scores for GPT-6 Astra and Claude Opus 5.5 across various tasks. ERT prepares networks for direct weight edits, improving the success of LLM edits in challenging scenarios, as demonstrated through over 2,600 evaluated edit processes (4). 
+
+The Multimodal Concept Lens (MC-Lens) analyzes concept processing in vision-language models, revealing that multimodal concept information is selectively accessible and plays a significant role in downstream computation. This study identifies shared patterns of concept accessibility across various architectures, providing insights into global workspace theory in multimodal systems (5). <span class="refs"><a href="https://huggingface.co/papers/2611.26617" title="One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning">[3]</a> <a href="https://huggingface.co/papers/2611.26408" title="Training Vision Models for LLM-Driven Weight-Space Programming">[4]</a> <a href="https://huggingface.co/papers/2611.26590" title="Probing the &quot;Conscious&quot; Mind: Selective Access and Global Workspace in Vision-Language Models">[5]</a></span></p></section><section><h2>Safety and efficiency in robotics</h2><p>State-Aware Fallback Imitation (SAFI) enhances the safety of vision-language-action models by enabling robots to safely stop prohibited tasks mid-execution. This two-stage process constructs fallback targets and adapts policies to learn these targets alongside original actions, achieving a drastic reduction in aggregate target success after takeover to 1.3% on LIBERO tasks, with no recorded physical incidents (6). 
+
+Reinforcement learning post-training for diffusion transformers introduces a method that uses a fixed set of steering vectors to achieve 90-96% of the reward gains from traditional RL methods while using 65x fewer parameters. This approach enhances visual quality and compositional accuracy, outperforming weight-based RL in specific tasks (7). <span class="refs"><a href="https://huggingface.co/papers/2611.26239" title="Teaching Vision-Language-Action Models to Stop Safely">[6]</a> <a href="https://huggingface.co/papers/2611.26627" title="RL Post-Training in Diffusion Transformers Is Activation Steering">[7]</a></span></p></section><details class="sources"><summary>All source material (7)</summary><ol><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.26511">Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.26540">AURA: AUdio-dRiven streaming Avatar</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.26617">One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.26408">Training Vision Models for LLM-Driven Weight-Space Programming</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.26590">Probing the &quot;Conscious&quot; Mind: Selective Access and Global Workspace in Vision-Language Models</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.26239">Teaching Vision-Language-Action Models to Stop Safely</a></li><li><span>Hugging Face</span><a href="https://huggingface.co/papers/2611.26627">RL Post-Training in Diffusion Transformers Is Activation Steering</a></li></ol></details>
+        <nav class="adjacent" aria-label="Adjacent editions"><a href="../posts/2026-11-21.html">← Previous edition</a></nav>
+      </div><aside><section class="guide" id="reading-guide"><h2>Worth a closer look</h2><ul><li><p>How does Direct3D-V3 improve geometric reliability?</p><a href="https://huggingface.co/papers/2611.26511">Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain ↗</a></li><li><p>What are the latency advantages of AURA&#x27;s audio-driven model?</p><a href="https://huggingface.co/papers/2611.26540">AURA: AUdio-dRiven streaming Avatar ↗</a></li><li><p>What tasks demonstrate the effectiveness of Edit-Ready Training?</p><a href="https://huggingface.co/papers/2611.26408">Training Vision Models for LLM-Driven Weight-Space Programming ↗</a></li></ul></section><section class="recent"><h2>Earlier editions</h2><ul class="editions"><li><a href="../posts/2026-11-21.html"><time datetime="2026-11-21">Nov 21</time><span>Posterior matching distillation improves image generation</span></a></li><li><a href="../posts/2026-11-20.html"><time datetime="2026-11-20">Nov 20</time><span>Generative models for video and world generation</span></a></li><li><a href="../posts/2026-11-19.html"><time datetime="2026-11-19">Nov 19</time><span>Unified models for world understanding and video generation</span></a></li><li><a href="../posts/2026-11-18.html"><time datetime="2026-11-18">Nov 18</time><span>Generative models improve efficiency and quality across tasks</span></a></li></ul><a class="archive-link" href="../archive.html">Full archive →</a></section></aside></div>
+    </article></main>
+  <footer class="wrap footer"><span>GenAI Daily · Generative media research</span><a href="../explore.html">Browse collected items ↗</a></footer>
+</body>
+</html>
