@@ -1,0 +1,70 @@
+{
+  "fingerprint": "e659f29b1fd3486f9b941bff410c9aa509a223e1f11ebc8479a2f609f3681cf5",
+  "article": {
+    "headline": "GameWM separates game engine and generative video model",
+    "lead": "GameWM enhances gameplay diversity while maintaining core mechanics. NoPeWorld significantly reduces object penetration in video models, achieving a 58% drop in violation rates.",
+    "sections": [
+      {
+        "heading": "Innovative frameworks for interactive video models",
+        "paragraphs": [
+          {
+            "text": "GameWM introduces a novel architecture that separates the game engine's responsibilities from those of a generative video model (VM). This allows for diverse gameplay experiences while preserving the game engine's rules and state (1). NoPeWorld addresses object penetration in interactive video world models by using hidden states from diffusion transformers. It reduces the physical violation rate from 74% to 16% and provides a benchmark for evaluating penetration handling (2). Both frameworks aim to improve user interaction and realism in video games.",
+            "refs": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Advancements in video editing and object tracking",
+        "paragraphs": [
+          {
+            "text": "Motion-aware reward modeling improves instruction-guided video editing by addressing motion collapse. The model integrates RGB frame-difference streams and preference training, achieving a significant reduction in motion-suppressed edits (5). Transformation Tracking and Understanding (TTU) introduces a method for tracking objects through physical transformations, operating 6 to 15 times faster than previous models while maintaining high accuracy (4). These contributions enhance the fidelity and responsiveness of video editing and object tracking.",
+            "refs": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Enhancing spatial reasoning and language models",
+        "paragraphs": [
+          {
+            "text": "StereoVLM enhances 3D spatial reasoning through a geometry-aware vision-language model, achieving a depth accuracy of 95.17% on the Stereo3D-Bench benchmark. It demonstrates that disparity supervision outperforms direct binocular depth supervision (6). Clover-35B-A3B-Preview introduces a mixture-of-experts diffusion language model that optimizes performance with Gated Delta Networks, achieving leading scores on various benchmarks (7). These models improve the integration of visual and linguistic data for better spatial understanding.",
+            "refs": [
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Image synthesis and editing",
+        "paragraphs": [
+          {
+            "text": "Reading the Unreadable — The paper introduces a novel approach to text-aware image super-resolution (TAISR) that incorporates reasoning capabilities to improve the restoration of degraded text in images.",
+            "refs": [
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "How does GameWM maintain game mechanics while enhancing diversity?"
+      },
+      {
+        "ref": 2,
+        "question": "What methods does NoPeWorld use to prevent object penetration?"
+      },
+      {
+        "ref": 5,
+        "question": "How does the motion-aware reward model improve video editing outcomes?"
+      }
+    ]
+  }
+}
