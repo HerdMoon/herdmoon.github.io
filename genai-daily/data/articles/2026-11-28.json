@@ -1,0 +1,73 @@
+{
+  "fingerprint": "fbde5d7dc832a550d7671f26c6bdd9985edec262f15db987ee2f802e161c951f",
+  "article": {
+    "headline": "LayoutRecall enables consistent 3D image editing across rounds",
+    "lead": "Recent methods improve decision-making and efficiency in multimodal tasks. LayoutRecall preserves object appearance in multi-round edits, while JudiAct enhances safety interventions with significant performance gains. Radev and CARE-3D focus on clinical decision-making and grounded reasoning in 3D environments, respectively. DeepCrossAttention optimizes transformer efficiency without sacrificing quality.",
+    "sections": [
+      {
+        "heading": "3D image editing and appearance retention",
+        "paragraphs": [
+          {
+            "text": "LayoutRecall is a multi-round 3D layout-controlled image editing framework. It uses Box-Surface Latent Memory and Geometry-Aligned Memory Conditioning to maintain object appearance across edits. This method allows retrieval of image latents from occluded objects, enhancing visual consistency during the editing process. Extensive experiments on the LayoutLoop benchmark demonstrate significant improvements in appearance retention, although specific quantitative results are not provided (1).",
+            "refs": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Safety interventions in multimodal contexts",
+        "paragraphs": [
+          {
+            "text": "JudiAct is a multimodal safety intervention model that improves decision-making in response to unsafe requests. It distinguishes between established hazards and conditions needing verification, achieving a Macro-F1 score improvement of over 28 percentage points on the JudiBench benchmark. Additionally, it reduces attack success rates on MM-SafetyBench from 40.78% to 25.30%, outperforming existing safety guards across nine public benchmarks. The model emphasizes a structured approach to safety actions, grounded in evidence from a corpus of 20,126 training audits (2).",
+            "refs": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Clinical decision-making and grounded reasoning",
+        "paragraphs": [
+          {
+            "text": "Radev introduces a decision-native multimodal model for structured clinical decision-making from volumetric CT scans. It improves decision accuracy and confidence calibration by integrating anatomy-guided visual compression and counterfactual confidence supervision. Radev employs a frozen 3D encoder for organ-level feature extraction, allowing efficient candidate prediction in a single forward pass. The model shows significant performance improvements on the CT-Verdict benchmark, particularly in handling distribution shifts (3).",
+            "refs": [
+              3
+            ]
+          },
+          {
+            "text": "CARE-3D enhances adaptive grounded reasoning in 3D environments through a reinforcement learning framework. It optimizes evidence acquisition strategies using a two-step approach: supervised fine-tuning for valid interactions and Group Relative Policy Optimization (GRPO) for refining decision-making. Experimental results on MSQA and Beacon3D demonstrate significant improvements in spatial reasoning and grounding answer coherence compared to traditional methods (4).",
+            "refs": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Efficiency in transformer models",
+        "paragraphs": [
+          {
+            "text": "Google's DeepCrossAttention introduces a mechanism that enhances transformer residual connections. This approach achieves comparable model quality while reducing computation time by up to 3x. It optimizes attention mechanisms, allowing for more efficient training and inference in generative models, thus improving the scalability of transformers without sacrificing performance (5).",
+            "refs": [
+              5
+            ]
+          }
+        ]
+      }
+    ],
+    "picks": [
+      {
+        "ref": 1,
+        "question": "What specific improvements does LayoutRecall demonstrate on the LayoutLoop benchmark?"
+      },
+      {
+        "ref": 2,
+        "question": "How does JudiAct's structured approach to safety actions function?"
+      },
+      {
+        "ref": 3,
+        "question": "What are the key features of Radev's anatomy-guided visual compression?"
+      }
+    ]
+  }
+}
